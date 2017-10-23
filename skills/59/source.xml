@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Set builder \&amp; roster notations}
+Understanding \&amp; working with sets expressed in either of the two forms</tex>
+  </render>
+  <reason>
+    <tex>%text
+ There are two ways of expressing sets 
+ Either one can write out all the elements that are in the set. This is the \underline\text{roster form} -- from the English word 'roster'
+ For example, below is the set of positive even integers less than 10
+\[ \quad E = \left\lbrace 2,4,6,8 \right\rbrace\]
+ Alternatively, one can write the \underline\text{recipe} for how the set is built. This is called the \underline\text{set-builder} form. For example, the above set can also be written as
+\[ \quad E = \left\lbrace x : x = 2k,\, 1\leq k &lt; 5, k\in\mathbb{Z} \right\rbrace\]
+ It is the \underline\text{same set, written differently}%
+</tex>
+  </reason>
+</skill>

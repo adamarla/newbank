@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{}
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Degrees and radians are not the only units for measuring angles 
+ But they are the most common ones 
+ Now, \underline\text{two right angles $= 180^\circ = \pi$ radians}
+ Hence,
+\[\qquad  x^\circ = \left(\frac{x}{180}\right)\cdot\pi radians \]
+ Conversely,
+\[ \qquad y \text{ radians} = \left( \frac{y}\pi\right)\cdot 180^\circ\]
+%
+</tex>
+  </reason>
+</skill>

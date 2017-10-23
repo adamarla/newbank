@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Write the anti-derivative of 
+    \[ \qquad\qquad  \fx \]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ If $F(x)$ be the anti-derivative of $f(x)$, then
+%
+\begin{align}
+
+\ddx F(x) &amp;= f(x) \text{ and } \int f(x)\cdot dx = F(x)
+\end{align}
+%text
+
+\incorrect
+If $F(x)$ be the anti-derivative of $f(x)$, then
+%
+\begin{align}
+
+\ddx f(x) &amp;= F(x) \text{ and } \int F(x)\cdot dx = f(x)
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ If $F(x)$ be the anti-derivative of $f(x)$, then
+%
+\begin{align}
+
+\ddx f(x) &amp;= F(x) \text{ and } \int F(x)\cdot dx = f(x)
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ \underline\text{By definition}, if $F(x)$ be the anti-derivative of a function $f(x)$, then
+\[ \qquad \ddx F(x) = f(x) \]
+ Conversely
+\[ \qquad \int f(x)\cdot dx = F(x) \]
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="0"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ F(x) = 2\sqrt{x}\cdot \left(x+1 \right) + C  \]
+
+\incorrect
+\[ F(x) = \sqrt{x}\cdot \left(3x + 2 \right) + C  \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ F(x) = \sqrt{x}\cdot \left(3x + 2 \right) + C  \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+F(x) &amp;= \int \fx\cdot dx \\
+&amp;= \underbrace{3\int \sqrt{x}\cdot dx + \int \frac{1}{\sqrt{x}}\cdot dx}_{\text{Remember } \sqrt{x} = x^{\frac{1}{2}}\text{ and } \frac{1}{\sqrt{x}}= x^{-\frac{1}{2}}} \\
+&amp;= \underbrace{3 \cdot \frac{x^{\frac{3}{2}}}{\frac{3}{2}} + \frac{\sqrt{x}}{\frac{1}{2}} + C}_{\int x^n \cdot dx = \frac{x^{n+1}}{n+1} + C} \\
+&amp;= 2\sqrt{x}\cdot \left(x+1 \right) + C
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="48"/>
+      </skills>
+    </step>
+  </steps>
+</question>

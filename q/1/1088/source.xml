@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Find the derivative of the following function with respect to $x$ 
+     at $ x = 1$ 
+     \[ \qquad y = \cos^{-1} \left(\sin\fxa \right) + x^x \]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ To evaluate $\ddx A$ in the equation below
+\[ \qquad y = \underbrace{\cos^{-1} \left(\sin\fxa \right)}_A + \underbrace{x^x}_B \]
+ \underline\text{Strategy $II$ is better} (see below)
+%
+\begin{align}
+\begin{tabular}{ll}
+
+\hline
+\text{Strategy $I$} &amp; \text{Strategy $II$}  \\
+\hline
+Let $x = \cos 2\theta$ &amp; Use $\cos^{-1} z + \sin^{-1} z = \frac\pi{2}$ \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+To evaluate $\ddx A$ in the equation below
+\[ \qquad y = \underbrace{\cos^{-1} \left(\sin\fxa \right)}_A + \underbrace{x^x}_B \]
+
+\underline\text{Strategy $I$ is better} (see below)
+%
+\begin{align}
+\begin{tabular}{ll}
+
+\hline
+\text{Strategy} $I$ &amp; \text{Strategy $II$}  \\
+\hline
+Let $x = \cos 2\theta$ &amp; Use $\cos^{-1} z + \sin^{-1} z = \frac\pi{2}$ \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ To evaluate $\ddx A$ in the equation below
+\[ \qquad y = \underbrace{\cos^{-1} \left(\sin\fxa \right)}_A + \underbrace{x^x}_B \]
+ \underline\text{Strategy $I$ is better} (see below)
+%
+\begin{align}
+\begin{tabular}{ll}
+
+\hline
+\text{Strategy} $I$ &amp; \text{Strategy $II$}  \\
+\hline
+Let $x = \cos 2\theta$ &amp; Use $\cos^{-1} z + \sin^{-1} z = \frac\pi{2}$ \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ You can try Strategy $I$. But it wouldn't make life any easier
+%
+\begin{align}
+
+A &amp;= \cos^{-1} \left(\sin \fxa \right) \\
+&amp;= \cos^{-1} \left(\sin \sqrt{\frac{1+\cos 2\theta}{2}} \right) \\
+&amp;= \cos^{-1} \left(\sin \cos\theta \right)
+\end{align}
+%text
+ This doesn't look very helpful
+ So, let us try Strategy $II$
+%
+\begin{align}
+
+A &amp;= \cos^{-1} \underbrace{\left(\sin\fxa \right)}_z \\
+&amp;= \frac\pi{2} - \sin^{-1} \left(\sin\fxa \right) \\
+&amp;= \frac\pi{2} - \fxa
+\end{align}
+%text
+ This is a whole lot simpler%
+</tex>
+      </reason>
+      <skills>
+        <skill id="41"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\ddx A &amp; \ddx B \\
+\hline
+\frac{-1}{2\sqrt{2\cdot (1+x)}} &amp; x^x\cdot \left(\log x + 1 \right)\\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Therefore $\ddx y = \frac{3}{4}$ when $x = 1$
+\incorrect
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\ddx A &amp; \ddx B \\
+\hline
+\frac{1}{2\sqrt{2\cdot (1+x)}} &amp; x\cdot x^{x-1} = x^x \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Therefore $\ddx y = \frac{5}{4}$ when $ x = 1$%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\ddx A &amp; \ddx B \\
+\hline
+\frac{1}{2\sqrt{2\cdot (1+x)}} &amp; x\cdot x^{x-1} = x^x \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Therefore $\ddx y = \frac{5}{4}$ when $ x = 1$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+y = A + B &amp;\implies \ddx y = \ddx A + \ddx B \\
+A &amp;= \frac{\pi}{2} - \fxa \\
+\therefore \ddx A &amp;= 0 - \frac{1}{\sqrt{2}}\cdot \frac{1}{2}\cdot \frac{1}{\sqrt{1+x}} \\
+\text{And }B &amp;= x^x \implies \log B = x \log x \\
+\therefore \ddx \log B &amp;= \ddx \left(x\cdot\log x \right) \\
+\text{or } \frac{1}{B}\ddx B &amp;= \underbrace{\frac{x}{x} + \log x}_{\text{Product Rule}} \\
+\therefore \ddx B &amp;= x^x\cdot \left(1 + \log x \right)
+\end{align}
+%text
+ Hence $\ddx y$ at $x = 1$ equals
+%
+\begin{align}
+
+\left[\ddx y \right]_{x=1} &amp;= \left[\ddx A + \ddx B \right]_{x=1} \\
+&amp;= \left[- \frac{1}{2\sqrt{2\cdot 2}} + 1^1\cdot \left(1 + \log 1 \right)  \right] \\
+&amp;= 1 - \frac{1}{4} = \frac{3}{4}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="33"/>
+      </skills>
+    </step>
+  </steps>
+</question>

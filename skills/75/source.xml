@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Domain \&amp; Range of $f(x)$}
+What are they and how to find them?</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Just as a king has a domain (kingdom), a function has a domain
+ The domain of $f(x)$ is the set of all values of $x$ for which $f(x)$ is defined
+ \underline\text{Do not assume} that the domain for every $f(x)$ is $\mathbb{R}$. Some functions are defined in a narrower band of $x$, as shown below
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+f(x) &amp;  \text{Not defined if} &amp; \text{Domain} \\
+\hline
+\frac{1}{x} &amp; x = 0 &amp; \mathbb{R} - \left\lbrace 0\right\rbrace \\
+\hline
+\frac{1}{\sqrt{x+2}} &amp; x + 2 \leq 0\text{ or } x \leq -2 &amp; (-2,\infty) \\
+\hline
+\frac{1}{x^2-1} &amp; (x-1)\cdot(x+1) = 0 &amp; \mathbb{R} - \left\lbrace -1,1\right\rbrace \\
+\hline
+\log x &amp; x \leq 0 &amp; \mathbb{R}^+ \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ \underline\text{The range of a function} is simply the set of all values $f(x)$ can take in it's domain
+ For example, $f(x) = \vert x\vert$ is defined for all $x\in\mathbb{R}$. But it can take only positive values. Hence, it's range is $\mathbb{R}^+$%
+</tex>
+  </reason>
+</skill>

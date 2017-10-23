@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="28">
+  <customCommands/>
+  <statement>
+    <tex>%text
+A pair of dice is thrown 4 times. If getting a 
+doublet is considered a success, then find
+the probability distribution of successes
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+If the two die -- $I$ and $II$ -- are thrown, then we would get a doublet if 
+either of the following combinations occur 
+
+\begin{center}
+  \begin{tabular}{N|NNNNNN}
+  \toprule
+   \text{Die} &amp; &amp; &amp; &amp; &amp; &amp; \\
+   \midrule
+   I &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\      
+  \midrule 
+   II &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\
+   \bottomrule
+  \end{tabular}
+\end{center}
+
+</tex>
+      <tex correct="false">
+
+If the two die -- $I$ and $II$ -- are thrown, then we would get a doublet if 
+either of the following combinations occur 
+
+\begin{center}
+  \begin{tabular}{N|NNNNNN}
+  \toprule
+   \text{Die} &amp; &amp; &amp; &amp; &amp; &amp; \\
+   \midrule
+   I &amp; 1 &amp; 2 &amp; 3 &amp; 2 &amp; 4 &amp; 6 \\      
+  \midrule 
+   II &amp; 2 &amp; 4 &amp; 6 &amp; 1 &amp; 2 &amp; 3 \\
+   \bottomrule
+  \end{tabular}
+\end{center}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+A doublet is when the \underline{same number} occurs on both the die\newline 
+
+Hence, we will get a doublet when 
+
+\begin{center}
+  \begin{tabular}{N|NNNNNN}
+  \toprule
+   \text{Die} &amp; &amp; &amp; &amp; &amp; &amp; \\
+   \midrule
+   I &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\      
+  \midrule 
+   II &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\
+   \bottomrule
+  \end{tabular}
+\end{center}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="26"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+If $p$ be the probability of getting a doublet in \underline{a given throw}, then $p= \frac{1}{6}$ 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+If you roll a 1 (or a 2, or a 3 $\ldots$) on die $I$, then to get a doublet, die $II$ should also roll to the same number \newline 
+
+Hence, the probability of getting a doublet \underline{on a given throw} is simply 
+\[ \qquad p = P \left(II = I\vert I \right) = \frac{1}{6} \]
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="26"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+The probability of getting \underline{$N$ doublets} in four throws is 
+\[ \qquad P(N) = {^4}C_N \cdot p^N\cdot q^{4-N},\, \left(N \leq 4\right) \]
+
+where $q = 1-p = \frac{5}{6}$ 
+
+</tex>
+      <tex correct="false"> 
+
+The probability of getting \underline{$N$ doublets} in four throws is 
+\[ \qquad P(N) = p^N\cdot q^{4-N},\, \left(N \leq 4\right) \]
+
+where $q = 1-p = \frac{5}{6}$ 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+You could get a doublet in first \&amp; second throws or the first \&amp; third throws or in any of the \underline{$^4C_N$ possible combinations} \newline 
+
+Each of these $^4C_N$ combinations, however, represents $N$ successes and $4-N$ failures\newline 
+
+Hence, each of these combinations will occur with a probability of $p^N\cdot q^{4-N}$\newline 
+
+And therefore, the \underline{total probability} of getting $N$ doublets is 
+\[ \qquad P(N) = ^4C_N\cdot p^N\cdot q^{4-N}\, \left(N\leq 4 \right)\]
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="20"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex>
+
+The probability distribution will therefore be as follows 
+
+\begin{center}
+\begin{tabular}{NN}
+\toprule
+\text{\# of doublets} = N &amp; \text{Probability} \\
+\midrule 
+0 &amp; \frac{625}{1296} \\
+\midrule 
+1 &amp; \frac{125}{324} \\
+\midrule 
+2 &amp; \frac{25}{216} \\
+\midrule 
+3 &amp; \frac{5}{324} \\
+\midrule 
+4 &amp; \frac{1}{1296} \\
+\bottomrule
+\end{tabular}
+\end{center} 
+
+</tex>
+    </options>
+    <reason>
+      <tex>
+
+%text
+We know that the probability of getting $N$ doublets in four throws is 
+\[ \qquad P(N) = ^4C_N \cdot p^N\cdot q^{4-N}\, \left(N\leq 4 \right)\]
+
+The probability distribution table is simply the value of $P(N)$ for $N=0,1,2,3,4$
+%
+
+\begin{center}
+\begin{tabular}{NNN}
+\toprule 
+\text{\# of doublets} &amp; \text{Expression} &amp; \text{Probability} \\
+\midrule 
+0 &amp; ^4C_0\cdot p^0\cdot q^4 &amp; \frac{625}{1296} \\
+\midrule 
+1 &amp; ^4C_1 \cdot p^1\cdot q^3 &amp; \frac{125}{324} \\
+\midrule 
+2 &amp; ^4C_2 \cdot p^2 \cdot q^2 &amp; \frac{25}{216} \\
+\midrule 
+3 &amp; ^4C_3\cdot p^3\cdot q^1 &amp; \frac{5}{324} \\
+\midrule 
+4 &amp; ^4C_4 \cdot p^4\cdot q^0 &amp; \frac{1}{1296} \\
+\bottomrule
+\end{tabular}
+\end{center}</tex>
+    </reason>
+    <skills>
+      <skill id="20"/>
+      <skill id="18"/>
+    </skills>
+  </step>
+</question>

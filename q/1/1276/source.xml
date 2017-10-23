@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="22">
+  <customCommands/>
+  <statement>
+    <tex>%text
+If the length of three sides of trapezium 
+other than the base is 10cm each, find the 
+area of the trapezium when it is maximum
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+%text
+You can have \underline{infinite} quadrilaterals with
+three sides equal to $10$ cm\newline 
+
+But you can have
+\underline{only one} trapezium (with $PS\parallel QR$) that has 
+three sides equal \newline 
+
+Moreover, in the figure below 
+\begin{center} 
+\includegraphics[scale=1.5]{figure.svg} 
+\end{center} 
+\begin{align}
+\text{Height } H &amp;= \sqrt{10^2 - x^2} = \sqrt{100-x^2} \\
+\therefore A &amp;= \frac{1}{2}\cdot \left(QR + PS \right)\cdot H \\
+&amp;= \frac{1}{2}\cdot \left(10 + 10 +2x \right)\cdot \sqrt{100-x^2} \\
+&amp;= \left(10+x \right)\cdot \sqrt{100-x^2} 
+\end{align}
+
+</tex>
+      <tex correct="false">
+
+\begin{center} 
+\includegraphics[scale=1.5]{img_prefab-2.svg} 
+\end{center} 
+
+</tex>
+    </options>
+    <reason>
+      <tex>
+
+\begin{center} 
+\includegraphics[scale=1.5]{img_prefab-1.svg} 
+\end{center} 
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="26"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex>
+
+\begin{align}
+	\frac{dA}{dx} &amp;= - \frac{2\cdot \left(x^2 + 5x-50 \right)}{\es} \\
+	\therefore \frac{dA}{dx} &amp;=0 \implies x = 5 
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+Given that $A = \eb\cdot\es$
+
+\begin{align}
+\frac{dA}{dx} &amp;= \overbrace{\es \frac{d}{dx}\eb + \eb \frac{d}{dx}\es}^{\text{Product Rule}} \\
+&amp;= \es + \frac{\eb}{2\cdot \es}\cdot \left(-2x \right) \\
+&amp;= \frac{\ea - \left\lbrace x\cdot \eb\right\rbrace}{\es} \\
+&amp;= -\frac{2\cdot \left(x^2+5x-50 \right)}{\es} = - \frac{2\cdot (x-5)\cdot (x+10)}{\es} \\
+\therefore \frac{dA}{dx} &amp;= 0 \implies (x-5)\cdot (x+10) = 0 \\
+\text{or } x &amp;= 5, -10\text{ (non-sensical)}
+\end{align} 
+
+Hence $A$ has an \underline{extreme value} when $x=5$
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="31"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\[ \frac{d^2 A}{dx^2} = -2\sqrt{3} \text{ when } x = 5 \]
+And the maximum area $A_m = 75\sqrt{3}$ units 
+
+</tex>
+      <tex correct="false"> 
+
+\[ \frac{d^2 A}{dx^2} = -\sqrt{3} \text{ when } x = 5 \]
+And the maximum area $A_m = 75\sqrt{3}$ units 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+
+Let $g(x) = x^2 + 5x - 50$\newline 
+
+\begin{align}
+\frac{dA}{dx} &amp;= -\frac{2\cdot g(x)}{\es}\\
+\therefore \frac{d^2 A	}{dx^2} &amp;= -2 \underbrace{\left[\frac{\es \cdot g'(x) - g(x) \frac{d}{dx}\es}{\left(\es \right)^2} \right]}_{\text{Quotient Rule}}
+\end{align}
+
+Now, recall that $g(x) = x^2 + 5x-50 = 0$ for $x = 5$, that is $g(5) = 0$. Hence 
+
+\begin{align}
+\left[ \frac{d^2 A}{dx^2}\right]_{x=5} &amp;= -2 \left[\frac{\es\cdot g'(x)}{\ea} \right]_{x=5}\\
+\text{where } g'(x) &amp;= 2x + 5 \\ 
+\therefore \left[ \frac{d^2 A}{dx^2}\right]_{x=5} &amp;= -2 \left[\frac{\sqrt{100-5^2}\cdot (10 + 5)}{100 - 5^2}\right] \\
+&amp;= -\frac{30}{\sqrt{75}} = -\frac{6}{\sqrt{3}} = -2\sqrt{3} 
+\end{align}
+
+And as $\dfrac{d^2A}{dx^2} &lt; 0$ at $x=5$, therefore we have a \underline{maxima} at $x=5$ 
+
+And the \underline{maximum area} is  
+\[ A_m = (10+5)\cdot \sqrt{100-5^2} = 75\sqrt{3}\text{ sq. units}\]</tex>
+    </reason>
+    <skills>
+      <skill id="31"/>
+      <skill id="63"/>
+    </skills>
+  </step>
+</question>

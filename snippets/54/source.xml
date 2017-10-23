@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The area bounded by the curves $y^2 = 4x$ and $x^2 = 4y$ is as shown below
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{figure.svg}
+\end{align}
+%text
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{Nc}
+
+\hline
+\text{Equation} &amp; Curve \\
+\hline
+x^2 = 4y &amp; Upward opening parabola \\
+\hline
+y^2 = 4x &amp; Parabola opening right \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Both parabolas touch the origin and intersect as shown. Hence, the shaded bit is the required area%
+</tex>
+  </reason>
+            <skills>
+    <skill id="66"/>
+  </skills>
+</snippet>

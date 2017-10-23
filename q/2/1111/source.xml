@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>If the function $f:\R\to\R$ be defined as $f(x) = 2x-3$ and $g:\R\to\R$ be defined as $g(x) = x^3 + 5$, then find the value of 
+\[ \qquad\qquad \ifgx \]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+\text{If } f(x) = 2x - 3 &amp;\text{ and } g(x) = x^3 + 5 \\
+\text{then } \fgx &amp;= 2x^3 + 7
+\end{align}
+%text
+
+\incorrect
+%
+\begin{align}
+
+\text{If } f(x) = 2x - 3 &amp;\text{ and } g(x) = x^3 + 5 \\
+\text{then } \fgx &amp;= 2x^4 - 3x^3 + 10x + 15
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+\text{If } f(x) = 2x - 3 &amp;\text{ and } g(x) = x^3 + 5 \\
+\text{then } \fgx &amp;= 2x^4 - 3x^3 + 10x + 15
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ $\fgx$ is \underline\text{simply shorthand} for $f \left(g(x) \right)$
+%
+\begin{align}
+
+\therefore \fgx &amp;= f \left( g(x) \right) = 2g(x) - 3 \\
+&amp;= 2 \left(x^3 + 5\right) - 3 \\
+&amp;= 2x^3 + 7
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="47"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ \therefore \ifgx = \sqrt[3]{\dfrac{x-7}{2}} \]
+
+\incorrect
+\[ \therefore \ifgx = \dfrac{1}{2x^3 + 7} \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ \therefore \ifgx = \dfrac{1}{2x^3 + 7} \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ In $ y= \fgx$, we know $x$ (independent variable) and use $\fgx$ to find $y$ (dependent variable)
+ But to \underline\text{find $x$ given $y$}, we need the inverse function $\ifgy$ which we can find as follows
+%
+\begin{align}
+
+y = 2x^3 + 7 &amp;\implies x = \sqrt[3]{\dfrac{y-7}{2}} \\
+\therefore \left(f\circ g \right)^{-1}(y) &amp;= x = \sqrt[3]{\dfrac{y-7}{2}}
+\end{align}
+%text
+ But \underline\text{by convention}, the \underline\text{independent} variable is written as $x$ and the \underline\text{dependent} variable as $y$. Hence,
+\[ \qquad \ifgx = \sqrt[3]{\dfrac{x-7}{2}} \]
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="99"/>
+      </skills>
+    </step>
+  </steps>
+</question>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ $F(x,y) = \dfrac{x^2 + y^2}{x-y}$ is a homogenous function of degree 1%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+F(x,y) &amp;= \dfrac{x^2 + y^2}{x-y} \\
+\therefore F \left(\lx,\ly \right) &amp;= \dfrac{ \left(\lx \right)^2 + \left(\ly \right)^2}{\lx - \ly} \\
+&amp;= \lambda\cdot\dfrac{x^2 + y^2}{x-y} \\
+&amp;= \lambda^1\cdot F(x,y)
+\end{align}
+%text
+ Hence, we can see that as $\lambda^n = \lambda^1$, therefore $n=1\implies$ degree $=1$%
+</tex>
+  </reason>
+            <skills>
+    <skill id="93"/>
+  </skills>
+</snippet>

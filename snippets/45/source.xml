@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ Below is the graph of some function $f(x)$. $AB \parallel x-$ axis
+ And $f(x)$ is a strictly increasing function
+%
+\begin{align}
+
+\includegraphics[scale=1.5]{figure.svg}
+\end{align}
+%text
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ $AB \parallel x-$axis $\implies \dydx = 0$ between $A$ and $B$. Hence, while $f(x)$ is an increasing function, it is \underline\text{not strictly increasing}
+ A function is strictly increasing (in some domain) if $\dydx &gt; 0$ but not $\geq 0$%
+</tex>
+  </reason>
+            <skills>
+    <skill id="63"/>
+  </skills>
+</snippet>

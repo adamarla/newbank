@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If a discrete random variable $X$ has the following probability distribution
+%
+\begin{align}
+\begin{tabular}{NNNNN}
+
+\hline
+X &amp; 0.5 &amp; 1 &amp; 1.5 &amp; 2 \\
+\hline
+P(X) &amp; k &amp; k^2 &amp; 2k^2 &amp; k \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ then $k = \dfrac{1}{4}$ and expected value $= \dfrac{17}{18}$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ The discrete random variable $X$ can have only one of the four given values -- $0.5,1,1.5$ and $2$ 
+ Hence, $\sum P(X) = 1$, that is,
+%
+\begin{align}
+
+k + k^2 + 2k^2 + k &amp;= 1 \\
+\implies 3k^2 + 2k - 1 &amp;= 0 \\
+\text{or } \left(3k-1 \right)\cdot (k + 1) &amp;= 0 \\
+\text{or } k &amp;= \frac{1}{3}, -1
+\end{align}
+%text
+ Now, if $k = -1$, then $P(1.5) &gt; 1$ and $P(0.5) &lt; 0$
+ This makes no sense. Hence, only $k=\frac{1}{3}$ is an acceptable solution 
+ The expected value of $X = E(X)$ is simply
+%
+\begin{align}
+
+E(X) &amp;= \sum P(X)\cdot X \\
+&amp;= \left[\frac{1}{3}\cdot\frac{1}{2} + \frac{1}{9}\cdot 1 + \frac{2}{9}\cdot\frac{3}{2} + \frac{1}{3}\cdot 2  \right] \\
+&amp;= \frac{23}{18}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="18"/>
+  </skills>
+</snippet>

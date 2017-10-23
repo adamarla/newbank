@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ $f(x) = \fx$ is decreasing at $x=\dfrac{3\pi}{2}$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ This is a trick question. For $f'(x)$ to be defined, $f(x)$ must also be defined at that point. But $f(x)$ is not defined at $x=\dfrac{3\pi}{2}$
+ Here is why 
+ $f(x) = \log \left(\tan\frac{x}{2} \right)$. Hence, $\tan\frac{x}{2} &gt; 0$ for $f(x)$ to be defined 
+ But at $x = \frac{3\pi}{2}, \tan\frac{x}{2} = \tan\frac{3\pi}{4} &lt; 0$
+ Hence, $f(x)$ is not defined. And therefore, neither is $f'(x)$
+ The question of $f(x)$ increasing or decreasing at $x=\frac{3\pi}{2}$ therefore does not arise%
+</tex>
+  </reason>
+            <skills>
+    <skill id="75"/>
+  </skills>
+</snippet>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="18">
+  <customCommands/>
+  <statement>
+    <tex>%text
+Write the principal value of $\sec^{-1}(-2)$. 
+%
+%
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex> 
+
+\[ \sec^{-1} (-2) = \cos^{-1} \left(-\frac{1}{2} \right)\]
+
+</tex>
+      <tex correct="false"> 
+
+\[ \sec^{-1} (-2) = -\cos^{-1} \left(\frac{1}{2} \right)\]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+The standard result is $\sec^{-1} x = \cos^{-1} \left(\frac{1}{x} \right)$ \newline 
+
+In this case $x = -2$\newline 
+And therefore $\sec^{-1} (-2) = \cos^{-1} \left(\frac{-1}{2} \right)$ \newline 
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="42"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex correct="false"> 
+
+\[ \cos \left(\frac{8\pi}{3} \right) = -\frac{1}{2} \implies\cos^{-1} \left( \frac{-1}{2}\right) = \frac{8\pi}{3}\]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+When we say that $\cos^{-1}x = \theta$, then $\theta$ belongs to what is called the \underline{principal range}. For $\cos^{-1}x$, that principal range is $[0,\pi]$\newline 
+
+And it so happens that 
+\begin{align}
+\cos \frac{2\pi}{3} = -\frac{1}{2} &amp;\text{ and } \frac{2\pi}{3}\in [0,\pi] \\
+\therefore \cos^{-1} \left(\frac{-1}{2} \right) &amp;= \frac{2\pi}{3}
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="39"/>
+    </skills>
+  </step>
+</question>

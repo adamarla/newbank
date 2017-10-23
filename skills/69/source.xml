@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Finding the points of intersection}
+Given the equations of two curves</tex>
+  </render>
+  <reason>
+    <tex>%text
+ In coordinate geometry, every gemoetrical shape or curve is represented by an equation 
+ Hence, if one wants to find the points of intersection of two curves $y=f(x)$ and $y=g(x)$, then one simply needs to find the $x$'s for which $f(x) = g(x)$ -- and then the corresponding $y$'s 
+ Or, you can find the $y$'s first and then the $x$'s. It is all the same 
+ The following is what you will need to do
+%
+\begin{align}
+
+y &amp;= f(x) = g(x) \implies x = \left\lbrace x_1, x_2, \ldots\right\rbrace
+\end{align}
+%text
+ And hence, the points of intersection are
+\[ \qquad \underbrace{\left\lbrace\left(x_1, f(x_1) \right), \left(x_2, f(x_2) \right)\ldots\right\rbrace}_{\text{or }\left(x,g(x) \right).\text{ Either is fine}} \]
+%
+</tex>
+  </reason>
+</skill>

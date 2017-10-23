@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Problem visualization}
+Plotting graphs and/or creating a picture from the problem statement</tex>
+  </render>
+  <reason>
+    <tex>%text
+ What does the graph of $y=x^2$ look like? How about $y = x^2$? What will $\left(\vec{a} + \vec{b} \right)$ look like? 
+ The ability to create a picture from the facts given in the question will make it easier for you to understand and solve the problem. This is a especially useful skill to have when solving problems on calculus, coordinate geometry \&amp; vector algebra.%
+</tex>
+  </reason>
+</skill>

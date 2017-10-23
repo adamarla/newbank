@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="25">
+  <customCommands/>
+  <statement>
+    <tex>\newcommand\ea{ \left(x^2-1 \right)}
+%text
+Solve the following differential equation
+\[ \quad \ea\frac{dy}{dx} + 2xy = \frac{1}{\ea}, \vert x\vert \neq 1\]
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex correct="false">
+
+\[ \ea\frac{dy}{dx} + 2x\cdot y = \frac{1}{\ea}\]
+is of the form \[ \qquad \frac{dy}{dx} = F \left(\frac{y}{x} \right)\]
+which makes it a \underline{homogenous} differential equation
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+	\ea \frac{dy}{dx}+ 2xy &amp;= \frac{1}{\ea} \\
+	\implies \frac{dy}{dx} + \frac{2x}{\ea}\cdot y&amp;= \frac{1}{\ea^2}
+\end{align}
+
+The above looks like 
+\[ \qquad \frac{dy}{dx} + P(x)\cdot y = Q(x) \]
+
+And that we know is a \underline{first-order linear} differential equation -- not a homogenous one 
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="53"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\[ \ea \frac{dy}{dx} + 2x\cdot y = \frac{d}{dx} \left[\ea\cdot y \right]\]
+
+</tex>
+      <tex correct="false"> 
+
+\[ \ea \frac{dy}{dx} + 2x\cdot y \neq \frac{d}{dx} \left[\ea\cdot y \right]\]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+We have established that the given differential equation is a linear one\newline 
+
+And so, the logical next step would be to calculate the integrating factor. It would be \underline{perfectly ok} to do that\newline 
+
+But if you can be a little patient, then you will notice that $\frac{d}{dx}\ea = 2x$\newline  
+
+And furthermore 
+\begin{align}
+\frac{d}{dx} \left[\ea\cdot y \right] &amp;= \underbrace{\ea \frac{dy}{dx} + y\cdot \frac{d}{dx}\ea}_{\text{Product Rule}} \\
+&amp;= \underbrace{\ea\cdot \frac{dy}{dx} + 2x\cdot y}_{\text{Our differential equation!}}
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="31"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+	\frac{d}{dx} \ea\cdot y &amp;= \frac{1}{\ea^2} \\
+	\implies y &amp;= \frac{1}{2\ea} \cdot \log \left\vert \frac{x-1}{x+1}\right\vert + C 
+\end{align}
+
+</tex>
+      <tex correct="false"> 
+
+\begin{align}
+	\frac{d}{dx} \ea\cdot y &amp;= \frac{1}{\ea^2} \\
+	\implies y &amp;= \frac{1}{\ea}\cdot\tan^{-1} x + C 
+\end{align} 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+In the last step, we established that 
+\[ \qquad \frac{d}{dx} \left[\ea\cdot y \right] = \frac{1}{\ea}\]
+
+And so it follows that 
+
+\begin{align}
+\ea\cdot y &amp;= \int \frac{dx}{x^2-1} \\
+&amp;= \underbrace{\frac{1}{2}\cdot \log \left\vert \frac{x-1}{x+1}\right\vert}_{\text{Standard result}} + C  \\
+\implies y &amp;= \frac{1}{2\ea}\log \left\vert \frac{x-1}{x+1}\right\vert + C 
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="61"/>
+    </skills>
+  </step>
+</question>

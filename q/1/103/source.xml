@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>%text
+Fuel expenditure for a steam-ship are
+proportional to the cube of its speed. It is
+known that a speed of 10 km/h, fuel costs
+are \$240/hour. Other expenses (independent
+of speed) amount to \$480 per hour \newline 
+
+At what speed should the ship travel  to keep
+its \underline{total expenses per kilometre} lowest? And 
+what will the total expense \underline{per hour} be at that speed? 
+%</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ If $F$ be the fuel-costs per hour and $T$ the total costs per hour, then
+%
+\begin{align}
+
+F \propto s^3 &amp;\implies F = ks^3 \\
+&amp;\implies F =  \dfrac{6}{25}\cdot s^3 \dph    \\
+\therefore T &amp;= \left(\dfrac{6}{25}s^3 + 480\right) \dph
+\end{align}
+%text
+
+\incorrect
+If $F$ be the fuel-costs per hour and $T$ the total costs per hour, then
+%
+\begin{align}
+
+F \propto s^3 &amp;\implies F = ks^3 \\
+&amp;\implies F =  \dfrac{3}{17}\cdot s^3 \dph    \\
+\therefore T &amp;= \left(\dfrac{3}{17}s^3 + 480\right) \dph
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ If $F$ be the fuel-costs per hour and $T$ the total costs per hour, then
+%
+\begin{align}
+
+F \propto s^3 &amp;\implies F = ks^3 \\
+&amp;\implies F =  \dfrac{3}{17}\cdot s^3 \dph    \\
+\therefore T &amp;= \left(\dfrac{3}{17}s^3 + 480\right) \dph
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ We have been told that
+\[\qquad F \propto s^3 \implies F =k\cdot s^3  \]
+ Moreover,
+%
+\begin{align}
+
+F \left(10 \right) &amp;= \underbrace{k\cdot \left(10 \kmph \right)^3 = 240 \dph}_{\text{Fuel costs at 10\kmph}} \\
+\implies k &amp;= \dfrac{240\dph}{(10 \kmph)^3} =
+\konst \frac{\$\cdot \text{h}^2}{\text{km}^3}\\
+\therefore F &amp;= \konst\dph \\
+\text{and } T &amp;= \left( F+480\right) \dph \\
+&amp;=\left(\dfrac{6}{25}s^3 + 480\right) \dph
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="103"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ If $T_k$ be the total cost \underline\text{per km}, then
+\[\quad T_k = \left(\dfrac{6}{25}s^2 + \dfrac{480}{s}\right)\dpk\]
+
+\incorrect
+\[\quad T_k = \left(\dfrac{6}{25}s^4 + 480\cdot s\right)\dpk\]
+%
+</tex>
+        <tex correct="false">%text
+
+\[\quad T_k = \left(\dfrac{6}{25}s^4 + 480\cdot s\right)\dpk\]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ In one hour, the ship would travel $s\text{ km}$ and incur a cost of $T$ dollars. Which means, that \underline\text{per km}, the ship spent
+%
+\begin{align}
+
+T_k &amp;= \frac{T}{s}\dpk = \frac{1}{s} \left[\konst + 480 \right]\dpk  \\
+&amp;= \left[\frac{6s^2}{25} + \frac{480}{s} \right]\dpk
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="36"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+\frac{d}{ds}T_k &amp;= \left(\frac{12}{25}s - \frac{480}{s^2} \right) \\
+\frac{d^2}{ds^2}T_k &amp;= \frac{12}{25} + \frac{960}{s^3} &gt; 0
+\end{align}
+%text
+ Hence, the speed at which total costs \underline\text{per km} are lowest is $s = 10 \kmph$ 
+ And at $s = 10\kmph, T = 720 \dph$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+T_k &amp;= \left(\dfrac{6}{25}s^2 + \dfrac{480}{s}\right) \\
+\implies\dfrac{d T_k}{ds} &amp;= \dfrac{12}{25}s - \dfrac{480}{s^2} \\
+\text{and }\dfrac{d^2 T_k}{ds^2} &amp;= \dfrac{12}{25} + \dfrac{960}{s^3} \\
+\text{Now, } \dfrac{dT_K}{ds} &amp;= 0 \text{ when }\dfrac{12}{25}s = \dfrac{480}{s^3} \\
+\implies s^3 &amp;= 1000 \text{ or }  s = 10 \kmph\\
+\text{Also, }\dfrac{d^2 T_K}{ds^2} &amp;= \left(\frac{12}{25} + \frac{960}{s^3} \right) &gt; 0 \because s &gt; 0 \\
+&amp;\implies\text{Minima  at } s = 10\kmph
+\end{align} \\
+%text
+ Hence, the expense per km is minimum at 10 km/hour. And at that speed, the \underline\text{expense per hour} would be
+\[\quad T(10) = \dfrac{6}{25}\cdot 10^3 + 480 = 720 \dph\]
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="63"/>
+      </skills>
+    </step>
+  </steps>
+</question>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="23">
+  <customCommands/>
+  <statement>
+    <tex>Evaluate the following integral 
+\[ \quad R = \int_0^{\frac\pi{2}} \left(2\log\sin x - \log\sin 2x \right)\cdot dx \] 
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+	2\log \left( \sin x \right) - \log \left(\sin 2x \right) &amp;= \log \left(\tan x \right) - \log 2 
+\end{align}
+
+</tex>
+      <tex correct="false"> 
+
+\begin{align}
+	2\log \left( \sin x \right) - \log \left(\sin 2x \right) &amp;= 
+	2\log \left(\sin x \right) \\
+	&amp;-\left[\log 2 + \log \sin x \right] \\ 
+	&amp;= \log \left(\sin x \right) -\log 2 
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+Just simple algebra involving $\log$ terms
+\begin{align}
+	2\log \left( \sin x \right) &amp;- \log \left(\sin 2x \right) =\log \left(\sin^2 x \right)-\log \left(\sin 2x \right) \\
+	&amp;= \log \left[\dfrac{\sin^2 x}{\sin 2x} \right] = \log \left[\dfrac{\sin^2 x}{2\sin x \cdot\cos x}\right] \\
+	&amp;= \log \left[\dfrac{\tan x}{2} \right] = \log \left(\tan x \right)-\log 2
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="55"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+R &amp;= \int_0^{\frac\pi{2}} \left[\log \left(\tan x \right) - \log 2 \right]\cdot dx \\
+&amp;= \underbrace{\int_0^{\frac\pi{2}}\log \left(\tan x \right)\cdot dx}_{A} - \int_0^{\frac\pi{2}}\log 2\cdot dx \\
+\text{And } A &amp;= \int_0^{\frac\pi{2}}\log \left(\tan x \right)\cdot dx 
+=\int_0^{\frac\pi{2}}\log \left(\cot x \right)\cdot dx \\
+\therefore A &amp;= 0 \implies R = -\frac\pi{2}\cdot\log 2
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+This step is about using the standard result 
+\[\qquad \int_0^a f(x)\cdot dx = \int_0^a f \left(a-x \right)\cdot dx  \]
+
+So, starting with $R$ 
+\begin{align}
+R &amp;= \int_0^{\frac\pi{2}} \left[\log \left(\tan x \right) - \log 2 \right]\cdot dx \\
+&amp;= \underbrace{\int_0^{\frac\pi{2}}\log \left(\tan x \right)\cdot dx}_{A} - \int_0^{\frac\pi{2}}\log 2\cdot dx \\
+\text{But } A &amp;= \int_0^{\frac\pi{2}}\log \left(\tan x \right)\cdot dx 
+\\
+&amp;=\int_0^{\frac\pi{2}}\log \left[\tan \left(\frac\pi{2} - x \right)\right] \cdot dx \\
+&amp;= \int_0^{\frac\pi{2}}\log \left(\cot x \right)\cdot dx  \\
+\therefore A + A  &amp;= \int_0^{\frac\pi{2}} \left[\log \left(\tan x \right) + \log \left(\cot x \right) \right]\cdot dx \\
+&amp;= \int_0^{\frac\pi{2}} \log \left(\tan x\cdot \cot x \right)\cdot dx \\ 
+&amp;= \int_0^{\frac\pi{2}} \log 1\cdot dx = 0 \quad (\because \log 1 = 0) \\
+\text{Hence } R &amp;= A - \log 2\int_0^{\frac\pi{2}} dx = 0 - \log 2\cdot \frac\pi{2} \\
+&amp;= -\frac\pi{2}\cdot \log 2 
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="45"/>
+    </skills>
+  </step>
+</question>

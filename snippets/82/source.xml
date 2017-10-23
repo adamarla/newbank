@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \intg = 0 \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+\intg &amp;= \left[-\frac{\cos 2x}{2} \right]_0^{\frac\pi{2}} \\
+&amp;= \underbrace{\frac{1}{2} \left[\cos 2x \right]_{\frac\pi{2}}^0 }_{-\int_a^b f(x)\cdot dx = \int_b^a f(x)\cdot dx} \\
+&amp;= \frac{1}{2} \left[\cos 0 - \cos \pi \right] \\
+&amp;= \frac{1}{2} \left[1 + 1 \right] = 1
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="48"/>
+  </skills>
+</snippet>

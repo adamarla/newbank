@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \ddx \sin^{-1}\sqrt{x} = \frac{1}{2\sqrt{x\cdot \left(1-x \right)}}\]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+\text{Let } z &amp;= \sqrt{x} \\
+\therefore \ddx \fx  &amp;= \underbrace{\frac{d}{dz}\sin^{-1} z\cdot \ddx z}_{\text{Chain Rule}} \\
+&amp;= \frac{1}{\sqrt{1-z^2}}\cdot \left[\ddx\sqrt{x} \right] \\
+&amp;= \frac{1}{\sqrt{1-x}}\cdot \left[\frac{1}{2\sqrt{x}} \right] \\
+&amp;= \frac{1}{2\sqrt{x\cdot \left(1-x \right)}}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="51"/>
+  </skills>
+</snippet>

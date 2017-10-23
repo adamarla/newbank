@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="23">
+  <customCommands/>
+  <statement>
+    <tex>%text
+Evaluate the following \[ \qquad \int \frac{dx}{\sqrt{1-x^2}} \]
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+If $x = \sin\phi$ then 
+\[ I = \int \frac{dx}{\sqrt{1-x^2}} = \int d\phi\]
+
+</tex>
+      <tex correct="false">  
+
+If $x = \sin\phi$ then 
+\[ I = \int \frac{dx}{\sqrt{1-x^2}} = \int \cot\phi\cdot d\phi \]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+	x = \sin\phi &amp;\implies dx = \cos\phi\cdot d\phi \\
+	\text{Also } \sqrt{1-x^2} &amp;= \sqrt{1-\sin^2\phi} = \cos \phi \\
+	\therefore I = \int \frac{dx}{\sqrt{1-x^2}} &amp;= \int \frac{\cos\phi\cdot d\phi}{\cos\phi} = \int d\phi
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="32"/>
+      <skill id="33"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+Hence, $I = \sin^{-1}x + C$ 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+	I = \int d\phi &amp;\implies I = \phi + C \\
+	\text{But } \phi &amp;= \sin^{-1} x \\
+	\therefore I &amp;= \sin^{-1} x + C 
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="48"/>
+    </skills>
+  </step>
+</question>

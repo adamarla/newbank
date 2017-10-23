@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \tan^{-1} \left(\tan\angb \right) = \angb \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ If $\tan^{-1}x = \theta$ then $\theta\in\prng$ - the principal range of $\tan^{-1} x$ 
+ But $\angb &gt; \pi$ and therefore $\angb\notin\prng$ 
+ Recall however that $\tan \left(\pi+\theta \right)=\tan\theta$. Which means that
+%
+\begin{align}
+
+\tan \left(\angb \right) &amp;= \tan \left(\pi + \angc \right) = \tan\angc \\
+\text{Also }\angc&amp;\in \prng \\
+\therefore \tan^{-1} \left(\tan\angb \right) &amp;= \tan^{-1} \left(\tan\angc \right) \\
+&amp;= \angc
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="39"/>
+  </skills>
+</snippet>

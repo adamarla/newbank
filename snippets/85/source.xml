@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The degree of the differential equation \[\left(1+\dydx \right)^3 = \left(\frac{d^2y}{dx^2} \right)^2\text{ is } 3\]%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Both the order and the degree come from the \underline\text{highest order} differential term
+ The highest order differential is $\dfrac{d^2 y}{dx^2}$. And as we have $\left(\dfrac{d^2 y}{dx^2} \right)^2$, the \underline\text{degree} is $2$%
+</tex>
+  </reason>
+            <skills>
+    <skill id="52"/>
+  </skills>
+</snippet>

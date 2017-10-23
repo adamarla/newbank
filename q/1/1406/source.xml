@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Without using a calculator, ascertain which is greater in value -- $\sin 2$ or $\cos 3$? The angles are in radians</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ If $\alpha = 2\text{ radians}$ and $\beta = 3\text{ radians}$ then
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{Angle} &amp; \text{In Quadrant} \\
+\hline
+\alpha &amp; II \\
+\hline
+\beta &amp; II \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+If $\alpha = 3\text{ radians}$ and $\beta = 2\text{ radians}$ then
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{Angle} &amp; \text{In Quadrant} \\
+\hline
+\alpha &amp; II \\
+\hline
+\beta &amp; III \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ If $\alpha = 3\text{ radians}$ and $\beta = 2\text{ radians}$ then
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{Angle} &amp; \text{In Quadrant} \\
+\hline
+\alpha &amp; II \\
+\hline
+\beta &amp; III \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ We know that $3 &lt; \pi &lt; 4$. And as $\pi &lt; 4$, therefore $\frac\pi{2} &lt; \frac{4}{2}$ or $2 &gt; \frac\pi{2}$ 
+ In other words $\frac\pi{2} &lt; \underbrace{2 &lt; 3}_{\alpha,\beta} &lt; \pi$. Therefore, both $\alpha$ and $\beta$ are in the $II$ quadrant%
+</tex>
+      </reason>
+      <skills>
+        <skill id="91"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ And hence, $\sin\alpha = \sin 2 &gt; \cos \beta = \cos 3$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Both $\alpha$ and $\beta$ are in the second quadrant. Hence, $\sin\alpha &gt; 0$ and $\cos\beta &lt; 0$ 
+ And therefore \[\qquad \sin\alpha &gt; \cos\beta\text{ or } \sin 2 &gt; \cos 3\]%
+</tex>
+      </reason>
+      <skills>
+        <skill id="91"/>
+      </skills>
+    </step>
+  </steps>
+</question>

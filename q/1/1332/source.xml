@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="0">
+  <customCommands/>
+  <statement>
+    <tex>%text
+Find the volume of the largest cylinder that
+can be inscribed in a sphere of radius $R$. 
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+\begin{center}
+\includegraphics[scale=0.5]{right.svg}
+\end{center}
+
+</tex>
+      <tex correct="false"> 
+
+\begin{center}
+\includegraphics[scale=0.5]{wrong.svg}
+\begin{center}
+
+</tex>
+    </options>
+    <reason>
+      <tex>
+
+The cylinder is \underline{inside the sphere}. Moreover, one can see from the diagram that 
+
+\[ \quad \cos\theta = \frac{R_C}{R} \text{ and } \frac{H_C}{2} = R\cdot \sin\theta \]
+
+This means that 
+\[ \quad R_C = R\cdot\cos\theta \text{ and } H_C = 2R\cdot\sin\theta \]
+
+The idea is to deal with only one variable $(\theta)$ instead of two -- $R_C\text{ and } H_C$ 
+
+</tex>
+      <!--tex>%text
+We only know the radius $R$ of the sphere,
+but not of the cylinder. 
+
+However, we can see that \underline{\text{for some $\theta$}} as 
+shown in the figure
+%
+\begin{align}
+R_C &amp;= R\cdot\cos\theta
+\end{align} 
+%text
+
+Moreover, half the cylinder lies in one 
+hemisphere and half in the other. And so, 
+%
+\begin{align}
+H_C &amp;= R\sin\theta + R\sin\theta = 2\cdot R\sin\theta
+\end{align}</tex-->
+    </reason>
+    <skills>
+      <skill id="26"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+	V &amp;= 2\pi R^2\cdot \left(\sin\theta - \sin^3\theta \right) \\
+	\therefore \frac{dV}{d\theta} &amp;= 0\implies\theta = \sin^{-1}\frac{1}{\sqrt{3}} \,\left(\text{or }\theta = \tan^{-1}\frac{1}{\sqrt{2}} \right)
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+The volume of the given cyclinder is 
+
+\begin{align}
+	V &amp;= \left(\pi\cdot R_C^2 \right)\cdot H_C = \left(\pi\cdot R^2\cos^2\theta \right)\cdot 2R\sin\theta \\
+	&amp;= \left(2\pi R^3 \right)\cdot \left(\cos^2\theta\cdot \sin\theta \right) \\	
+	&amp;= 2\pi\cdot R^3 \left[\left(1-\sin^2\theta \right)\cdot \sin\theta \right] \\
+	&amp;= 2\pi R^3 \left[\sin\theta-\sin^3\theta \right] \\
+	\therefore \frac{dV}{d\theta} &amp;= 2\pi R^3\cdot \left[\cos\theta - 3\sin^2\theta\cos\theta \right] \\
+	&amp;= 2\pi R^3\cdot\cos\theta\cdot \left(1-3\sin^2\theta \right) \\
+	\text{Hence, } \frac{dV}{d\theta} &amp;= 0 \implies \cos\theta = 0\text{ or } \sin\theta = \frac{1}{\sqrt{3}} \\
+	\cos\theta &amp;= 0 \implies \theta = \frac\pi{2}\implies \underbrace{R_C = 0}_{\text{No cylinder}}\\
+	\therefore \theta &amp;= \sin^{-1}\frac{1}{\sqrt{3}} 
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="33"/>
+      <skill id="30"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex>
+
+Hence, the \underline{maximum volume} $V_m$ is 
+\[ \quad \qquad V_m = \frac{4\pi R^3}{3\sqrt{3}} \] 
+
+</tex>
+      <tex correct="false"> 
+
+Hence, the \underline{maximum volume} $V_m$ is 
+\[ \quad \qquad V_m = \frac{2\pi R^3}{\sqrt{3}} \] 
+
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+We found that at $\theta = \sin^{-1}\frac{1}{\sqrt{3}}$, the cylinder has an 
+\underline{extreme} value (a maxima or a minima). But which is it? \newline 
+
+Now, ordinarily, you would calculate $\frac{d^2 V}{d\theta^2}$ also and infer 
+the nature of the extrema (maxima or minima) \newline 
+
+But in this case, you know that $\theta=\sin^{-1}\frac{1}{\sqrt{3}}$ is \underline{not a minima}\newline 
+
+Why? Because as $\theta\to\frac\pi{2}, V\to 0$. In fact, the minimum value of $V$ is 0 at $\theta=\frac\pi{2}$. No other minimum value is possible \newline 
+
+Hence, the extreme point we found must be the maxima \newline 
+
+And the maximum volume is 
+
+\begin{align}
+	V_m &amp;= \left(\pi R^2\cos^2\theta \right)\cdot \left( 2R\sin\theta \right) \\
+	\text{where }\sin\theta &amp;= \frac{1}{\sqrt{3}}\implies\cos\theta = \sqrt\frac{2}{3} \\
+	\therefore V_m &amp;= \pi R^2\frac{2}{3}\cdot 2 R\cdot \frac{1}{\sqrt{3}} = \dfrac{4\pi R^3}{3\sqrt{3}} 
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="1"/>
+    </skills>
+  </step>
+</question>

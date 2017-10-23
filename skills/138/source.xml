@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Explicit outcome counting}
+         
+         Counting outcomes by listing them first instead of using 
+         $\permi{n}{r}$ or $\combi{n}{r}
+$</tex>
+  </render>
+  <reason>
+    <tex>%text
+ If the number of possible outcomes is small, then it just might be easier to list them out first and count 
+ For example, the following is a good use-case for this approach
+ \textit{In how many ways can one roll a total of $7$ using two dice?}
+ But the following is perhaps not 
+ \textit{In how many ways is the following possible?}
+\[ \qquad a + b + c = 100\quad \left(a,b,c,\in\mathbb{N} \right)\]
+ The number of potential outcomes is too large for one to count them all quickly and reliably by listing them out first%
+</tex>
+  </reason>
+</skill>

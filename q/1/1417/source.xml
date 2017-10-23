@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>If the tangent to a curve at any point $P = (x,y)$ meets the coordinate
+    axes at $A$ and $B$ such that $P$ is the mid-point of $AB$, then find the equation 
+    of the curve given that it passes through $(1,1)$</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ In the figure below, $AB$ is some tangent, $A = (0,a), B = (b,0)$ and $P=(x,y)$
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{1417-A.svg}
+\end{align}
+%text
+
+\[\qquad \therefore \dydx = -\frac{a}{b} = -\frac{y}{x} \]
+
+\incorrect
+In the figure below, $AB$ is some tangent, $A = (0,a), B = (b,0)$ and $P=(x,y)$
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{1417-A.svg}
+\end{align}
+%text
+
+\[\qquad \therefore \dydx = -\frac{a}{b} = -\frac{x}{y} \]
+%
+</tex>
+        <tex correct="false">%text
+ In the figure below, $AB$ is some tangent, $A = (0,a), B = (b,0)$ and $P=(x,y)$
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{1417-A.svg}
+\end{align}
+%text
+
+\[\qquad \therefore \dydx = -\frac{a}{b} = -\frac{x}{y} \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ If the tangent cuts the axes at $A$ and $B$ respectively and $P$ is the mid-point, then
+\[ \underbrace{P = \left(x,y \right) = \left(\frac{0+b}{2},\frac{0+a}{2} \right) = \left(\frac{b}{2}, \frac{a}{2} \right)}_{\text{Mid-point Rule}} \]
+ Which means,
+%
+\begin{align}
+
+x = \frac{b}{2}&amp;\text{ and } y = \frac{a}{2} \\
+\therefore b = 2x&amp;\text{ and } a = 2y
+\end{align}
+%text
+ Moreover, the \underline\text{slope of the tangent} is
+\[ \quad \dydx = \dfrac{a-0}{0-b} = -\frac{a}{b} = -\frac{2y}{2x} = -\frac{y}{x}\]
+ Hence, the \underline\text{differential equation} for the curve
+\[ \qquad\qquad \dydx = -\frac{y}{x}\]
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="136"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ \qquad\dydx = -\frac{y}{x}\implies xy = C \]
+ And as the curve passes through $(1,1)$
+\[ \qquad C =1\text{ and } xy = 1\]
+
+\incorrect
+\[ \qquad\dydx = -\frac{y}{x}\implies y = e^x + C \]
+
+And as the curve passes through $(1,1)$
+\[ \qquad C = 1-e \text{ and } y = e^x + (1-e) \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ \qquad\dydx = -\frac{y}{x}\implies y = e^x + C \]
+ And as the curve passes through $(1,1)$
+\[ \qquad C = 1-e \text{ and } y = e^x + (1-e) \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+\dydx = -\frac{y}{x} &amp;\implies \frac{dy}{y} = -\frac{dx}{x} \\
+\therefore \int\frac{dy}{y} &amp;= -\int\frac{dx}{x} \\
+\text{or } \log y &amp;= -\log x + C_1 \\
+\implies \log y + \log x &amp;= \log \left(xy \right) = C_1 \\
+\therefore xy &amp;= e^{C_1} = C
+\end{align}
+%text
+ But as the curve passes through $(1,1)$
+\[ \qquad\qquad C = 1\cdot 1 = 1\]
+ And hence $\underbrace{xy = 1}_{C = 1}$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="48"/>
+      </skills>
+    </step>
+  </steps>
+</question>

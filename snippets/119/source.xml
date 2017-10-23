@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If $R_2$ be the relation
+\[ \quad R_2 = \left\lbrace (x,y)\,\vert\, x,y\in\mathbb{Z}, x^2 + y^2 = 64 \right\rbrace\]
+ then
+\[ \quad R_2 = \left\lbrace (-8,0),(0,-8),(0,8),(8,0) \right\rbrace\]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ We have been given $R_2$ in set builder form and we have to re-write it in roster form
+ Now, $x$ and $y$ are integers $(x,y\in\mathbb{Z})$ that satisfy the condition $x^2 + y^2 = 64$
+ Note that when $x = 1$, then $y=\sqrt{63}\notin\Z$. Similarly, if $x = 2$ then too $y\notin\Z$ 
+ In fact, only when $x = 0$ is $y\in\Z$. And only when $y=0$ is $x\in\Z$
+ Hence, the \underline\text{only acceptable $(x,y)$} are
+\[ R_2 = \left\lbrace (-8,0),(0,-8),(0,8),(8,0) \right\rbrace\]
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="59"/>
+  </skills>
+</snippet>

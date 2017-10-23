@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If $f(x) = \vert \cos x - \sin x\vert$ then
+\[ \quad f' \left(\frac{\pi}{3} \right) = \left[\sin x + \cos x \right]_{x = \frac{\pi}{3}} = \frac{\sqrt{3}+1}{2} \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ For $x &gt; \frac\pi{4}, \sin x &gt; \cos x$. Which is why
+%
+\[ \quad f(x) = \begin{cases}
+
+\cos x - \sin x, x \in \left(0, \frac\pi{4} \right) \\
+\sin x - \cos x, x \in \left(\frac\pi{4}, \frac\pi{2} \right)
+\end{cases} \]
+%text
+ And hence, at $x = \frac{\pi}{3}$
+%
+\begin{align}
+
+f'(x) &amp;= \ddx \left(\sin x-\cos x \right) = \cos x + \sin x\\
+\text{or } f' \left(\frac\pi{3} \right) &amp;= \frac{\sqrt{3} + 1}{2}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="13"/>
+  </skills>
+</snippet>

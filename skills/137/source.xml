@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Geometric Sequence and Series}
+What is a geometric sequence. Standard results for the sum of first $N$ terms of a geometric series</tex>
+  </render>
+  <reason>
+    <tex>%text
+ A geometric sequence is a \underline\text{sequence} of numbers where each term is found by multiplying the previous one with a \underline\text{fixed, non-zero} constant called the \underline\text{common ratio}
+ If $a$ be the first term and $r$ the common ratio, then the sequence will look like
+\[ \qquad a, ar,ar^2, ar^3,\ldots ar^{n-1}\quad \left(a,r\neq 0 \right)\]
+ Notice that the $n-$th term is
+\[ \qquad a_n = a\cdot r^{n-1}\text{ (not $a\cdot r^n$)} \]
+ The correpoding series is simply
+\[ \qquad S_n = a + ar + ar^2 + \cdots + ar^{n-1} \]
+ \textbf{Standard Results }
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{Result} &amp; \text{Constraints}  \\
+\hline
+S_n = \sum_{k=1}^n ar^{k-1} = \dfrac{a \left(1-r^n \right)}{1-r} &amp;  r \neq 1 \\
+\hline
+S_{mn} = \sum_{k=m}^n ar^{k-1} = \dfrac{a \left(r^m-r^{n+1} \right)}{1-r} &amp; r \neq 1 \\
+\hline
+\underbrace{S_\infty = \sum_{k=1}^\infty ar^{k-1} = \dfrac{a}{1-r} = C}_{\text{$S_\infty$ will converge to a constant $C$ only if $\vert r\vert &lt; 1$}} &amp; \vert r\vert &lt; 1 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

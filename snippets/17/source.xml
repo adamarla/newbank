@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \int_1^2 x^2\cdot dx = \int_1^2 (3-x)^2\cdot dx \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Recall the following standard result
+\[ \quad \int_a^b f(x)\cdot dx = \int_a^b f(a+b-x)\cdot dx \]
+ When applied to $\int_1^2 x^2\cdot dx$, one can see that
+%
+\begin{align}
+
+\int_1^2 x^2\cdot dx &amp;= \int_1^2 \left(1+2-x \right)^2\cdot dx  \\
+&amp;= \int_1^2 \left(3-x \right)^2\cdot dx
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="45"/>
+  </skills>
+</snippet>

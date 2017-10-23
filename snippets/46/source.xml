@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The function $f(x)$ shown below is differentiable at both $A$ and $B$
+%
+\begin{align}
+
+\includegraphics[scale=1.5]{figure.svg}
+\end{align}
+%text
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ One only needs to see the slopes of the lines to know that at both $A$ and $B$, the rate of change \underline\text{before} the point is different from the rate of change \underline\text{after} the point
+ Hence, $f(x)$ is not differentiable at $A$ or $B$ 
+ Mathematically, we would say
+%
+\begin{align}
+
+\lim_{x\to A^-} f'(x) &amp;\neq \lim_{x\to A^+} f'(x) \\
+\lim_{x\to B^-} f'(x) &amp;\neq \lim_{x\to B^+} f'(x)
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="71"/>
+  </skills>
+</snippet>

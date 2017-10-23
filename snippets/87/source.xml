@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \frac{dx}{x} + \frac{dy}{y} = 0 \implies x\cdot y = C \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+\frac{dx}{x} + \frac{dy}{y} = 0 &amp;\implies \frac{dy}{y} = -\frac{dx}{x} \\
+\therefore \log y &amp;= -\log x + k \\
+\log y + \log x &amp;= \log \left(x\cdot y \right) = k \\
+\text{or } x\cdot y &amp;= e^k = C
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="54"/>
+  </skills>
+</snippet>

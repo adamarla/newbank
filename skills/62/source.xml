@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Completing the squares}
+Being able to do the following conversion\small\[ \quad ax^2 + bx + c \longrightarrow a\cdot \left(x + \alpha \right)^2 \pm \beta^2 \]\normalsize</tex>
+  </render>
+  <reason>
+    <tex>%text
+ \underline\text{Any quadratic polynomial} $ax^2 + bx + c$ can be rewritten as
+\[ \qquad a\cdot \left(x + \alpha \right)^2 + \beta^2\quad \left(a \neq 0 \right)\]
+ Here is how
+%
+\begin{align}
+
+ax^2 &amp;+ bx + c = a\cdot \left[x^2 + \frac{b}{a} x + \frac{c}{a} \right] \\
+&amp;= a\cdot \left[\underbrace{x^2 + 2\frac{b}{2a}\cdot x + \left(\frac{b}{2a} \right)^2}_{\text{Look familiar?}} +  \frac{c}{a} - \left(\frac{b}{2a} \right)^2  \right] \\
+&amp;= a\cdot \left(x + \frac{b}{2a} \right)^2 + \left(c-\frac{b^2}{4a} \right) \\
+&amp;\implies \alpha = \left(\frac{b}{2a} \right)\text{ and } \beta = \left(c-\frac{b^2}{4a} \right)
+\end{align}
+%text
+ Completing the squares is a \underline\text{very handy trick}
+ You will find it especially useful when evaluating integrals of quadratic polynomials%
+</tex>
+  </reason>
+</skill>

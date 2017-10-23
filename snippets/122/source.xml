@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ For the following relation
+\[ \quad R = \left\lbrace (x,y)\,\vert\, x,y\in\W, x^2 + y^2 = 25 \right\rbrace\]
+
+\[ \text{Domain} = \text{Range} = \left\lbrace 0,3,4,5\right\rbrace\]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ $x$ and $y$ are supposed to be whole numbers $(x,y\in\W = \mathbb{N} + \left\lbrace 0\right\rbrace)$
+ Moreover, they must also satisfy the condition $x^2 + y^2 = 25$ 
+ This is possible only for the following pairs
+\[ \quad R = \overbrace{\underbrace{\left\lbrace (0,5),(3,4),(4,3),(5,0) \right\rbrace}_{\text{Range = All $y's$}}}^{\text{Domain = All $x's$}}\]
+ Which is why
+\[ \quad \text{Domain} = \text{Range} = \left\lbrace 0,3,4,5\right\rbrace\]
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="59"/>
+  </skills>
+</snippet>

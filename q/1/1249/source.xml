@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="23">
+  <customCommands/>
+  <statement>
+    <tex>\newcommand\ea{ \left( 7-4x\right)}
+%text
+Evaluate $\int \sec^2 \left(7-4x \right)\cdot dx$ 
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex> 
+
+If $z = 7-4x$, then 
+\[ I = \int \sec^2 \ea\cdot dx = -\frac{1}{4}\int \sec^2 z\cdot dz \]
+%
+</tex>
+      <tex correct="false"> 
+
+If $z = 7-4x$, then 
+\[ I = \int \sec^2 \ea\cdot dx = \int \sec^2 z\cdot dz \]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+	\text{If } z &amp;= \ea\text{ then } dx = -\frac{dz}{4} \\
+	\therefore I &amp;= \int \sec^2 \ea\cdot dx \\
+	&amp;= -\frac{1}{4}\int \sec^2 z \cdot dz 
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="30"/>
+      <skill id="32"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\[ I = -\frac{1}{4}\int\sec^2 z\cdot dz = -\frac{\tan \ea}{4} + C \]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+The standard result is \[\qquad \int \sec^2 z\cdot dz = \tan z + C\]
+
+And therefore 
+\begin{align}
+	I &amp;= -\frac{1}{4}\int \sec^2 z\cdot dz = -\frac{\tan z}{4} + C \\ 
+	&amp;= -\frac{\tan \ea}{4} + C 
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="48"/>
+    </skills>
+  </step>
+</question>

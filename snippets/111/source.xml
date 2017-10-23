@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \qquad \frac{d^2y}{dx^2} + \left(\dydx \right)^3 + 6y^5 = 0 \]
+ is a differential equation of degree $1$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ To find the degree (or order) of a differential equation, one must look at the \underline\text{most} differentiated term
+ In this case, that is $\dfrac{d^2 y}{dx^2}$ 
+ It is a second-order differential raised to the power of $1$
+ Therefore, it's order is $2$ and \underline\text{degree} is $1$%
+</tex>
+  </reason>
+            <skills>
+    <skill id="52"/>
+  </skills>
+</snippet>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Three persons $A,B$ and $C$ apply for the job of a Manager in a Private Company. Chances of their selection are in the ratio $1:2:4$. The probabilities that $A,B$ and $C$ can introduce changes to improve the profits of the company are 
+    $0.8,0.5$ and $0.3$ respectively\newline 
+    
+    If the change does not take place, then find the probability that it 
+    is due to the appointment of $C$</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ If we define the following events $\ldots$
+%
+\begin{align}
+\begin{tabular}{NlNl}
+
+\hline
+\text{Event} &amp; \text{Meaning} &amp; \text{Event} &amp; \text{Meaning} \\
+\hline
+A &amp; \text{$A$ is hired} &amp; B &amp; \text{$B$ is hired} \\
+\hline
+C &amp; \text{$C$ is hired} &amp; I &amp; \text{Profits improve} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ $\ldots$ then we know the following
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\prob{A} = \frac{1}{7} &amp; \prob{B} = \frac{2}{7} &amp; \prob{C} = \frac{4}{7} \\
+\hline
+\condp{I}{A} = 0.8 &amp; \condp{I}{B} = 0.5 &amp; \condp{I}{C} = 0.3 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+If we define the following events $\ldots$
+%
+\begin{align}
+\begin{tabular}{NlNl}
+
+\hline
+\text{Event} &amp; \text{Meaning} &amp; \text{Event} &amp; \text{Meaning} \\
+\hline
+A &amp; \text{$A$ is hired} &amp; B &amp; \text{$B$ is hired} \\
+\hline
+C &amp; \text{$C$ is hired} &amp; I &amp; \text{Profits improve} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ $\ldots$ then we know the following
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\prob{A} = \frac{1}{7} &amp; \prob{B} = \frac{2}{7} &amp; \prob{C} = \frac{4}{7} \\
+\hline
+\prob{I\cap A} = 0.8 &amp; \prob{I\cap B} = 0.5 &amp; \prob{I\cap C} = 0.3 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ If we define the following events $\ldots$
+%
+\begin{align}
+\begin{tabular}{NlNl}
+
+\hline
+\text{Event} &amp; \text{Meaning} &amp; \text{Event} &amp; \text{Meaning} \\
+\hline
+A &amp; \text{$A$ is hired} &amp; B &amp; \text{$B$ is hired} \\
+\hline
+C &amp; \text{$C$ is hired} &amp; I &amp; \text{Profits improve} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ $\ldots$ then we know the following
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\prob{A} = \frac{1}{7} &amp; \prob{B} = \frac{2}{7} &amp; \prob{C} = \frac{4}{7} \\
+\hline
+\prob{I\cap A} = 0.8 &amp; \prob{I\cap B} = 0.5 &amp; \prob{I\cap C} = 0.3 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ It is not said explicitly in the problem, but is understood, that one of $A,B$ or $C$ is \underline\text{definitely} hired. Therefore,
+%
+\begin{align}
+
+\text{If }\prob{A} =x &amp;\text{ then } \prob{B}= 2x\\
+&amp;\text{ and }\prob{C} = 4x \\
+\implies x + 2x + 4x &amp;= 1 \text{ or } x = \frac{1}{7}
+\end{align}\\
+%text
+
+\[ \text{Hence, }\prob{A} = \pa, \prob{B} = \pb, \prob{C} = \pc \]
+ Moreover, we have been told the probabilities of profits improving \underline\text{given that} a certain person is hired
+ Hence $\condp{I}{A}$ --- and not $\prob{I\cap A}$ 
+ These, we have been told, are
+%
+\begin{align}
+\begin{tabular}{NlN}
+
+\hline
+\text{Expression} &amp; \text{Meaning} &amp; \text{Value}  \\
+\hline
+\condp{I}{A} &amp; \text{Improvement if $A$ hired} &amp; 0.8 \\
+\hline
+\condp{I}{B} &amp; \text{Improvement if $B$ hired} &amp; 0.5 \\
+\hline
+\condp{I}{C} &amp; \text{Improvement if $C$ hired} &amp; 0.3 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="38"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ And we have to find $\condp{C}{I'}$
+\incorrect
+And we have to find $\condp{I'}{C}$%
+</tex>
+        <tex correct="false">%text
+ And we have to find $\condp{I'}{C}$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Someone was hired --- and the profits \underline\text{didn't} improve. We want to know the probability that $C$ was hired 
+ In other words, we want to know $\condp{C}{I'}$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="38"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+\condp{C}{I'} &amp;= \fcondp{C}{I'} \\
+&amp;= \dfrac{\condp{I'}{C}\cdot\prob{C}}{\sum_{X = A}^C \condp{I'}{X}\cdot\prob{X}} \\
+\text{where } \condp{I'}{A} &amp;= 0.2, \condp{I'}{B} = 0.5 \\
+\text{and }\condp{I'}{C} &amp;= 0.7  \\
+\therefore \condp{C}{I'} &amp;= \frac{7}{10}
+\end{align}
+%text
+ Hence, if profits didn't improve, then there is a $70\%$ chance that $C$ was hired%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Bayes' Theorem tells us that
+%
+\begin{align}
+
+\condp{C}{I'} &amp;= \fcondp{C}{I'} \\
+&amp;= \dfrac{\condp{I'}{C}\cdot\prob{C}}{\underbrace{\sum_{X=A}^C\condp{I'}{X}\cdot\prob{X}}_{=\condp{I'}{A}\prob{A} + \ldots + \condp{I'}{C}\prob{C}}}
+\end{align}
+%text
+ But we will need $\condp{I'}{A}$ etc. to find the above value. And given that
+\[ \qquad \condp{I}{X} + \condp{I'}{X} = 1 \]
+ Therefore
+%
+\begin{align}
+
+\condp{I'}{A} &amp;= 1-\condp{I}{A} = 0.2 \\
+\condp{I'}{B} &amp;= 1-\condp{I}{B} = 0.5 \\
+\condp{I'}{C} &amp;= 1-\condp{I}{C} = 0.7
+\end{align}
+%text
+ And hence,
+%
+\begin{align}
+
+\condp{C}{I'} &amp;= \dfrac{\condp{I'}{C}\cdot\prob{C}}{\sum_{X=A}^C\condp{I'}{X}\cdot\prob{X}} \\
+&amp;= \dfrac{\frac{7}{10}\cdot\pc}{\left[\frac{2}{10}\cdot\pa + \frac{1}{2}\cdot\pb + \frac{7}{10}\cdot\pc \right]} \\
+&amp;= \frac{7}{10}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="17"/>
+      </skills>
+    </step>
+  </steps>
+</question>

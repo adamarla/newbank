@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="21">
+  <customCommands/>
+  <statement>
+    <tex>\newcommand\dnm{\left(1+x^2 \right)}
+%text
+If $x = \tan\left( \frac{1}{a}\log y \right)$, then show that
+\[ \qquad (1+x^2)\cdot\frac{d^2 y}{dx^2} + (2x-a)\cdot\frac{dy}{dx} = 0\]
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+\[ \log y = a\tan^{-1} x \]
+
+</tex>
+      <tex correct="false"> 
+
+\[ \log y = \tan^{-1} \left(ax \right)\]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+	x = \tan \left( \frac{1}{a}\log y \right) &amp;\implies \tan^{-1} x = \frac{1}{a}\log y \\
+	\therefore \log y &amp;= a\tan^{-1} x 
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="39"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\[ y' = \frac{a\cdot y}{1+x^2}\]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+	\log y &amp;= a\tan^{-1} x \\
+	\implies \frac{d}{dx}\log y &amp;= \frac{d}{dx} \left(a\cdot\tan^{-1} x \right) \\
+	\text{or } \underbrace{\frac{1}{y}\cdot \frac{dy}{dx}}_{\text{Chain Rule}} &amp;= \frac{a}{1+x^2} \\
+	\implies \frac{dy}{dx} &amp;= \frac{a\cdot y}{\dnm}
+\end{align}
+
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="51"/>
+      <skill id="33"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\[ y'' = \frac{a\cdot y'}{\dnm} - \frac{2ay}{\dnm}\cdot \frac{x}{\dnm}\]
+which on simplifying gives us 
+\[ y''\cdot\dnm + (2x-a)\cdot y' = 0 \]
+Hence proved 
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+
+\begin{align}
+	y'' &amp;= a \underbrace{\left[\frac{\left(1+x^2 \right)\cdot y ' - 2xy}{\left(1+x^2 \right)^2} \right]}_{\text{Quotient Rule}} \\
+	&amp;= \frac{ay'\cdot \dnm}{\dnm^2} - \frac{2axy}{\dnm^2} \\
+	&amp;= \frac{a\cdot y'}{\dnm} - \underbrace{\frac{2ay}{\dnm}}_{ = 2 y'}\cdot \frac{x}{\dnm} \\
+	&amp;= \frac{ay'}{\dnm} - \frac{2x\cdot y'}{\dnm} \\
+	\therefore y'' &amp;+ \frac{y'}{\dnm}\left(2x-a \right) = 0 \\ 
+	\text{or } y''&amp;\dnm  + (2x-a)\cdot y' = 0
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="31"/>
+    </skills>
+  </step>
+</question>

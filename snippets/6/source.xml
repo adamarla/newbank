@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \lim_{x\to\infty} x\cdot\sin\dfrac{1}{x} \neq1 \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+\text{If } z = \frac{1}{x}\text{ then as }&amp;x\to\infty, z\to 0 \\
+\therefore \lim_{x\to\infty} x\cdot\sin\dfrac{1}{x} &amp;=
+\lim_{z\to 0}\left( \dfrac{1}{z}\sin\dfrac{1}{\frac{1}{z}}\right) \\
+&amp;=\lim_{z\to 0}\dfrac{\sin z}{z} = 1
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="10"/>
+  </skills>
+</snippet>

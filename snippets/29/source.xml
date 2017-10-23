@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \lim_{x\to 0} \frac{\sqrt{x}}{\sqrt{\ea} - 2} = 4 \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+\frac{\sqrt{x}}{\sqrt{\ea} - 2} &amp;= \frac{\sqrt{x}}{\sqrt{\ea} - 2}\cdot \frac{\sqrt{\ea}+2}{\sqrt{\ea} + 2} \\
+&amp;= \frac{\sqrt{x}\cdot \left(\sqrt{\ea} + 2 \right)}{\ea - 4} \\
+&amp;= \sqrt{\ea} + 2
+\end{align}
+%text
+ And hence
+\[\lim_{x\to 0} \frac{\sqrt{x}}{\sqrt{\ea} - 2} = \lim_{x\to 0} \left(\sqrt{\ea} + 2\right) = 4 \]
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="32"/>
+  </skills>
+</snippet>

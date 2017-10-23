@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Inverse Trigonometry (Sums)}
+
+\small{\textbf{Example} } $\sin^{-1}x + \cos^{-1}
+x = ?$</tex>
+  </render>
+  <reason>
+    <tex>%text
+ We will prove one result, namely,
+\[ \qquad \sin^{-1} x + \cos^{-1} x = \frac\pi{2} \]
+ And then you could perhaps try proving the others. The logic is similar.
+%
+\begin{align}
+
+\sin\theta &amp;= \cos\left( \frac\pi{2} - \theta \right) = x \\
+\implies \theta &amp;= \sin^{-1} x \\
+\text{and } \frac\pi{2} - \theta &amp;= \cos^{-1} x \\
+\text{ or } \theta &amp;= \frac\pi{2} - \cos^{-1}x = \sin^{-1} x \\
+\therefore \cos^{-1}x &amp;+ \sin^{-1}x = \frac\pi{2}
+\end{align}
+%text
+ Similarly,
+%
+\begin{align}
+
+\tan^{-1}x + \cot^{-1}x &amp;= \frac\pi{2} \\
+\sec^{-1} x + \csc^{-1} x &amp;= \frac\pi{2}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

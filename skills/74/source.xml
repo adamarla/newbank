@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Non-standard functions}
+Definitions and meanings of the modulus ($\vert x\vert$), floor ($\lfloor x \rfloor$) and ceiling ($\lceil x\rceil$) functions</tex>
+  </render>
+  <reason>
+    <tex>%text
+ \textbf{Modulus } The modulus function is defined as follows
+%
+\[ \quad \vert x \vert = \begin{cases}
+
+-x, &amp;\text{ if }x &lt; 0 \\
+x, &amp;\text{ if } x \geq 0
+\end{cases} \]
+%text
+ Note that $\vert x \vert$ is always $\geq 0$, even for $x &lt; 0$ 
+ \textbf{Floor / Greatest Integer Function} Returns the largest integer $\leq x$. Also written as $[x]$, it is however recommended that one use the modern notation $\lfloor x \rfloor$ 
+ \textbf{Ceiling } Returns the smallest integer $\geq x$ 
+ The following table shows values for various $x$ for the above functions
+%
+\begin{align}
+\begin{tabular}{NNNN}
+
+\hline
+x &amp; \vert x \vert &amp; \lfloor x\rfloor &amp; \lceil x \rceil \\
+\hline
+-1 &amp; 1 &amp; -1 &amp; -1 \\
+\hline
+-1.5 &amp; 1.5 &amp; -2 &amp; -1 \\
+\hline
+2 &amp; 2 &amp; 2 &amp; 2 \\
+\hline
+4.3 &amp; 4.3 &amp; 4 &amp; 5 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

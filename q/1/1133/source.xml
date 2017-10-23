@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Find the intervals in which the function
+         \[ \qquad f(x) = \fx \]
+         is strictly increasing and decreasing</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ $f(x) = \fx$ will be strictly increasing/decreasing under the following conditions
+%
+\begin{align}
+\begin{tabular}{cN}
+
+\hline
+&amp; \text{Condition} \\
+\hline
+\text{Strictly increasing} &amp; 12 x\cdot (x+1)\cdot (x-2) &gt; 0 \\
+\hline
+\text{Strictly decreasing} &amp; 12 x\cdot (x+1)\cdot (x-2) &lt; 0 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+$f(x) = \fx$ will be strictly increasing/decreasing under the following
+conditions
+%
+\begin{align}
+\begin{tabular}{cN}
+
+\hline
+&amp; \text{Condition} \\
+\hline
+\text{Strictly increasing} &amp; 12 x\cdot (x+1)\cdot (x-2) \geq 0 \\
+\hline
+\text{Strictly decreasing} &amp; 12 x\cdot (x+1)\cdot (x-2) \leq 0 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ $f(x) = \fx$ will be strictly increasing/decreasing under the following conditions
+%
+\begin{align}
+\begin{tabular}{cN}
+
+\hline
+&amp; \text{Condition} \\
+\hline
+\text{Strictly increasing} &amp; 12 x\cdot (x+1)\cdot (x-2) \geq 0 \\
+\hline
+\text{Strictly decreasing} &amp; 12 x\cdot (x+1)\cdot (x-2) \leq 0 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ We are looking for intervals where the function is \underline\text{strictly} increasing and decreasing 
+
+%
+\begin{align}
+\begin{tabular}{cNN}
+
+\hline
+&amp;  &amp; \text{Strictly}\\
+\hline
+\text{Increasing} &amp; f'(x) \geq 0 &amp; f'(x) &gt; 0 \\
+\hline
+\text{Decreasing} &amp; f'(x) \leq 0 &amp; f'(x) &lt; 0 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Therefore, $f'(x)$ has to be either $&gt;0$ or $&lt;0$, but never $=0$
+ Moreover
+%
+\begin{align}
+
+f'(x) &amp;= \ddx \left(\fx \right) \\
+&amp;= 12x^3 - 12x^2-24x \\
+&amp;= 12x\cdot(x^2-x-2)  \\
+&amp;= 12 x\cdot (x+1)\cdot (x-2)
+\end{align}
+%text
+ Which is why
+%
+\begin{align}
+\begin{tabular}{cN}
+
+\hline
+&amp; \text{Condition} \\
+\hline
+\text{Strictly increasing} &amp; 12 x\cdot (x+1)\cdot (x-2) &gt; 0 \\
+\hline
+\text{Strictly decreasing} &amp; 12 x\cdot (x+1)\cdot (x-2) &lt; 0 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="63"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ Given that $f'(x) = 12x\cdot (x+1)\cdot (x-2)$
+%
+\begin{align}
+\begin{tabular}{lNNNN}
+
+\hline
+&amp; x &lt; -1 &amp; (-1,0) &amp; (0,2) &amp; &gt; 2 \\
+\hline
+\text{Strictly increasing} &amp; &amp; \checkmark &amp; &amp; \checkmark \\
+\hline
+\text{Strictly decreasing} &amp; \checkmark &amp; &amp; \checkmark &amp; \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+Given that $f'(x) = 12x\cdot (x+1)\cdot (x-2)$
+%
+\begin{align}
+\begin{tabular}{lNNNN}
+
+\hline
+&amp; x &lt; -1 &amp; (-1,0) &amp; (0,2) &amp; &gt; 2 \\
+\hline
+\text{Strictly increasing} &amp; \checkmark &amp; &amp; \checkmark &amp; \\
+\hline
+\text{Strictly decreasing} &amp; &amp; \checkmark &amp; &amp; \checkmark \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ Given that $f'(x) = 12x\cdot (x+1)\cdot (x-2)$
+%
+\begin{align}
+\begin{tabular}{lNNNN}
+
+\hline
+&amp; x &lt; -1 &amp; (-1,0) &amp; (0,2) &amp; &gt; 2 \\
+\hline
+\text{Strictly increasing} &amp; \checkmark &amp; &amp; \checkmark &amp; \\
+\hline
+\text{Strictly decreasing} &amp; &amp; \checkmark &amp; &amp; \checkmark \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ We have to determine when $f'(x)$ is $&gt;0$ and when it is $&lt;0$, where
+\[ \qquad f'(x) = 12x\cdot (x+1)\cdot (x-2) \]
+ There are three terms, $x, x+1$ and $x-2$, that will determine the sign of $f'(x)$
+%
+\begin{align}
+\begin{tabular}{NNNNN}
+
+\hline
+&amp; x &lt;-1 &amp; (-1,0) &amp; (0,2) &amp; &gt; 2 \\
+\hline
+x &amp; - &amp; - &amp; + &amp; + \\
+\hline
+x+1 &amp; - &amp; + &amp; + &amp; + \\
+\hline
+x-2 &amp; - &amp; - &amp; - &amp; + \\
+\hline
+f'(x) &amp; - &amp; + &amp; - &amp; + \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Which is why
+%
+\begin{align}
+\begin{tabular}{lN}
+
+\hline
+&amp; \text{Condition} \\
+\hline
+\text{Strictly increasing} &amp; x\in (-1,0)\cup (2,\infty) \\
+\hline
+\text{Strictly decreasing} &amp; x\in (-\infty,-1)\cup (0,2) \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="73"/>
+      </skills>
+    </step>
+  </steps>
+</question>

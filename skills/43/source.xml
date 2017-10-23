@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Inverse Trigonometry (Negatives)}
+	
+\small\textbf{Example } $\sin^{-1} \left(-x \right) = \sin^{-1}
+x$ etc.</tex>
+  </render>
+  <reason>
+    <tex>%text
+ We will prove one. And if you're so inclined, then you can try and prove the others
+%
+\begin{align}
+
+\sin\theta &amp;= x \implies \theta = \sin^{-1}x \\
+\text{And }\sin (-\theta) &amp;= -\sin\theta = -x  \\
+\implies -\theta &amp;= \sin^{-1}(-x)  \\
+\text{But }\theta &amp;= \sin^{-1} x \implies -\theta = -\sin^{-1} x \\
+\therefore \sin^{-1} (-x) &amp;= -\sin^{-1} x
+\end{align}
+%text
+ Below are other such results
+
+%
+\begin{align}
+\begin{tabular}{MM}
+
+\hline
+\textbf{Result} &amp; \textbf{Condition } \\
+\hline
+\sin^{-1}(-x) = -\sin^{-1} x &amp; x\in[-1,1] \\
+\hline
+\cos^{-1}(-x) = \pi -\cos^{-1}x &amp; x\in[-1,1] \\
+\hline
+\tan^{-1}(- x) = -\tan^{-1}x &amp;x\in\mathbb{R} \\
+\hline
+\cot^{-1}(-x) = \pi - \cot^{-1}x &amp; x\in\mathbb{R} \\
+\hline
+\sec^{-1}(-x) = \pi-\sec^{-1}x &amp; x\in\mathbb{R} - (-1,1) \\
+\hline
+\csc^{-1}(-x) = -\csc^{-1}x &amp; x\in\mathbb{R} - (-1,1) \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

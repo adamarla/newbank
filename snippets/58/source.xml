@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The area $(A)$ enclosed between
+\[ \qquad y = -x^2\text{ and } x + y + 2 = 0 \]
+ is given by
+\[ \quad A = \left\vert \intg \fxl dx +\intg x^2 \cdot dx \right\vert \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{Nl}
+
+\hline
+\text{Equation} &amp; Curve \\
+\hline
+x + y + 2 = 0 &amp; Straight line with $m=-1$ \\
+&amp; Cuts \yaxis at $y=-2$ \\
+\hline
+y = -x^2 &amp; Downward opening parabola \\
+&amp; $\qquad y \leq 0$ for all $x$ \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Hence, the curves would look like
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{figure.svg}
+\end{align}
+%text
+ They intersect when
+%
+\begin{align}
+
+y = -x^2 = \fxl &amp;\text{ or } x^2 - x - 2 = 0  \\
+\implies (x+1)\cdot (x-2) &amp;= 0  \\
+\text{or } x &amp;= -1, 2
+\end{align}
+%text
+ Which is why
+%
+\begin{align}
+
+A &amp;= \underbrace{\left\vert \intg \fxl dx - \intg \fxp \cdot dx \right\vert}_{A\text{ is expressed as a value } &gt; 0} \\
+&amp;=  \left\vert \intg \fxl dx +\intg x^2 \cdot dx \right\vert
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="66"/>
+  </skills>
+</snippet>

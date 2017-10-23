@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ y = \sini{-1} + 2\tani{-\sqrt{3}} = -\frac{7\pi}{6}\]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+&amp; \text{Principal Range} &amp; \text{Value} \\
+\hline
+\sini{-1} &amp; \left[-\frac\pi{2},\frac{\pi}{2} \right] &amp; -\frac\pi{2} \\
+\hline
+\tani{-\sqrt{3}} &amp; \left(-\frac\pi{2},\frac{\pi}{2} \right) &amp; -\frac\pi{3} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Therefore
+\[ \qquad y = -\frac\pi{2} + 2\cdot \left(-\frac\pi{3} \right) = \frac{7\pi}{6} \]
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="39"/>
+  </skills>
+</snippet>

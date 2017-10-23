@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If ten fair coins are tossed, then the probability of getting at least $8$ heads is
+\[ \qquad P = \combi{10}{8}\cdot \left(\frac{1}{2} \right)^{10} = \frac{45}{1024}\]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ We need \underline\text{at least} $8$ heads. Which means $8,9$ or $10$ heads in ten coin tosses 
+ Moreover, the coin is fair. Hence, the probability of getting a head $=p=\frac{1}{2}$ and $q = 1-p = \frac{1}{2}$ 
+ Therefore, the required probability is
+%
+\begin{align}
+
+P &amp;= \combi{10}{8}\cdot p^8\cdot q^2 + \combi{10}{9}\cdot p^9\cdot q + \combi{10}{10}\cdot p^{10} \\
+&amp;= \left(\frac{1}{2} \right)^{10} \left[\combi{10}{8} + \combi{10}{9} + \combi{10}{10} \right] \\
+&amp;= \left[ \frac{45+10+1}{1024}\right] = \frac{7}{128}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="20"/>
+  </skills>
+</snippet>

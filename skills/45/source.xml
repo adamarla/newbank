@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Definite Integrals \#1}
+Definition and fundamental properties of integrals</tex>
+  </render>
+  <reason>
+    <tex>%text
+ For function $f(x)$ that is \underline\text{continuous} in $\left[a,b \right]$
+\[ \qquad \qquad A(x) = \int_a^b f(x)\cdot dx \]
+ represents the \underline\text{area under $f(x)$} between \\$x=a$ and $x=b$
+%
+\begin{align}
+
+\dfrac{d}{dx} A(x) &amp;= f(x) \\
+\text{If } \int f(x)\cdot dx &amp;= F(x) + C \text{ then } \\
+\int_a^b f(x)\cdot dx &amp;= F(b) - F(a)
+\end{align}
+%text
+ \textbf{Basic properties } 
+%
+\begin{align}
+
+\int_a^b f(x)\cdot dx &amp;= -\int_b^a f(x)\cdot dx \\
+\int_a^a f(x)\cdot dx &amp;= 0 \\
+\int_a^c f(x)\cdot dx &amp;= \int_a^b f(x)\cdot dx + \int_b^c f(x)\cdot dx \\
+\int_a^b f(x)\cdot dx &amp;= \int_a^b f \left(a+b-x \right)\cdot dx \\
+\int_0^a f(x)\cdot dx &amp;= \int_0^a f \left(a-x \right)\cdot dx \\
+\int_0^{2a} f(x)\cdot dx &amp;= \underbrace{\int_0^a f(x)\cdot dx + \int_0^a f \left(2a-x \right)\cdot dx}_{\text{Note: It is $0\rightarrow a$ in both integrals}}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

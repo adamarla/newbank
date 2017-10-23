@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Let $f:\N\to\N$ be a function defined as $f(x) = \fx$. Show that 
+$f:\N\to S$, where $S$ is the range of $f$ is invertible. Find the 
+inverse of $f$ and hence find $f^{-1}(43)$ and $f^{-1}(163)$</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ The plot of $f(x)$ will be as shown below where the dotted line is the parabolic curve $\fx$
+%
+\begin{align}
+
+\includegraphics[scale=1.5]{1427-C.svg}
+\end{align}
+%text
+
+\incorrect
+$f(x)$ will be a continuous parabolic curve as shown below
+%
+\begin{align}
+
+\includegraphics[scale=1.5]{1427-A.svg}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ $f(x)$ will be a continuous parabolic curve as shown below
+%
+\begin{align}
+
+\includegraphics[scale=1.5]{1427-A.svg}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ $f(x) = f:\N\to\N$. Which means that $f(x)$ is defined \underline\text{only for $x\in\N$}
+ Hence, $f(x)$ is defined for $x=1,2,3,\ldots\infty$. But it is not defined for $x=1.5$ or $x=100.4454$ because these numbers $\notin\N$
+ Nor is $f(x)$ defined for $x=0$ as $0\notin\N$
+ Notice also $f(2) &gt; f(1), f(3) &gt; f(2)$ and so on. Which means, $f(x)$ is strictly increasing in $\N$. Hence, it looks as below
+%
+\begin{align}
+
+\includegraphics[scale=1.5]{1427-C.svg}
+\end{align}
+%text
+ \underline\text{The dotted line is the parabola} $\fx$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="26"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{lNN}
+
+\hline
+Property &amp; f(x)? &amp; \text{Why?} \\
+\hline
+Injective &amp; \checkmark &amp; f(x)\neq f(y) \implies x\neq y \\
+\hline
+Surjective &amp; \checkmark &amp; y\in S\implies x\in\N \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ And hence, $f(x)$ is also \underline\text{bijective/invertible}%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ We haven't found the co-domain $S$ mentioned in the problem. But even then, just by looking at the plot of $f(x)$, we can say that $f(x)$ is
+%
+\begin{align}
+\begin{tabular}{lNl}
+
+\hline
+&amp; \text{Why?} &amp; Also called \\
+\hline
+1-to-1 &amp; x\neq y \implies f(x)\neq f(y) &amp; Injective \\
+\hline
+Onto &amp; \text{For every }y\in S,\text{ there is a }x\in\N &amp; Surjective \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ And as $f(x)$ is \underline\text{both 1-to-1 and onto}, it is therefore also \underline\text{invertible (bijective)}%
+</tex>
+      </reason>
+      <skills>
+        <skill id="142"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+y &amp;= \fx \\
+\therefore x &amp;= \frac{1}{3} \left[\sqrt{y + 6} - 1 \right] \\
+\implies f^{-1}(x) &amp;= \invfx \\
+\text{Hence }f^{-1}(43) &amp;= 2\text{ and } f^{-1}(163) = 4
+\end{align}
+%text
+
+\incorrect
+%
+\begin{align}
+
+y &amp;= \fx \\
+\therefore x &amp;= \frac{1}{3} \left[\sqrt{y + 9} - 2 \right] \\
+\implies f^{-1}(x) &amp;= \dfrac{\sqrt{x+9} - 2}{3} \\
+\text{Hence }f^{-1}(43) &amp;= \dfrac{\sqrt{52}-2}{3}\\
+\text{ and } f^{-1}(163) &amp;= \dfrac{\sqrt{172}-2}{3}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+y &amp;= \fx \\
+\therefore x &amp;= \frac{1}{3} \left[\sqrt{y + 9} - 2 \right] \\
+\implies f^{-1}(x) &amp;= \dfrac{\sqrt{x+9} - 2}{3} \\
+\text{Hence }f^{-1}(43) &amp;= \dfrac{\sqrt{52}-2}{3}\\
+\text{ and } f^{-1}(163) &amp;= \dfrac{\sqrt{172}-2}{3}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ If $f:\N\to S$, then $f^{-1}:S\to\N$. Which means, that the output of $f^{-1}(x)$ will be a natural number 
+ That said,
+%
+\begin{align}
+
+y &amp;= \fx = \left\lbrace (3x+1)^2 - 1\right\rbrace -5 \\
+&amp;= (3x+1)^2 - 6 \\
+\therefore x &amp;= \dfrac{\sqrt{y+6}-1}{3}
+\end{align}
+%text
+ In the last equation, we evaluate $x$ in terms of $y$. Hence, $x$ is the \underline\text{dependent} variable and $y$ is the \underline\text{independent} variable
+ And by convention, we use $x$ for independent and $y$ for dependent variables
+ Hence,
+\[ x = \frac{\sqrt{y+6}-1}{3} \implies f^{-1}(x) = \frac{\sqrt{x+6}-1}{3} \]
+ And therefore,
+%
+\begin{align}
+
+f^{-1}(43) &amp;= \frac{\sqrt{43+6}-1}{3} = 2 \\
+f^{-1}(163) &amp;= \frac{\sqrt{163+6}-1}{3} = 4
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="62"/>
+      </skills>
+    </step>
+  </steps>
+</question>

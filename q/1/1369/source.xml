@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="18">
+  <customCommands/>
+  <statement>
+    <tex>%text
+Evaluate 
+\[ \qquad \sin \left[ \frac\pi{3} - \sin^{-1}\left(-\frac{1}{2} \right) \right] \] 
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex correct="false"> 
+
+\begin{align}
+\sin\left( \pi + \frac\pi{6}\right) &amp;= \sin\left( \frac{7\pi}{6} \right)  = -\frac{1}{2} \\
+\therefore \sin^{-1}\left( -\frac{1}{2} \right) &amp;= \frac{7\pi}{6} 
+\end{align} 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+%text
+There are infinite angles for which 
+\[ \qquad\qquad \sin\theta = -\frac{1}{2} \]
+
+But when we say \[\qquad \qquad\sin^{-1}\left(-\frac{1}{2}\right) = \theta\]
+the $\theta$ is an angle in what is called the
+
+\underline{principal range}\newline 
+
+
+For $\sin^{-1} x$, that principal range is $ \left[-\frac\pi{2},\frac\pi{2}\right]$\newline 
+
+
+And as $\sin\left( -\frac\pi{6}\right) = -\frac{1}{2}$ and $-\frac\pi{6}\in\left[ -\frac\pi{2},\frac\pi{2}\right]$,
+\[ \qquad \therefore \sin^{-1}\left( -\frac{1}{2}\right) = -\frac\pi{6} \]
+%
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="39"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\[ \sin \left[ \frac\pi{3} - \sin^{-1}\left(-\frac{1}{2} \right) \right] = 1 \]
+
+</tex>
+      <tex correct="false"> 
+
+\[ \sin \left[ \frac\pi{3} - \sin^{-1}\left(-\frac{1}{2} \right) \right] = \frac{1}{2} \]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+\sin^{-1}\left(-\frac{1}{2}  \right) &amp;= -\frac\pi{6} \\
+\therefore \frac\pi{3} - \sin^{-1}\left(-\frac{1}{2}  \right)  &amp;= \frac\pi{3} - \left( -\frac\pi{6} \right)\\
+&amp;= \frac\pi{2} \\
+\implies \sin \left[ \frac\pi{3} - \sin^{-1}\left(-\frac{1}{2} \right) \right] &amp;= \sin\frac\pi{2}= 1
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="1"/>
+    </skills>
+  </step>
+</question>

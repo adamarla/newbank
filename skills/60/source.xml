@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Inferring facts about a line}
+Given the equation of line, finding it's slope, point of intersection with another line, intercepts etc.</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Sometimes you will have to find the equation of a line given its slope, points it passes through etc 
+ And at other times, you will have to do the opposite 
+ You will be \underline\text{given the equation} of a line and you will have to figure out the line's slope, where it intersects with another line, it's $x-$ and $y-$ intercepts etc 
+ So, given a line $L_1: ax + by + c = 0$, re-write it as
+\[ \qquad y = -\frac{a}{b} x - \frac{c}{b}\]
+
+%
+\begin{align}
+\begin{tabular}{cNN}
+
+\hline
+&amp; \text{Value}  &amp; \text{How?} \\
+\hline
+Slope &amp; m = -\frac{a}{b} &amp; y = mx + c \\
+\hline
+$x$-intercept &amp; -\frac{c}{a} &amp; \text{Put }y = 0 \\
+\hline
+$y$-intercept &amp; -\frac{c}{b} &amp; \text{Put } x= 0 \\
+\hline
+Point of intersection &amp; &amp; \text{Solve } y = m_1 x + c_1 \\
+&amp; &amp; = m_2 x + c_2 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

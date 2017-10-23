@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>An insurance company insured $2000$
+scooter drivers, $4000$ car drivers and 
+$6000$ truck drivers. The probability of 
+an accident involving a scooter, a car 
+and a truck are $0.01, 0.03$ and $0.15$ 
+respectively.  One of the insured persons
+meets with an accident. What is the probability that he is 
+a scooter driver?</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ Given the following events
+%
+\begin{align}
+\begin{tabular}{cccc}
+
+\hline
+$S$ &amp; $C$ &amp; $T$ &amp; $A$  \\
+\hline
+\text{Scooter} &amp; \text{Car Driver} &amp; \text{Truck Driver}  &amp; \text{Accident} \\
+\text{Rider} &amp; &amp; &amp; \text{occurs} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ We have been told the following
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\prob{S} = \frac{1}{6} &amp; \condp{A}{S} = 0.01 \\
+\hline
+\prob{C} = \frac{1}{3} &amp; \condp{A}{C} = 0.03 \\
+\hline
+\prob{T} = \frac{1}{2} &amp; \condp{A}{T} = 0.15 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+Given the following events
+%
+\begin{align}
+\begin{tabular}{cccc}
+
+\hline
+$S$ &amp; $C$ &amp; $T$ &amp; $A$  \\
+\hline
+\text{Scooter} &amp; \text{Car Driver} &amp; \text{Truck Driver}  &amp; \text{Accident} \\
+\text{Rider} &amp; &amp; &amp; \text{occurs} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ We have been told the following
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\prob{S} = \frac{1}{6} &amp; \prob{A\cap S} = 0.01 \\
+\hline
+\prob{C} = \frac{1}{3} &amp; \prob{A\cap C} = 0.03 \\
+\hline
+\prob{T} = \frac{1}{2} &amp; \prob{A\cap T} = 0.15 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ Given the following events
+%
+\begin{align}
+\begin{tabular}{cccc}
+
+\hline
+$S$ &amp; $C$ &amp; $T$ &amp; $A$  \\
+\hline
+\text{Scooter} &amp; \text{Car Driver} &amp; \text{Truck Driver}  &amp; \text{Accident} \\
+\text{Rider} &amp; &amp; &amp; \text{occurs} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ We have been told the following
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\prob{S} = \frac{1}{6} &amp; \prob{A\cap S} = 0.01 \\
+\hline
+\prob{C} = \frac{1}{3} &amp; \prob{A\cap C} = 0.03 \\
+\hline
+\prob{T} = \frac{1}{2} &amp; \prob{A\cap T} = 0.15 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ The insurance company has ensured $12,000$ vehicles in all $\left(2000 + 4000 + 6000 \right)$
+%
+\begin{align}
+\begin{tabular}{NcN}
+
+\hline
+&amp;  \text{Insured vehicle is a$\ldots$} &amp; \text{Value} \\
+\hline
+\prob{S} &amp; \text{Scooter} &amp; \frac{2000}{12,000} = \frac{1}{6} \\
+\hline
+\prob{C} &amp; \text{Car} &amp; \frac{4000}{12,000} = \frac{1}{3} \\
+\hline
+\prob{T} &amp; \text{Truck} &amp; \frac{6000}{12,000} = \frac{1}{2} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ We have also been told the probability of an accident \underline\text{given} the vehicle type
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+&amp; \text{Probability} &amp; \text{Not} \\
+\hline
+\condp{A}{S} &amp; 0.01 &amp; \prob{A\cap S} \\
+\hline
+\condp{A}{C} &amp; 0.03 &amp; \prob{A\cap C} \\
+\hline
+\condp{A}{T} &amp; 0.15 &amp; \prob{A\cap T} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="38"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ And we need to find $\condp{S}{A}$
+\incorrect
+And we need to find $\prob{S\cap A}$%
+</tex>
+        <tex correct="false">%text
+ And we need to find $\prob{S\cap A}$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ The accident has \underline\text{already happened}. We need to find the probability of the vehicle being a scooter
+ Hence, $\condp{S}{A}$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="38"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ The probability that there is an accident is
+%
+\begin{align}
+
+\prob{A} &amp;= \frac{13}{150} \\
+\therefore \condp{S}{A} &amp;= \left[ \dfrac{\frac{1}{100}\cdot\frac{1}{6}}{\frac{13}{150}}\right] =\frac{1}{52}
+\end{align}
+%text
+
+\incorrect
+The probability that there is an accident is
+%
+\begin{align}
+
+\prob{A} &amp;= \frac{9}{200} \\
+\therefore \condp{S}{A} &amp;= \left[ \dfrac{\frac{1}{100}\cdot\frac{1}{6}}{\frac{13}{150}}\right] =\frac{1}{27}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ The probability that there is an accident is
+%
+\begin{align}
+
+\prob{A} &amp;= \frac{9}{200} \\
+\therefore \condp{S}{A} &amp;= \left[ \dfrac{\frac{1}{100}\cdot\frac{1}{6}}{\frac{13}{150}}\right] =\frac{1}{27}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ As per Bayes' Theorem
+\[ \qquad \condp{S}{A} = \fcondp{S}{A}  \]
+ We know all the terms in the numerator. But we will need to find $\prob{A}$
+%
+\begin{align}
+
+\prob{A} = &amp;\overbrace{\condp{A}{S}\cdot\prob{S} + \condp{A}{C}\cdot\prob{C}}^{\text{Theorem of Total Probability}} \\
+&amp;+ \condp{A}{T}\cdot\prob{T} \\
+&amp;= \left[ \frac{1}{100}\cdot\frac{1}{6} + \frac{3}{100}\cdot\frac{1}{3} + \frac{15}{100}\cdot\frac{1}{2} \right] \\
+&amp;= \frac{13}{150}
+\end{align}
+%text
+ And therefore,
+%
+\begin{align}
+
+\condp{S}{A} &amp;= \fcondp{S}{A} \\
+&amp;= \dfrac{ \left( \frac{1}{100}\cdot\frac{1}{6}\right)}{\frac{13}{150}} = \frac{1}{52}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="17"/>
+      </skills>
+    </step>
+  </steps>
+</question>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Injective, Surjective \&amp; Bijective}
+Types of functions. Easy concepts, difficult names</tex>
+  </render>
+  <reason>
+    <tex>%text
+ The figure below shows the various types of functions you need to know about \includegraphics[scale=0.33]{142-A.svg}
+%
+\begin{align}
+\begin{tabular}{Nlll}
+
+\hline
+&amp; \text{Name} &amp; \text{Type} &amp; \text{Bear in mind} \\
+\hline
+A &amp; &amp; \text{Regular} &amp; \text{Two $x$ can map to} \\
+&amp; &amp; &amp; \text{the same $y$ but one $x$} \\
+&amp; &amp; &amp; \text{cannot map to two $y$} \\
+\hline
+B &amp; \text{Injective} &amp; \text{1-to-1} &amp; \text{$f(x) = f(y) \implies x = y$} \\
+&amp; &amp; &amp; \text{$f(x)\neq f(y)\implies x \neq y$} \\
+\hline
+C &amp; \text{Surjective} &amp; \text{Onto} &amp; \text{Every $y$ in co-domain is} \\
+&amp; &amp; &amp; \text{mapped to some $x$ in domain}  \\
+\hline
+D &amp; \text{Bijective} &amp; \text{Invertible} &amp; \text{Injective $+$ Surjective} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

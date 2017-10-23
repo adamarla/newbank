@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Relating two events}
+\[ P\left( A\,\vert\,B \right) + P\left( A'\,\vert\, B\right) = ? \]</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Let there be two events - $A$ and $B$
+ If event B has already happened, then event $A$ has also either happened or not happened. There is no third possiblility
+ Mathematically, this rather obvious fact is expressed as follows
+\[\qquad P\left( A\,\vert\,B \right) + P\left( A'\,\vert\, B\right) = 1\]
+
+%
+\begin{align}
+\begin{tabular}{Nc}
+
+\hline
+\text{Notation} &amp;  \text{Probability of $\ldots$} \\
+\hline
+P \left(A\vert B \right)  &amp; \text{$A$ happening given $B$} \\
+\hline
+P \left(A'\vert B \right) &amp; \text{$A$ not happening given $B$} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

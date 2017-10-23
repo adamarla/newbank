@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Simplest Set Results}
+The most intuitive and easiest to remember results involving two sets $A$ and $B$</tex>
+  </render>
+  <reason>
+    <tex>%text
+ The table below summarizes standard results that are the easiest to remember and which you can -- with some care -- prove easily using Venn diagrams
+ $U$ is the universal set and $\phi$ an empty set
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\text{Union} &amp; \text{Intersection} &amp; \text{Complement}  \\
+\hline
+A\cup B = B\cup A &amp; A\cap B = B\cap A &amp; A\cup A' = U \\
+\hline
+A \cup \phi = A &amp; A\cap \phi = \phi &amp; A\cap A' = \phi \\
+\hline
+A\cup A = A &amp; A\cap A = A &amp; \left(A' \right)' = A \\
+\hline
+A\cup U = U &amp; A\cap U = A &amp; U' = \phi \\
+\hline
+&amp; &amp; \phi' = U \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

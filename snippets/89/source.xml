@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ $e^{-x}$ is the integrating factor for the following differential equation
+\[ \quad \qquad x\dydx - y = \sin x \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ The given differential equation looks like the following \underline\text{but is not exactly}
+\[ \qquad \dydx + P(x)\cdot y = Q(x) \]
+ We must therefore modify it to look like the equation above
+%
+\begin{align}
+
+x\cdot\dydx - y &amp;= \sin x \\
+\implies \dydx - \left(\frac{1}{x} \right)y &amp;= \frac{\sin x}{x} \\
+\dydx + \underbrace{\left(-\frac{1}{x} \right)}_{P(x)} y &amp;= \frac{\sin x}{x}
+\end{align}
+%text
+ Now, we can find the integrating factor
+%
+\begin{align}
+
+IF &amp;= e^{\int P(x)\cdot dx} = e^{\int -\frac{dx}{x}} = e^{-\log x} \\
+&amp;= \underbrace{\frac{1}{e^{\log x}} = \frac{1}{x} }_{e^{\log a } = a}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="54"/>
+  </skills>
+</snippet>

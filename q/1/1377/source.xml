@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>%text
+If $f(x) = x + 7$ and $g(x) = x-7, x\in\mathbb{R},$ 
+then find $(f\circ g)(7)$
+%</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+
+\[(f\circ g)(x) = f\left( g\left( x\right)\right) \]
+
+\incorrect
+\[(f\circ g)(x) = f(x)\cdot g(x) \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[(f\circ g)(x) = f(x)\cdot g(x) \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ $(f\circ g)(x)$ is simply shorthand for $ f\left( g\left( x\right)\right)$. And similarly $\left(g\circ f \right)(x) = g \left( f \left(x \right) \right)$
+ And note that $ f \left(g(x) \right)\neq g \left(f(x) \right)$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="47"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[\therefore (f\circ g)(7) = 7 \]
+
+\incorrect
+\[\therefore (f\circ g)(7) = 0\]
+%
+</tex>
+        <tex correct="false">%text
+
+\[\therefore (f\circ g)(7) = 0\]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+(f\circ g)(x) &amp;= f\left( g\left( x \right) \right) = g(x) + 7 \\
+&amp;= (x-7) + 7 = x \\
+\therefore (f\circ g)(7) &amp;= 7
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="47"/>
+      </skills>
+    </step>
+  </steps>
+</question>

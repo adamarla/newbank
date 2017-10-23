@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Parabola Basics}
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+\includegraphics[scale=1.2]{parabola.svg}
+\end{align}
+%text
+
+%
+\begin{align}
+\begin{tabular}{Nl}
+
+\hline
+&amp; \bf{Definition} \\
+&amp; The locus of all points that are equi-distant\\
+&amp; from a line (called \textit{directrix}) and a point \\
+&amp; (called the \textit{focus}) \\
+\hline
+&amp;  \bf{In the figure above} \\
+\hline
+1 &amp; $F$ is the focus. The directrix \\
+&amp; has not been shown  \\
+\hline
+2 &amp; $F$ always lies on the axis of \\
+&amp; the parabola \\
+\hline
+3 &amp; The vertex is where the parabola \\
+&amp; cuts it's axis (point $O$) \\
+\hline
+&amp; \bf{You will only study parabola $\ldots$} \\
+A &amp; With focus $F$ on the $x-$ or $y-$ axis only \\
+\hline
+B &amp; Vertex at the origin only \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ \textbf{Standard equations }
+%
+\begin{align}
+\begin{tabular}{cN}
+
+\hline
+Opens along &amp; \text{Standard Equation}  \\
+\hline
+Positive $x$ axis &amp; y^2 = 4ax \\
+\hline
+Negative $x$ axis &amp; y^2 = -4ax \\
+\hline
+Positive $y$ axis &amp; x^2 = 4ay \\
+\hline
+Negative $y$ axis &amp; x^2 = -4ay \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

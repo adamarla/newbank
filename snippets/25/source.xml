@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+%
+\[ \qquad f(x) = x\vert x\vert = \begin{cases}
+
+x^2,\quad x \geq 0 \\
+-x^2,\quad x &lt; 0
+\end{cases} \]
+%text
+ is not differentiable at $x=0$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\[ f(x) = x\vert x\vert = \begin{cases}
+
+x\cdot x = x^2, \, x \geq 0 \\
+x\cdot \left(-x \right) = -x^2,\,x &lt; 0
+\end{cases}  \]
+%text
+ So, $f(x)$ has been defined correctly
+ Moreover
+%
+\begin{align}
+
+\lim_{x\to 0^-} f'(x) &amp;= \lim_{x\to 0^-} \left(-2x \right) = 0 \\
+\lim_{x\to 0^+} f'(x) &amp;= \lim_{x\to 0^+} \left(2x \right) = 0
+\end{align}
+%text
+ As both the limits are equal, therefore $f(x)$ is differentiable at $x=0$%
+</tex>
+  </reason>
+            <skills>
+    <skill id="71"/>
+  </skills>
+</snippet>

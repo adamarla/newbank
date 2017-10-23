@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If it is cloudy in the morning, then the probability that it will rain in the afternoon is $0.6$. If it is not cloudy, then the probability of rain is $0.3$
+ The probability of it being cloudy tomorrow morning is $0.4$. The probability that it will rain tomorrow is therefore $0.38$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ If we define the following two events
+%
+\begin{align}
+\begin{tabular}{Nl}
+
+\hline
+\text{Event} &amp; \text{Meaning}  \\
+\hline
+C &amp; \text{Cloudy in the morning} \\
+\hline
+R &amp; \text{Rain in the afternoon} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ then we have been told the following
+%
+\begin{align}
+\begin{tabular}{NNl}
+
+\hline
+&amp;  \text{Value} &amp; \text{Meaning} \\
+\hline
+\prob{C} &amp; 0.4 &amp; \text{Cloudy tomorrow morning} \\
+\hline
+\condp{R}{C} &amp; 0.6 &amp; \text{Rain if cloudy} \\
+\hline
+\condp{R}{C'} &amp; 0.3 &amp; \text{Rain if not cloudy} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ And we have to find $\prob{R}$ -- which is 
+%
+\begin{align}
+
+\prob{R} &amp;= \underbrace{\condp{R}{C}\cdot\prob{C} + \condp{R}{C'}\cdot \prob{C'}}_{\text{Theorem of Total Probability}} \\
+&amp;= 0.6\times 0,4 + 0.3\times \left(1-0.4 \right) \\
+&amp;= 0.42
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="17"/>
+  </skills>
+</snippet>

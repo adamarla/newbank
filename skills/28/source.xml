@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Trigonometry (Ratios of Sums)}
+
+$\sin\left(A\pm B\right), \cos\left( A\pm B\right)\text{ etc.}
+$</tex>
+  </render>
+  <reason>
+    <tex>%text
+ \textbf{Basic Identities} The following trigonometric identities are fundamental 
+ We are not giving proofs for them here. But you should \underline\text{commit these to memory } 
+%
+\begin{align}
+
+\sin (A+B) &amp;= \sin A\cdot \cos B + \cos A\cdot \sin B \\
+\sin (A-B) &amp;= \sin A\cdot \cos B - \cos A\cdot \sin B  \\
+\cos (A + B) &amp;= \cos A \cdot \cos B - \sin A\cdot \sin B \\
+\cos (A-B) &amp;= \cos A\cdot \cos B + \sin A\cdot \sin B \\
+\tan (A+B) &amp;= \dfrac{\tan A + \tan B}{1-\tan A\cdot \tan B} \\
+\tan (A-B) &amp;= \dfrac{\tan A - \tan B}{1+ \tan A\cdot \tan B}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

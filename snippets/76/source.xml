@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \tan \left(\anga + \angb= \right) = \sqrt{3} \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+\anga &amp;= \frac\pi{3} \text{ and } \angb = \frac\pi{3} \\
+\therefore y &amp;= \tan \left(\anga + \angb \right) \\
+&amp;= \tan \left(\frac\pi{3} + \frac\pi{3} \right) = \tan\frac{2\pi}{3} \\
+&amp;= -\sqrt{3} \left(\text{not }\sqrt{3}  \right)
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="39"/>
+  </skills>
+</snippet>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skill xmlns='http://www.gradians.com' chapterId='9'>
+  <render>
+    <tex>%text
+\textbf{Basics}
+Definition \&amp; the General Term
+%</tex>
+  </render>
+  <reason>
+    <tex>%text
+If $a,b\in\mathbb{R}$ and $n\in\mathbb{Z^+}$ (positive integers), then 
+%
+\begin{align}
+(a&amp;+b)^n = \sum_{k=0}^n\, ^{n}C_k \cdot a^{n-k}\cdot b^k \\
+&amp;= \underbrace{^{n}C_0 \cdot a^n b^0 + ^{n}C_1\cdot a^{n-1}b +\ldots+^{n}C_n\cdot a^0b^n}_{n+1\text{ terms}}
+\end{align}
+
+%text
+
+
+\underline\text{All other expansions,} like $(a-b)^n, (1+x)^n$ are
+simply different versions of $(a+b)^n$. 
+
+\textbf{General Term \&amp; Coefficient}
+
+%
+\begin{tabular}{|c|c|c|}
+\hline 
+&amp; \text{Expression} &amp; \text{Notes} \\ 
+\hline 
+(m+1)\text{-Term} &amp; {^n}C_m\cdot a^{n-m}\cdot b^m &amp; 0\leq m \leq n \\
+\hline 
+(m+1)\text{-Coeff} &amp; {^n}C_m &amp; 0\leq m \leq n \\
+\hline 
+\end{tabular} 
+%text
+
+
+\textbf{Note the following} 
+For the first term, $m=0$ (not $m=1$). 
+For the second term, $m=1$ (not $m=2)$.
+For the last term, $m = n$.
+$^{n}C_{n+1}$ is \underline\text{not} defined. Hence, $m\leq n$. 
+%</tex>
+  </reason>
+</skill>

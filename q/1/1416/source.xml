@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Find the equation of the curve passing through origin if the slope of the 
+     tangent to the curve at any point $(x,y)$ is equal to the square 
+     of the difference of the abscissa and ordinate of the point</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ The required curve satisfies the following condition
+\[ \qquad\quad \dydx = (y-x)^2 \]
+
+\incorrect
+The required curve satisfies the following condition
+\[ \qquad\quad \dydx = y^2 - x^2 \]
+%
+</tex>
+        <tex correct="false">%text
+ The required curve satisfies the following condition
+\[ \qquad\quad \dydx = y^2 - x^2 \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Abscissa and ordinate are \underline\text{fancy words} for $x$ and $y$ respectively (as shown below)
+\[ \qquad\qquad (\overbrace{x}^{\text{Abscissa}}, \overbrace{y}^{\text{Ordinate}} )\]
+ And hence, as per the problem, the required curve satisfies the following the condition
+\[ \qquad \underbrace{\dydx = (y-x)^2 \text{ or } \dydx = (x-y)^2}_{\text{Either is fine}}\]
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="103"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ Of the following three strategies, \underline\text{strategy $III$} is the best
+%
+\begin{align}
+\begin{tabular}{NNl}
+
+\hline
+&amp; \text{Re-write as} &amp; Solve using \\
+\hline
+I &amp; \dydx + 2yx = y^2 + x^2 &amp; Integrating factor \\
+\hline
+II &amp; \dydx = x^2 \left[\yx^2 - 2\yx + 1 \right] &amp; $ y = vx$ \\
+\hline
+III &amp; \dydx = (y-x)^2 &amp; Let $z = y-x$ \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+Of the following three strategies, \underline\text{strategy $II$} is the best
+%
+\begin{align}
+\begin{tabular}{NNl}
+
+\hline
+&amp; \text{Re-write as} &amp; Solve using \\
+\hline
+I &amp; \dydx + 2yx = y^2 + x^2 &amp; Integrating factor \\
+\hline
+II &amp; \dydx = x^2 \left[\yx^2 - 2\yx + 1 \right] &amp; $ y = vx$ \\
+\hline
+III &amp; \dydx = (y-x)^2 &amp; Let $z = y-x$ \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ Of the following three strategies, \underline\text{strategy $II$} is the best
+%
+\begin{align}
+\begin{tabular}{NNl}
+
+\hline
+&amp; \text{Re-write as} &amp; Solve using \\
+\hline
+I &amp; \dydx + 2yx = y^2 + x^2 &amp; Integrating factor \\
+\hline
+II &amp; \dydx = x^2 \left[\yx^2 - 2\yx + 1 \right] &amp; $ y = vx$ \\
+\hline
+III &amp; \dydx = (y-x)^2 &amp; Let $z = y-x$ \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ The table below summarizes why the given differential equation \underline\text{is not} a linear or a homogenous differential equation. Hence, it \underline\text{cannot} be solved as those
+%
+\begin{align}
+\begin{tabular}{NlN}
+
+\hline
+\text{If written as} &amp; Looks like &amp; \text{Is not because}  \\
+\hline
+\dydx + 2xy = x^2 + y^2 &amp; Linear &amp; \dydx + 2xy \neq F(x) \\
+\hline
+\dydx = x^2 \left[\yx^2 - 2\yx + 1 \right] &amp; Homogenous &amp; \dydx \neq F\yx \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Which leaves \underline\text{strategy $III$} as the best option. So, let us try and work with that%
+</tex>
+      </reason>
+      <skills>
+        <skill id="53"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ If $z = y-x$ then
+%
+\begin{align}
+
+\frac{dz}{z^2-1} = dx &amp;\implies \int \frac{dz}{z^2-1} = \int dx \\
+\text{or } x &amp;= \frac{1}{2}\log\left\vert \frac{y-x-1}{y-x+1}\right\vert + C
+\end{align}
+%text
+ But as $y = 0$ when $x=0$, therefore $C = 0$. Hence,
+\[ \quad \underbrace{y = e^{2x}\cdot \left(y-x+1 \right) + (x+1)}_{\text{Answer}}\]
+
+\incorrect
+If $z = y-x$ then
+%
+\begin{align}
+
+\frac{dz}{z^2-1} &amp;= dx \implies \int \frac{dz}{z^2-1} = \int dx \\
+\text{or } x &amp;= \log\left\vert \ymx + \sqrt{\ymx^2 + 1}\right\vert + C
+\end{align}
+%text
+ But as $y = 0$ when $x=0$, therefore $C = 0$. Hence,
+\[ \quad \underbrace{e^x = \ymx + \sqrt{\ymx^2 + 1}}_{\text{Answer}}\]
+%
+</tex>
+        <tex correct="false">%text
+ If $z = y-x$ then
+%
+\begin{align}
+
+\frac{dz}{z^2-1} &amp;= dx \implies \int \frac{dz}{z^2-1} = \int dx \\
+\text{or } x &amp;= \log\left\vert \ymx + \sqrt{\ymx^2 + 1}\right\vert + C
+\end{align}
+%text
+ But as $y = 0$ when $x=0$, therefore $C = 0$. Hence,
+\[ \quad \underbrace{e^x = \ymx + \sqrt{\ymx^2 + 1}}_{\text{Answer}}\]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+z = y -x &amp;\implies \frac{dz}{dx} = \dydx - 1\\
+\therefore \frac{dz}{dx} + 1 &amp;= \ymx^2 = z^2  \\
+\implies \frac{dz}{z^2 - 1} &amp;= dx \text{ or } \int \frac{dz}{z^2 - 1} = \int dx \\
+\implies x &amp;= \frac{1}{2} \log \left\vert \dfrac{z-1}{z + 1}\right\vert + C \\
+&amp;= \frac{1}{2}\log \left\vert \dfrac{\ymx - 1}{\ymx+ 1} \right\vert + C
+\end{align}
+%text
+ But the curve \underline\text{passes through the origin}. Hence,
+%
+\begin{align}
+
+0 &amp;= \underbrace{\frac{1}{2}\log \left\vert\dfrac{(0-0) - 1}{(0-0) + 1} \right\vert + C \implies C = 0}_{\log 1 = 0}
+\end{align}
+%text
+ And so,
+%
+\begin{align}
+
+x &amp;= \frac{1}{2}\log\left\vert \dfrac{\ymx - 1}{\ymx + 1}\right\vert  \\
+\implies e^{2x} &amp;= \underbrace{\dfrac{\ymx - 1}{\ymx + 1}}_{\log a = b \implies a = e^b} \\
+\text{or } y &amp;= e^{2x} \left[\ymx+1 \right] + \left(x+1 \right)
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="61"/>
+      </skills>
+    </step>
+  </steps>
+</question>

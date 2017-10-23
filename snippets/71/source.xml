@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \sin^{-1} \left(\sin 3 \right) = 3 \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ First, recall that
+\[\qquad \sin^{-1} x =\theta \implies \theta\in \left[-\frac\pi{2},\frac{\pi}{2} \right]\]
+ But $ 3 &gt; \frac\pi{2}$. Therefore $\sin^{-1} \left(\sin 3 \right)\neq 3$
+ Instead, note that
+%
+\begin{align}
+
+\sin 3 &amp;= \sin \left(\pi -3 \right) \\
+\text{and } \left(\pi-3 \right) &amp;= \left(3.14-3 \right)\in \left[-\frac\pi{2},\frac\pi{2} \right] \\
+\therefore\sin^{-1} \left(\sin 3 \right) &amp;= \sin^{-1} \left[\sin \left(\pi-3 \right) \right] \\
+&amp;= \pi - 3
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="39"/>
+  </skills>
+</snippet>

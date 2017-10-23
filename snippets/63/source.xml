@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The shaded portion is the area bound by $y=x^2, x = 1$ and the \xaxis
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{figure.svg}
+\end{align}
+%text
+ When this area is rotated around the \xaxis, then the volume of the resulting solid is
+\[ \qquad V = \int_0^1 \pi x^4\cdot dx = \frac{\pi}{5} \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Imagine a thin strip $AB$ of width $dx$ at some $x$ -- as shown below
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{diagram.svg}
+\end{align}
+%text
+ When $AB$ is rotated around the \xaxis, then one gets the following cylinder
+%
+\begin{align}
+\begin{tabular}{lNNN}
+
+\hline
+&amp;  \text{Radius} &amp; \text{Height} &amp; \text{Volume } (dV) \\
+\hline
+Cylinder &amp; y = x^2 &amp; dx &amp; \left(\pi y^2 \right)\cdot dx = \pi x^4\cdot dx \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Add up the volume of all such cylinders to get the volume of the generated solid
+%
+\begin{align}
+
+V &amp;= \int_0^1 dV = \int_0^1 \pi x^4\cdot dx \\
+&amp;= \pi \left[\frac{x^5}{5} \right]_0^1 = \frac\pi{5}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="26"/>
+  </skills>
+</snippet>

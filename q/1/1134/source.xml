@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Find the equation of the tangent and normal to the curve 
+    \[ \qquad x = a\sin^3\theta \text{ and } y = a\cos^3\theta \] 
+    at $\theta = \dfrac\pi{4}$</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ The tangent and normal will pass through the point $A = \pta$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ What we have here is a parametric curve in which both $x$ and $y$ are defined in terms of a third parameter $\theta$ 
+ And for $\theta = \frac{\pi}{4}$, the point $A$ on the curve is given by
+\[ A = \left(a\sin^3 \frac{\pi}{4}, a\cos^3 \frac{\pi}{4} \right) = \pta \]
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="56"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ If $m_T$ be the slope of the tangent and $m_N$ the slope of the normal at $A$, then
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+&amp; \text{Expression} &amp; \text{Value} \\
+\hline
+m_T &amp; \frac{dy}{dx} &amp; -1 \\
+\hline
+m_N &amp; &amp; 1 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+If $m_T$ be the slope of the tangent and $m_N$ the slope of the normal at $A$, then
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+&amp; \text{Expression} &amp; \text{Value} \\
+\hline
+m_T &amp; \frac{dy}{dx} &amp; 1 \\
+\hline
+m_N &amp; &amp; -1 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ If $m_T$ be the slope of the tangent and $m_N$ the slope of the normal at $A$, then
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+&amp; \text{Expression} &amp; \text{Value} \\
+\hline
+m_T &amp; \frac{dy}{dx} &amp; 1 \\
+\hline
+m_N &amp; &amp; -1 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ It might be a parametric curve. But it is still drawn in the $x-y$ plane 
+ Hence, the slope of the tangent $(m_T)$ at point $A$ is
+%
+\begin{align}
+
+m_T &amp;= \dydx = \left[ \frac{dy / dt}{dx / dt}\right]_{\frac\pi{4}}
+= \left[\frac{\frac{d}{dt} \left(\cy \right)}{\frac{d}{dt} \left(\cx \right)} \right]\\
+&amp;= \underbrace{\left[\frac{3\cos^2\theta\cdot (-\sin\theta)}{3\sin^2\theta\cdot (\cos\theta)} \right]}_{\text{Chain Rule}} = -\cot\theta \\
+&amp;= -1\text{ when } \theta = \frac\pi{4}
+\end{align}
+%text
+ Morever $m_T\cdot m_N = -1$ as the tangent and normal are perpendicular to each other 
+ Hence, $m_N = 1$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="56"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{lN}
+
+\hline
+&amp;  \text{Equation} \\
+\hline
+Tangent &amp; x + y = \frac{a}{\sqrt{2}}\\
+\hline
+Normal &amp; x = y \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+%
+\begin{align}
+\begin{tabular}{lN}
+
+\hline
+&amp;  \text{Equation} \\
+\hline
+Tangent &amp; x - y = \frac{a}{2\sqrt{2}}\\
+\hline
+Normal &amp; y = x + \frac{a}{\sqrt{2}} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+\begin{tabular}{lN}
+
+\hline
+&amp;  \text{Equation} \\
+\hline
+Tangent &amp; x - y = \frac{a}{2\sqrt{2}}\\
+\hline
+Normal &amp; y = x + \frac{a}{\sqrt{2}} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ We know that the one point the two lines pass through. And we know their slopes
+ That is more than enough information to find the equations of the two lines 
+
+%
+\begin{align}
+\begin{tabular}{lNNN}
+
+\hline
+&amp; \text{Slope} &amp; \text{Setup} &amp; \text{Equation} \\
+\hline
+Tangent &amp; -1 &amp; \frac{y-\frac{a}{2\sqrt{2}}}{x-\frac{a}{2\sqrt{2}}} = -1 &amp; x + y = \frac{a}{\sqrt{2}} \\
+\hline
+Normal &amp; 1 &amp; \frac{y- \frac{a}{2\sqrt{2}}}{x- \frac{a}{2\sqrt{2}}} = 1 &amp; x = y \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="57"/>
+      </skills>
+    </step>
+  </steps>
+</question>

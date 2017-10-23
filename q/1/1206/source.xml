@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="25">
+  <customCommands/>
+  <statement>
+    <tex>\newcommand\xy{\frac{x}{y}}
+\newcommand\yx{\frac{y}{x}}
+\newcommand\ebz{e^{\frac{1}{z}}}
+\newcommand\ez{e^z}
+
+
+Solve the following differential equation 
+\[ \quad 2y e^\xy\cdot dx + \left(y - 2xe^\xy \right)\cdot dy = 0 \]
+and find the particular solution given that $x =0$ when $y=1$
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex> 
+%
+\[ \frac{dy}{dx} = -\frac{2y\cdot e^\xy}{y - 2xe^\xy} = F \left(\frac{y}{x} \right)\]
+
+Hence, the given equation is a \underline{homogenous} differential equation 
+
+</tex>
+      <tex correct="false"> 
+
+\[ \frac{dy}{dx} + \frac{2e^\xy}{y-2x e^\xy}\cdot y = 0 \]
+
+This is of the form 
+\[ \quad \frac{dy}{dx} + P(x)\cdot y = Q(x) \]
+Hence, the given differential equation is a \underline{linear} differential equation
+
+</tex>
+    </options>
+    <reason>
+      <tex>
+\smallmath 
+\begin{align}
+	2y e^\xy\cdot dx &amp;+ \left(y - 2xe^\xy \right)\cdot dy  = 0  \\
+	\implies \left(y-2x e^\xy \right)\cdot dy  &amp;= -2y e^\xy\cdot dx \\
+	\text{or }\frac{dy}{dx} &amp;= -\frac{2y\cdot e^\xy}{\left(y-2x\cdot e^\xy \right)} \\
+	&amp;= \underbrace{-\frac{2 \left(\yx \right)\cdot e^\xy}{\yx - 2\cdot e^\xy}}_{\text{Divide throughout by $x$}} \\
+	&amp;= F \left(\yx \right)
+\end{align}
+
+Hence, this is a \underline{homogenous} differential equation 
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="53"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+
+If $z = \dfrac{y}{x}$ then 
+\begin{align}
+	\frac{dy}{dx} &amp;= z + x \frac{dz}{dx} = - \frac{2z\cdot \ebz}{z - 2\ebz} \\
+	\implies -\frac{dx}{x} &amp;= \left[\frac{1}{z} - 2 \frac{\ebz}{z^2} \right] \cdot dz
+	\end{align} 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+	\frac{dy}{dx} &amp;= -\frac{2\left(\yx \right)\cdot e^\xy}{\left( \yx - 2\cdot e^\xy\right) } \\
+	\text{and if } z &amp;= \yx \text{ then } \\
+	\frac{dy}{dx} &amp;= \underbrace{z + x\frac{dz}{dx}}_{ y = z\cdot x} = - \frac{2z\cdot \ebz}{z - 2\cdot \ebz} \\
+	x \frac{dz}{dx} &amp;= \frac{-2z\cdot \ebz -z^2 + 2z\cdot\ebz}{z-2\cdot \ebz} \\
+	&amp;= -\frac{z^2}{z-2\cdot\ebz} \\
+	\therefore -\frac{dx}{x} &amp;= \left[\frac{z-2\cdot \ebz}{z^2} \right]\cdot dz \\
+	&amp;= \left[\frac{1}{z} - \frac{2\ebz}{z^2} \right]\cdot dz
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="31"/>
+      <skill id="54"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+\log y &amp;= 2 \int \frac{\ebz}{z^2}\cdot dz  
+\end{align}
+
+</tex>
+      <tex correct="false"> 
+
+\begin{align}
+\log y &amp;= -2\int \frac{\ebz}{z^2}\cdot dz 
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+-\frac{dx}{x} &amp;= \left[\frac{1}{z} - \frac{2\ebz}{z^2} \right]\cdot dz \\
+\therefore \frac{dx}{x} + \frac{dz}{z} &amp;= \frac{2\ebz}{z^2}\cdot dz \\
+\therefore \int \frac{dx}{x} + \int \frac{dz}{z} &amp;= \int \frac{2\ebz}{z^2}\cdot dz \\
+\text{or } \log x + \log z &amp;= \int \frac{2\ebz}{z^2}\cdot dz  \\
+\implies \log \left(x\cdot z \right) &amp;= \log y = \int \frac{2\ebz}{z^2}\cdot dz 
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="48"/>
+      <skill id="55"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+\int \frac{2\ebz}{z^2}\cdot dz &amp;= -2\cdot e^\xy + C \\
+\therefore \log y &amp;= -2e^\xy + C 
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+\frac{d}{dx}\frac{1}{z} &amp;= -\frac{1}{z^2} \\
+\therefore\text{ if }w &amp;= \frac{1}{z}\text{ then } \frac{dz}{z^2} = -dw \\
+\text{and } \int \frac{2\ebz}{z^2}\cdot dz &amp;= -2\int e^w\cdot dw \\
+&amp;= -2 e^w + C = -2\ebz + C\\
+&amp;= \underbrace{-2\cdot e^\xy + C }_{z = \frac{y}{x}} \\
+\text{Hence } \log y &amp;= -2\cdot e^\xy + C 
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="32"/>
+      <skill id="33"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+Given that $x=0$ when $y=1$ 
+\[\qquad \log y = 2\cdot \left(1 - e^\xy\right)\]
+
+</tex>
+      <tex correct="false"> 
+Given that $x=0$ when $y=1$ 
+\[\qquad \log y = 2\cdot \left(\frac{1}{2} - e^\xy\right)\]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+We have to find the particular solution. Which means, we need a value for $C$
+
+\begin{align}
+x =0\text{ when } &amp;y = 1 \implies \log 1 = -2\cdot e^{\frac{0}{1}} + C \\
+\therefore C &amp;= 0 + 2 = 2 \quad (\because \log 1 = 0) \\
+\text{Hence } \log y &amp;= -2\cdot e^\xy + 2 = 2\cdot \left(1-e^\xy \right)
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="36"/>
+      <skill id="1"/>
+    </skills>
+  </step>
+</question>

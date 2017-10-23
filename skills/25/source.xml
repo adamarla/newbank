@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Polynomial factorization}
+
+Expressing $p(x)$ as the product or quotient of other polynomials
+\[ \small p(x) = a(x)\cdot b(x)\text{ or } p(x) = \frac{a(x)}{b(x)}
+\]</tex>
+  </render>
+  <reason>
+    <tex>%text
+ You will be working a lot with polynomials in the  course of your studies. 
+ And many a times, you will need to \underline\text{factorize} polynomials in order to simplify a complex expression 
+ For example, you may need to do one or more of the following conversions
+%
+\begin{align}
+
+\left(x^2 - 3x + 2 \right) &amp;\longleftrightarrow \left(x-1 \right)\cdot \left(x-2 \right) \\
+\left(x^2-x+1 \right)&amp;\longleftrightarrow \frac{x^3-1}{x-1}
+\end{align}
+%text
+ It would therefore help you to know the expansions of $(x+a)^2, (x^3-a^3), (x-a)^3$ etc. 
+ Below are some cubic and bi-quadratic (with $x^4$) expansions for your convenience
+%
+\begin{align}
+
+(x+a)^3 &amp;= x^3 + 3ax^2 + 3a^2x + a^3 \\
+(x-a)^3 &amp;= x^3 - 3ax^2 + 3a^2 x - a^3 \\
+x^3+a^3 &amp;= (x+a)\cdot (x^2-ax+a^2) \\
+x^3 - a^3 &amp;= (x-a)\cdot (x^2 + ax  -a^3) \\
+x^4 - a^4 &amp;= \underbrace{(x-a)\cdot (x+a)}_{= x^2 - a^2}\cdot (x^2 + 1)
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

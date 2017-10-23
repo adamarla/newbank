@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The region defined by
+\[ \quad \left\lbrace (x,y): x \geq 0, x\leq y \leq \sqrt{4-x^2}\right\rbrace\]
+ is as shown below
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{wrong.svg}
+\end{align}
+%text
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ We have been told which $(x,y)$ to consider in set-builder notation. And what we have been told is
+%
+\begin{align}
+\begin{tabular}{Nl}
+
+\hline
+\text{Requirement} &amp; Meaning \\
+\hline
+x\geq 0 &amp; Points to the right of the origin \\
+\hline
+y\geq x &amp; Above the line $x=y$ \\
+\hline
+y \leq \sqrt{4-x^2} &amp; Inside the circle $x^2+y^2 = 4$ \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ So, the required region is as shown below
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{right.svg}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="59"/>
+  </skills>
+</snippet>

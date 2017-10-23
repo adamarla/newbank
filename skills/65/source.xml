@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Circle Basics}
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+\includegraphics[scale=1.5]{circle.svg}
+\end{align}
+%text
+ A circle is the locus of all points that are equi-distant from a given point (known as the center) 
+ The figure above shows a circle whose center is at the origin $O$
+ It does not have to be though. The center can be at any point $(a,b)$
+ The \underline\text{standard equation} of a circle with center at $(a,b)$ and radius $R$   is
+\[ \qquad \left(x-a \right)^2 + \left(y-b \right)^2 = R^2 \]
+ When the center is at the origin, that is $(a,b) = (0,0)$, then this boils down to
+\[ \qquad x^2 + y^2 = R^2 \]
+%
+</tex>
+  </reason>
+</skill>

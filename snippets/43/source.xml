@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ At a given time $t$, the position of a particle is given by $(x,y) = \left(t, \log t \right)$
+ This particle is accelerating along the $x-$axis%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ The \underline\text{speed} of the particle \underline\text{along the $x-$axis} is given by \[\quad s_x = \frac{d}{dt} x = \frac{d}{dt} t = 1\] It's acceleration, however, is
+\[ \quad a_x = \frac{d}{dt} s_x  = 0 \]
+ Hence, the particle is \underline\text{not} accelerating along the $x-$axis. In fact, its speed (along $x-$axis) is constant%
+</tex>
+  </reason>
+            <skills>
+    <skill id="63"/>
+  </skills>
+</snippet>

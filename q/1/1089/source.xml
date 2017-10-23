@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Solve the following equation 
+    \[ \tan^{-1} \left(\frac{x-2}{x-3} \right) + \tan^{-1} \left(\frac{x+2}{x+3} \right) = \frac\pi{4} \]
+    given that $x \geq 0$</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ \small\[ \tan^{-1} \left(\frac{x-2}{x-3} \right) + \tan^{-1} \left(\frac{x+2}{x+3} \right) = \tan^{-1} \left( \frac{2x^2 - 12}{-5}\right)\]
+\incorrect
+\[ \tan^{-1} \left(\frac{x-2}{x-3} \right) + \tan^{-1} \left(\frac{x+2}{x+3} \right) = \tan^{-1} \left( \frac{x^2 - 6}{5}\right)\]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ \tan^{-1} \left(\frac{x-2}{x-3} \right) + \tan^{-1} \left(\frac{x+2}{x+3} \right) = \tan^{-1} \left( \frac{x^2 - 6}{5}\right)\]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+&amp;\tan^{-1} A + \tan^{-1} B = \tan^{-1} \left(\frac{A + B}{1-A\cdot B} \right) \\
+&amp;\therefore \tan^{-1} \left(\frac{x-2}{x-3} \right) + \tan^{-1} \left(\frac{x+2}{x+3} \right) \\
+&amp;= \tan^{-1} \left[ \frac{\frac{x-2}{x-3} + \frac{x+2}{x+3}}{1- \left(\frac{x-2}{x-3} \right)\cdot \left(\frac{x+2}{x+3} \right)} \right]  \\
+&amp;= \tan^{-1} \left[ \frac{\frac{\left(x^2+x-6 \right) + \left(x^2 - x - 6 \right)}{\xsqth}}{\frac{\xsqth-\xsqtw}{\xsqth}} \right] \\
+&amp;= \tan^{-1} \left[\frac{2x^2 - 12}{-5} \right]
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="44"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ \tan^{-1} \left(\frac{2x^2-12}{-5} \right) = \frac\pi{4} \implies x = \frac{\sqrt{7}}{\sqrt{2}} \]
+
+\incorrect
+\[ \tan^{-1} \left(\frac{2x^2-12}{-5} \right) = \frac\pi{4} \implies x = \frac{\sqrt{3}}{\sqrt{2}} \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ \tan^{-1} \left(\frac{2x^2-12}{-5} \right) = \frac\pi{4} \implies x = \frac{\sqrt{3}}{\sqrt{2}} \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+\tan^{-1} \left(\frac{2x^2-12}{-5} \right) &amp;= \frac\pi{4} \\
+\therefore \frac{2x^2 - 12}{-5} &amp;= 1 \\
+\implies 2x^2 &amp;= 7\text{ or } x = \pm \frac{\sqrt{7}}{\sqrt{2}}
+\end{align}
+%text
+ But as $x \geq 0$, therefore only $x = \frac{\sqrt{7}}{\sqrt{2}}$ is an acceptable solution%
+</tex>
+      </reason>
+      <skills>
+        <skill id="39"/>
+      </skills>
+    </step>
+  </steps>
+</question>

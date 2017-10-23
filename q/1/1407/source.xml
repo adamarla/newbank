@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Evaluate the following 
+    \[\qquad y = \sin \left(\frac{1}{2}\cos^{-1}\val \right)\]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ If $\phi = \cos^{-1} \val$ then $y = \sqrt{\dfrac{1-\cos\phi}{2}}$
+\incorrect
+If $\phi = \cos^{-1} \val$ then $y = \sqrt{\dfrac{1+\cos\phi}{2}}$%
+</tex>
+        <tex correct="false">%text
+ If $\phi = \cos^{-1} \val$ then $y = \sqrt{\dfrac{1+\cos\phi}{2}}$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ $\cos^{-1}\val$ is an angle. Let us call it $\phi$. And therefore
+%
+\begin{align}
+
+y &amp;= \sin \left(\frac{1}{2}\angb \right) = \sin \left(\frac{\phi}{2} \right) \\
+&amp;= \underbrace{\sqrt{\dfrac{1-\cos\phi}{2}}}_{\left(\text{Because } \sqrt{\frac{1-\cos 2\theta}{2}} = \sin\theta \right)}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="28"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[\therefore y = \frac{5}{8} \]
+
+\incorrect
+\[\therefore y = \frac{5}{16} \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[\therefore y = \frac{5}{16} \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+y = \sqrt{\dfrac{1-\cos \phi}{2}}&amp;\text{ where } \phi=\angb \\
+\implies \cos\phi &amp;= \val \\
+\therefore y &amp;= \sqrt{\dfrac{1-\val}{2}} = \frac{5}{8}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="39"/>
+      </skills>
+    </step>
+  </steps>
+</question>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \lim_{x\to 0} \frac{2\sin^2 2x}{x^2} = \lim_{x\to 0} 4\cdot \underbrace{\frac{\sin^2 2x}{2x^2}}_{= 1} = 4\]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ The rule is
+\[ \qquad \lim_{x\to 0} \frac{\sin Mx}{Mx} = 1 \]
+ Which is why
+%
+\begin{align}
+
+\lim_{x\to 0} \frac{2\sin^2 2x}{x^2} &amp;= \lim_{x\to 0} 2 \left(\frac{\sin 2x}{2x} \right)^2\times 4 \\
+&amp;= 8\cdot \underbrace{\lim_{x\to 0} \left(\frac{\sin 2x}{2x} \right)^2}_{=1} = 8
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="10"/>
+  </skills>
+</snippet>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \ddx \sin^{-1} \left(\cos x \right) = \ddx \left(\frac\pi{2} -x \right) = -1\]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ If $f(x) = \sin^{-1} \left(\cos x \right)$, then note that
+%
+\begin{align}
+
+f(x) &amp;= \underbrace{\sin^{-1} \left[\sin \left(\frac\pi{2}-x \right) \right] = \frac\pi{2}- x}_{\sin^{-1} \left(\sin\theta \right) = \theta} \\
+\therefore \ddx f(x) &amp;= \ddx \left(\frac\pi{2}-x \right) = -1
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="40"/>
+  </skills>
+</snippet>

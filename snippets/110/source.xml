@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The following differential equation
+\[ \qquad x^3 \expa + x\expb = 0 \]
+ is of \underline\text{order 3 and degree 4}%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ $\dfrac{d^2y}{dx^2}$ is the most $y$ has been differentiated with respect to $x$. Hence, the \underline\text{order} of the differential equation is $2$ 
+ The degree of the equation \underline\text{will also} come from this highest-order differential term 
+ Notice that in $\expa, \frac{d^2 y}{dx^2}$ has been raised to the power $2$. Hence, the \underline\text{degree} is also $2$ 
+ Every other term, like $\expb$, \underline\text{is irrelevant}%
+</tex>
+  </reason>
+            <skills>
+    <skill id="52"/>
+  </skills>
+</snippet>

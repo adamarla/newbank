@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Ellipse Basics}
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+\includegraphics[scale=0.4]{figure.svg}
+\end{align}
+%text
+ An ellipse is the locus of all points the sum of whose distances from two fixed points (the foci) is constant 
+ The following are common to $E_1$ and $E_2$
+%
+\begin{align}
+\begin{tabular}{Nl}
+
+\hline
+&amp; Meaning \\
+\hline
+O &amp; The center. When $F_1,F_2$ and $O$ \\
+&amp; coincide, then we have a circle \\
+\hline
+F_1 \text{ and } F_2 &amp; The foci. Always on the major-axis \\
+\hline
+\pi\cdot ab &amp; Area of the ellipse \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ And the following are the \underline\text{differences}
+%
+\begin{align}
+\begin{tabular}{lNNN}
+
+\hline
+&amp;  \text{Ellipse }E_1 &amp; \text{Ellipse }E_2 &amp; \text{Note} \\
+\hline
+Major axis &amp; AB &amp; PQ &amp; \\
+\hline
+Minor axis &amp; PQ &amp; AB &amp;\\
+\hline
+Vertices &amp; A, B &amp; P, Q &amp; \\
+\hline
+Equation &amp; \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 &amp; \frac{x^2}{b^2} + \frac{y^2}{a^2} = 1 &amp; O = (0,0) \\
+&amp; &amp; &amp; a &gt; b \\
+\hline
+Parametric &amp; x = a\cos\theta &amp; x = b\cos\theta &amp; O = (0,0)\\
+&amp; y = b\sin\theta &amp; y = a\sin\theta &amp; a &gt; b\\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

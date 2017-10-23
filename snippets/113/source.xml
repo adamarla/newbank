@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The differential equation for
+\[ \qquad y = \fx \]
+ where $A$ and $B$ are arbitrary constants is
+\[ \qquad \frac{d^2y}{dx^2} + \alpha^2 y = 0 \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ We need to find the \underline\text{general} differential equation which when solved gives the \underline\text{specific} solution $y = \fx$ 
+ Hence, we need to get rid off $A$ and $B$
+%
+\begin{align}
+
+y &amp;= \fx \\
+\therefore \dydx &amp;= \dfx \\
+\text{and } \frac{d^2y}{dx^2} &amp;= -\alpha^2 A \cos\alpha x - \alpha^2 B\sin\alpha x \\
+&amp;= -\alpha^2 \left[\fx \right] \\
+&amp;= -\alpha^2 \cdot y \\
+\implies\frac{d^2 y}{dx^2} &amp;+ \alpha^2 y = 0 \quad\text{ (answer) }
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="33"/>
+  </skills>
+</snippet>

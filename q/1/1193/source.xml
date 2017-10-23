@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="21">
+  <customCommands/>
+  <statement>
+    <tex>Is the function \[\qquad f(x) = \fx, x\in\mathbb{R}\]
+continuous and differentiable at $x=1$?
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+\begin{center}
+\includegraphics[scale=0.35]{img_right.svg} 
+\end{center} 
+
+</tex>
+      <tex correct="false">
+
+\begin{center}
+\includegraphics[scale=0.35]{img_wrong.svg} 
+\end{center} 
+
+</tex>
+    </options>
+    <reason>
+      <tex>
+
+\[ \quad \vert x - 1\vert = \begin{cases}
+x-1\text{ for } x \geq 1 \\
+-(x-1)\text{ for } x &lt; 1 
+\end{cases} \]
+
+And therefore, 
+
+\[ \quad f(x) = \begin{cases}
+(x-1) - 1 = x-2, \, x \geq 1 \\
+-(x-1) - 1  = -x,\, x &lt; 1 
+\end{cases} \]
+
+Hence, $f(x)$ looks like the plot below 
+
+\begin{center}
+\includegraphics[scale=0.35]{figure.svg} 
+\end{center} 
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="13"/>
+      <skill id="26"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{center}
+  \begin{tabular}{NN}
+   \toprule
+   &amp; \text{Value} \\
+   \midrule 
+   \lim_{x\to 1^-} f(x) &amp; -1 \\ 
+   \midrule 
+   \lim_{x\to 1^+} f(x) &amp; -1 \\
+   \midrule 
+   f(1) &amp; -1 \\ 
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+And hence, $f(x)$ is continuous at $x = 1$ 
+
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+The following table shows the values that we should be looking at to ascertain continuity at $x=1$ for $f(x)$ (as defined previously) 
+
+\begin{center}
+  \begin{tabular}{NNN}
+   \toprule
+   &amp; \text{Expression} &amp; \text{Value} \\
+   \midrule 
+   \lim_{x\to 1^-} f(x) &amp; \lim_{x\to 1^-} (-x) &amp; -1 \\ 
+   \midrule 
+   \lim_{x\to 1^+} f(x) &amp; \lim_{x\to 1^+} (x-2) &amp;  -1 \\
+   \midrule 
+   f(1) &amp; (x-2) &amp; -1 \\ 
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+And as $\lim_{x\to 1} f(x) = f(1)$, therefore $f(x)$ is continous at $x=1$ 
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="34"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\[ \qquad \lim_{x\to 1^-} f'(x) \neq \lim_{x\to 1^+} f'(x) \]
+Hence $f(x)$ is \underline{not} differentiable at $x=1$ 
+
+</tex>
+      <tex correct="false"> 
+
+\[ \qquad \lim_{x\to 1^-} f'(x) = \lim_{x\to 1^+} f'(x) \]
+Hence $f(x)$ is differentiable at $x=1$ 
+ 
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+Just by looking at the plot of $f(x)$ we made earlier, one can see that 
+the \underline{rate of change} of $f(x)$ -- that is $f'(x)$ -- is not the same for $x\geq 1$ and $x &lt; 1$ \newline 
+
+But more formally 
+\begin{center}
+  \begin{tabular}{NN}
+   \toprule
+        &amp; f'(x) \\
+   \midrule 
+   x \geq 1 &amp; \ddx (x-2) = 1 \\
+    \midrule 
+    x &lt; 1 &amp; \ddx (-x) = -1 \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+Hence, $f(x)$ is continuous \underline{but not} differentiable at $x =1$</tex>
+    </reason>
+    <skills>
+      <skill id="71"/>
+    </skills>
+  </step>
+</question>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Prove the following 
+     \small\[ 2\tan^{-1} \left(\sqrt{\ea}\cdot\tan \frac{x}{2} \right) = \cos^{-1} \left(\frac{a\cos x + b}{a + b\cos x} \right)\] \normalsize</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ Because \small\[ y = 2\tan^{-1} \left(\sqrt{\ea}\cdot\tan \frac{x}{2} \right) = \cos^{-1} \left(\frac{a\cos x + b}{a + b\cos x} \right)\] \normalsize Therefore
+%
+\begin{align}
+
+\tan \frac{y}{2} &amp;= \sqrt{\ea}\cdot\tan \frac{x}{2} \\
+\text{and } \cos y &amp;= \frac{a\cos x + b}{a + b\cos x}
+\end{align}
+%text
+
+\incorrect
+Because
+\small\[ y = 2\tan^{-1} \left(\sqrt{\ea}\cdot\tan \frac{x}{2} \right) = \cos^{-1} \left(\frac{a\cos x + b}{a + b\cos x} \right)\] \normalsize
+Therefore
+\[ \tan \frac{y}{2} = \sqrt\ea\cdot\tan \frac{x}{2} = \cos y = \frac{a\cos x + b}{a + b\cos x}\]
+%
+</tex>
+        <tex correct="false">%text
+ Because \small\[ y = 2\tan^{-1} \left(\sqrt{\ea}\cdot\tan \frac{x}{2} \right) = \cos^{-1} \left(\frac{a\cos x + b}{a + b\cos x} \right)\] \normalsize Therefore
+\[ \tan \frac{y}{2} = \sqrt\ea\cdot\tan \frac{x}{2} = \cos y = \frac{a\cos x + b}{a + b\cos x}\]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ This problem looks scarier than it is. So, let us do the simplest things first \small\[ y = 2\tan^{-1} \left(\sqrt{\ea}\cdot\tan \frac{x}{2} \right) = \cos^{-1} \left(\frac{a\cos x + b}{a + b\cos x} \right)\] \normalsize And hence
+%
+\begin{align}
+
+y &amp;= 2\tan^{-1} \left(\sqrt{\ea}\cdot\tan \frac{x}{2} \right) \\
+\frac{y}{2} &amp;= \tan^{-1} \left(\sqrt\ea\cdot\tan \frac{x}{2} \right) \\
+\text{or } \tan \frac{x}{2} &amp;= \sqrt\ea\cdot\tan\frac{x}{2}
+\end{align}
+%text
+ Similarly
+%
+\begin{align}
+
+y &amp;= \cos^{-1} \left( \frac{a\cos x + b}{a + b\cos x}\right) \\
+\therefore \cos y &amp;= \frac{a\cos x + b}{a + b\cos x}
+\end{align}
+%text
+ This \underline\text{does not} mean that $\tan \frac{y}{2} = \cos y$ (just in case you were wondering)%
+</tex>
+      </reason>
+      <skills>
+        <skill id="39"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+\cos y &amp;= \frac{1 - \tsqy}{1 + \tsqy} \\
+&amp;= \left[ \frac{1-\ea\cdot\tsqx}{1 + \ea\cdot\tsqx}\right] \\
+&amp;= \left[\frac{a\cdot \left(1-\tsqx \right) + b\cdot \left(1+\tsqx \right)}{a\cdot \left(1+\tsqx \right) + b\cdot \left(1-\tsqx \right)} \right] \\
+&amp;= \frac{a\cdot\cos x + b}{a + b\cdot \cos x}\quad\text{ (hence proved)}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ We know that
+\[ \qquad \cos 2\theta = \frac{1-\tan^2\theta}{1+\tan^2\theta}\]
+ Similarly,
+%
+\begin{align}
+
+\cos y &amp;= \frac{1 - \tsqy}{1 + \tsqy} \\
+&amp;= \left[ \frac{1-\ea\cdot\tsqx}{1 + \ea\cdot\tsqx}\right] \\
+&amp;= \left[\frac{a+b-a\tsqx + b\tsqx}{a+b+a\tsqx - b\tsqx} \right] \\
+&amp;= \left[\frac{a\cdot \left(1-\tsqx \right) + b\cdot \left(1+\tsqx \right)}{a\cdot \left(1+\tsqx \right) + b\cdot \left(1-\tsqx \right)} \right] \\
+&amp;= \left[\underbrace{\frac{a\cdot \left( \frac{1-\tsqx}{1+\tsqx}\right) + b}{a + b\cdot \left(\frac{1-\tsqx}{1+\tsqx}\right)}}_{\text{Noticed }\cos x?} \right] \\
+&amp;= \frac{a\cdot\cos x + b}{a + b\cdot \cos x}\quad\text{ (hence proved)}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="28"/>
+      </skills>
+    </step>
+  </steps>
+</question>

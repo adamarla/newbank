@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The integrating factor $(I)$ of
+\[ \qquad \left(1-x^2 \right)\dydx - xy = 1 \]
+ is given by $I = \dfrac{1}{2}\log \left(1-x^2 \right)$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ We are asking for the integrating factor $(I)$. So, this must be a first-order linear differential equation 
+ But even if we didn't ask for $I$, you would have noticed that
+%
+\begin{align}
+
+\left(1-x^2 \right)\dydx - xy &amp;= 1 \\
+\text{or } \dydx + \underbrace{\frac{-x}{1-x^2}}_{P(x)}\cdot y &amp;= \frac{1}{1-x^2}
+\end{align}
+%text
+ Hence, the integrating factor $(I)$ is
+%
+\begin{align}
+
+I = e^{\int P(x)\cdot dx} &amp;= e^{\int \frac{-x}{1-x^2}\cdot dx }\\
+\text{Now }\int \frac{-x}{1-x^2}\cdot dx &amp;= \frac{1}{2}\int \frac{dz}{z} \\
+\text{where } z &amp;= 1-x^2 \\
+\therefore I = e^{\frac{1}{2}\int \frac{dz}{z}} &amp;= e^{\frac{\log z}{2}} \\
+= \underbrace{e^{\log \sqrt{z}}}_{a\log b = \log b^a} &amp;= \underbrace{\sqrt{z} = \sqrt{1-x^2}}_{e^{\log b} = b}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="48"/>
+  </skills>
+</snippet>

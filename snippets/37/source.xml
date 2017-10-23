@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The derivative of $\sin x$ with respect to $\cos x$ is $-\cot x$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ If $f(x) = \sin x$ and $g(x) = \cos x$, then we have to find $\dfrac{d}{d g} f(x)$ -- not $f'(x)$ or $g'(x)$
+%
+\begin{align}
+
+\frac{d}{dg} f(x) &amp;= \dfrac{ df / dx}{dg / dx} = \dfrac{ \ddx \sin x}{\ddx \cos x} \\
+&amp;= \dfrac{\cos x}{-\sin x} = -\cot x
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="51"/>
+  </skills>
+</snippet>

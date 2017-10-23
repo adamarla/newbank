@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Find the value of 
+    \[ \quad y = \sin \left[\sini{\frac{3}{5}} - \cosi{\frac{3}{5}} \right]\]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex correct="false">%text
+ $y$ will be an angle like $\sini{\frac{1}{\sqrt{3}}}$ and not a trigonometric ratio like $\sin\frac{1}{\sqrt{3}}$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ $ y = \sin \left(\alpha - \beta \right)$. It will therefore be a trigonometric ratio%
+</tex>
+      </reason>
+      <skills>
+        <skill id="39"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ In $y = \sin \left[ \underbrace{\sini{\frac{3}{5}}}_{\alpha} - \underbrace{\cosi{\frac{3}{5}}}_{\beta}\right]$
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\theta &amp; \sin\theta &amp; \cos\theta \\
+\hline
+\alpha &amp; \frac{3}{5} &amp; \frac{4}{5} \\
+\hline
+\beta &amp; \frac{4}{5} &amp; \frac{3}{5} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ And therefore $y = -\dfrac{7}{25}$
+\incorrect
+In $y = \sin \left[ \underbrace{\sini{\frac{3}{5}}}_{\alpha} - \underbrace{\cosi{\frac{3}{5}}}_{\beta}\right]$
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\theta &amp; \sin\theta &amp; \cos\theta \\
+\hline
+\alpha &amp; \frac{3}{5} &amp; \frac{2}{5} \\
+\hline
+\beta &amp; \frac{2}{5} &amp; \frac{3}{5} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ And therefore $y = \dfrac{1}{5}$%
+</tex>
+        <tex correct="false">%text
+ In $y = \sin \left[ \underbrace{\sini{\frac{3}{5}}}_{\alpha} - \underbrace{\cosi{\frac{3}{5}}}_{\beta}\right]$
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\theta &amp; \sin\theta &amp; \cos\theta \\
+\hline
+\alpha &amp; \frac{3}{5} &amp; \frac{2}{5} \\
+\hline
+\beta &amp; \frac{2}{5} &amp; \frac{3}{5} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ And therefore $y = \dfrac{1}{5}$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ $y = \sin \left[ \underbrace{\sini{\frac{3}{5}}}_{\alpha} - \underbrace{\cosi{\frac{3}{5}}}_{\beta}\right]$ where
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\theta &amp; \sin\theta &amp; \cos\theta \\
+\hline
+\alpha &amp; \frac{3}{5} &amp; \sqrt{1-\sin^2\theta} = \frac{4}{5} \\
+\hline
+\beta &amp; \sqrt{1-\cos^2\theta} = \frac{4}{5} &amp; \frac{3}{5} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ And hence
+%
+\begin{align}
+
+y &amp;= \sin \left(\alpha - \beta \right) \\
+&amp;= \sin\alpha\cos\beta - \cos\alpha\sin\beta \\
+&amp;= \frac{3}{5}\cdot\frac{3}{5} - \frac{4}{5}\cdot\frac{4}{5} \\
+&amp;=\frac{9}{25} - \frac{16}{25} = -\frac{7}{25}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="40"/>
+      </skills>
+    </step>
+  </steps>
+</question>

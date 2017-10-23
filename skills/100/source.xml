@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{The Identity Element}
+What is it?</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Let a binary operation $*$ on some \underline\text{non-empty} set $A$ be defined as $a*b$
+ The \underline\text{identity element $e$} is an element - or elements - in $A$ $(e\in A)$ such that for \underline\text{every} $a\in A$
+\[ \qquad\quad a * e = a = e* a \text{ for all }a\in A \]
+ Once again, $e\in A$. And the same $e$ satisfies the above condition for all $a\in A$
+ \underline\text{As far as your syllabus is concerned}, the above definition is enough. But it gets a little more interesting
+ It is possible that $a*e = a$ but $e*a \neq a$. Or that $e*a = a$ but $a*e \neq a$. Or, that there is no $e$. Below are some examples
+%
+\begin{align}
+\begin{tabular}{NNNN}
+
+\hline
+a * b &amp; e &amp; a * e = a &amp; e * b = b  \\
+\hline
+a + (b-1)\cdot(b-2) &amp; 1,2 &amp; \checkmark &amp; \times \\
+\hline
+a\cdot (a^2-1) + b &amp; 0,1,-1 &amp; \times &amp; \checkmark \\
+\hline
+ab + 1 &amp; \left\lbrace \phi\right\rbrace &amp; \times &amp; \times \\
+\hline
+a + b &amp; 0 &amp; \checkmark &amp; \checkmark \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

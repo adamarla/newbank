@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If $f(x) = x\sin 2x$ then
+\[ f'(x) + f(x) + 2 = 2x \cos 2x + \sin 2x + 2 \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+f'(x) &amp;= \ddx \left(x\sin 2x \right) \\
+&amp;= \underbrace{x\ddx \sin 2x + \sin 2x\ddx x}_{\text{Product Rule}} \\
+&amp;= \underbrace{x\cdot 2\cos 2x}_{\text{Chain Rule}} + \sin 2x \\
+\therefore f'(x) &amp;+ f(x) + 2  \\
+&amp;= \left( 2x\cos 2x + \sin 2x\right) + x\sin 2x + 2 \\
+&amp;= 2x\cos 2x + \left(1+x \right)\sin 2x + 2
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="51"/>
+  </skills>
+</snippet>

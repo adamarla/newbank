@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="21">
+  <customCommands/>
+  <statement>
+    <tex>%text
+For what value of $k$ would 
+%
+\[ \qquad f(x) = \begin{cases}
+kx + 1,\, x\leq 5 \\ 
+3x-5,\, x&gt; 5 
+\end{cases} \]
+%text
+
+be continuous at $x=5$? 
+% 
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+%text
+The value of $f(x)$ for $x = 4.9,5,5.1$ 
+would be as follows\newline  
+
+%
+\begin{center}
+\begin{tabular}{MM}
+\midrule 
+x &amp; f(x) \\ 
+\midrule 
+4.9 &amp; 4.9k + 1 \\ 
+\midrule 
+5 &amp; 5k + 1 \\ 
+\midrule 
+5.1 &amp; 3(5.1) - 5=10.3 \\ 
+\midrule 
+\end{tabular} 
+\end{center} 
+
+</tex>
+      <tex correct="false">
+
+%text
+The value of $f(x)$ for $x = 4.9,5,5.1$ 
+would be as follows\newline 
+
+%
+\begin{center}
+\begin{tabular}{MM}
+\toprule
+x &amp; f(x) \\ 
+\midrule 
+4.9 &amp; 4.9k + 1 \\ 
+\midrule 
+5 &amp; 3(5) - 5 = 10 \\ 
+\midrule 
+5.1 &amp; 3(5.1) - 5=10.3 \\ 
+\bottomrule 
+\end{tabular} 
+\end{center} 
+
+</tex>
+    </options>
+    <reason>
+      <tex>
+
+%text
+For $x\leq 5$, $f(x) = kx + 1$. Hence, even 
+for $x=5, f(x) = kx + 1 = 5k+1$ \newline 
+
+But for $x&gt; 5, f(x) = 3x + 1$. 
+Which  is why $f(x) = 3(5.1) - 5 = 10.3$
+for $x = 5.1$
+%
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="13"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex>
+
+%text
+For $f(x)$ to be continuous at
+$x = 5$, the following must be true
+
+\[ \qquad 5k + 1 = 10 \implies k = \frac{9}{5} \] 
+%
+
+</tex>
+    </options>
+    <reason>
+      <tex>
+
+%text
+For $f(x)$ to be continuous 
+\[ \qquad \lim_{x\to 5^-}f(x) = \lim_{x\to 5^+} f(x) = f(5) \]
+
+Which means, 
+%
+\begin{align}
+\lim_{x\to 5^-} (kx+1) &amp;= \lim_{x\to 5^+} (3x-5) = \underbrace{5k+1}_{f(5)}\\
+\text{or } 5k + 1 &amp;= 3(5) - 5 = 10 \\
+\therefore k &amp;= \frac{10 - 1}{5} = \frac{9}{5}
+\end{align}
+%text
+
+Hence, $f(x)$ is continuous at $x=5$
+if $k = \frac{9}{5}$
+%</tex>
+    </reason>
+    <skills>
+      <skill id="34"/>
+    </skills>
+  </step>
+</question>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \intga \vert\sin x\vert \cdot dx = 0 \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\[ \vert\sin x\vert = \begin{cases}
+
+\sin x, \, x\in \left[0,\frac\pi{2} \right] \\
+- \left(\sin \left(-x \right) \right) = \sin x,\, x\in \left(-\frac\pi{2},0 \right)
+\end{cases} \]
+%text
+ In other words, $f(x) = f(-x)$. And hence, $f(x) = \vert\sin x\vert$ is an \underline\text{even function}
+ And we know that for even functions
+\[ \quad \int_{-a}^a f(x)\cdot dx = 2\int_0^a f(x)\cdot dx \]
+ And therefore,
+%
+\begin{align}
+
+\intga \vert\sin x\vert\cdot dx &amp;= \intgb \vert\sin x\vert\cdot dx  \\
+&amp;= \intgb \sin x\cdot dx \\
+&amp;= 2\left[-\cos x \right]_0^{\frac\pi{2}} = 2
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="46"/>
+  </skills>
+</snippet>

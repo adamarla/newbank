@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="21">
+  <customCommands/>
+  <statement>
+    <tex>%text
+Examine the continuity of $f(x)$
+where $f(x)$ is defined as 
+
+%
+\[\qquad f(x) = \begin{cases}
+  \sin x - \cos x,\, x\neq 0 \\ 
+  -1, \, x = 0 
+\end{cases} \]
+
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+\textcolor{blue}{To Prove}\newline 
+$f(x)$ is continuous \underline{for all $x$} -- including at $x = 10^4, 10^{99}$ etc.
+
+</tex>
+      <tex correct="false">
+
+\textcolor{blue}{To Prove}\newline 
+$f(x)$ is continuous \underline{for $x$ in and around $0$}\newline --
+but not at, say, $x = 10^4, 10^{99}$ etc.
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+%text
+The question clearly asks to examine
+the \underline{continuity of $f(x)$}\newline 
+
+Which means \underline{for all $x$} - and not
+just some specific $x$.
+%
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="36"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex>
+
+%text
+$f(x) = \sin x-\cos x$ is continuous 
+for all $x\neq 0$ 
+%
+
+</tex>
+    </options>
+    <reason>
+      <tex>
+
+%text
+If two functions $a(x)$ and $b(x)$ are
+continuous in some domain, then 
+so is $a(x) + b(x)$ and $a(x) - b(x)$\newline 
+
+Now, given that $\sin x$ and $\cos x$ 
+are both continuous for $x\neq 0$, 
+then so must $\sin x-\cos x$ be
+%
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="34"/>
+      <skill id="4"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex correct="false">
+
+%text
+\[ \lim_{x\to 0} f(x) \neq f(0) \]
+
+Hence, $f(x)$ is 
+not continuous at $x = 0$
+%
+
+</tex>
+    </options>
+    <reason>
+      <tex>
+
+\begin{align}
+\lim_{x\to 0} f(x) &amp;= \lim_{x\to 0}(\sin x-\cos x) \\
+&amp;= 0 - 1 = -1 \\
+\text{Also, } f(0) &amp;= \sin 0 -\cos 0 = - 1 \\
+\therefore \lim_{x\to 0} f(x) &amp;= f(0)\implies\text{ continuity at }x=0
+\end{align}
+%text
+
+
+Hence, $f(x)$ is continuous for 
+$x\neq 0$ and for $x= 0 \implies f(x)$ 
+is continuous for all $x$</tex>
+    </reason>
+    <skills>
+      <skill id="34"/>
+    </skills>
+  </step>
+</question>

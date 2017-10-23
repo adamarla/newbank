@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[\prob{A\cup B} = \prob{A\cap B} + \prob{A\cap B'} + \prob{A'\cap B} \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Given two events $A$ and $B$, the following figures show what $A\cap B, A\cap B'$ and $A'\cap B$ look like
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{98-A.svg}
+\end{align}
+%text
+ And one can see that if the three areas \underline\text{are added together} then one will get $A\cup B$. Which is why
+\[\prob{A\cup B} = \prob{A\cap B} + \prob{A\cap B'} + \prob{A'\cap B} \]
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="26"/>
+  </skills>
+</snippet>

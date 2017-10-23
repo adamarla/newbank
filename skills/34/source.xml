@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Conditions for Continuity}
+
+At a point $x=a$ and in \underline{open \&amp; closed}
+intervals.</tex>
+  </render>
+  <reason>
+    <tex>%text
+ \textbf{At a point } A function $f(x)$ is continuous at the point $x=a$ if
+\[ \lim_{x\to a^-} f(x) = \lim_{x\to a^+}f(x) = f(a) \]
+ That is, $f(x)$ \underline\text{converges on $f(a)$} from both the left and right of $x=a$. 
+ \textbf{Open Interval -- $(b,c)$} $f(x)$ is continuous in $ \left(b,c \right)$ if it is continuous \underline\text{for every $x\in \left(b,c \right)$ } 
+ Note that $x\in \left(b,c \right)$ means
+\[ \qquad x &gt; b\text{ and } x &lt; c\]
+ \textbf{Closed Interval -- $\left[b,c \right]$ } In a closed interval $x\geq b$ and $x\leq c$. Therefore, for $f(x)$ to be continuous in $\left[b,c \right]$, $f(x)$ must be
+ - Continuous in $\left(b,c \right)$
+ - $\lim_{x\to b^+}f(x) = f(b)$
+ - $\lim_{x\to c^-} f(x) = f(c)$%
+</tex>
+  </reason>
+</skill>

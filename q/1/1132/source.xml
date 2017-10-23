@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Evaluate the following
+     \[ \qquad A = \intg \frac{dx}{\ea} \]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ Given that $\frac\pi{3} + \frac\pi{6} = \frac\pi{2}$
+\[ \qquad A = \intg \frac{dx}{1+\sqrt{\tan x}} \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ There is a nice little rule that says
+\[ \quad \int_a^b f(x)\cdot dx = \int_a^b f \left(a+b-x \right)\cdot dx \]
+ When applied to the given integral
+%
+\begin{align}
+
+\intg \frac{dx}{\ea} &amp;= \intg \frac{dx}{1+\sqrt{\cot \left(\frac\pi{6}+\frac\pi{3} -x \right)}} \\
+&amp;= \intg \frac{dx}{1 + \sqrt{\cot \left(\frac\pi{2} - x \right)}} \\
+&amp;= \intg \frac{dx}{1+\sqrt{\tan x}}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="45"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+A + A &amp;= 2A = \intg dx \implies A = \frac{\pi}{12}
+\end{align}
+%text
+
+\incorrect
+%
+\begin{align}
+
+A + A &amp;= 2A = \intg \tan x \cdot dx \\
+&amp;= \left[\log \vert \sec x \vert \right]_{\frac\pi{6}}^{\frac\pi{3}} \\
+&amp;= \log 2 - \log \frac{2}{\sqrt{3}} = \frac{\log 3}{2}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+A + A &amp;= 2A = \intg \tan x \cdot dx \\
+&amp;= \left[\log \vert \sec x \vert \right]_{\frac\pi{6}}^{\frac\pi{3}} \\
+&amp;= \log 2 - \log \frac{2}{\sqrt{3}} = \frac{\log 3}{2}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+A &amp;= \intg \frac{dx}{\ea} = \intg \frac{dx}{1 + \sqrt{\frac{1}{\tan x}}} \\
+&amp;= \intg \eb\cdot dx \\
+A &amp;= \intg \frac{dx}{1 + \sqrt{\tan x}}\text{ (see previous step) } \\
+\therefore A + A &amp;= \intg \eb\cdot dx + \intg \frac{dx}{1+\sqrt{\tan x}} \\
+&amp;= \intg \left[\eb + \frac{1}{1+\sqrt{\tan x}} \right]\cdot dx \\
+&amp;= \intg dx = \left(\frac\pi{3} - \frac\pi{6} \right) = \frac\pi{6} \\
+\therefore A &amp;= \frac\pi{12}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="45"/>
+      </skills>
+    </step>
+  </steps>
+</question>

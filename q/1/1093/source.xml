@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>If the function 
+    \[ \qquad f(x) = \fx \]
+    where $m &gt; 0$ attains its maximum and minimum values at $p$ and $q$ respectively and if $p^2 = q$, then find the value of $m$</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\text{At} &amp;  f'(x) &amp; f''(x) \\
+\hline
+p &amp; 0 &amp; &lt; 0 \\
+\hline
+q &amp; 0 &amp; &gt; 0 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\text{At} &amp;  f'(x) &amp; f''(x) \\
+\hline
+p &amp; 0 &amp; &gt; 0 \\
+\hline
+q &amp; 0 &amp; &lt; 0 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\text{At} &amp;  f'(x) &amp; f''(x) \\
+\hline
+p &amp; 0 &amp; &gt; 0 \\
+\hline
+q &amp; 0 &amp; &lt; 0 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ $p$ and $q$ are extrema points. Which is why $f'(x) = 0$ at $x = p,q$ 
+ And as $p$ is a maxima and $q$ a minima, therefore
+%
+\begin{align}
+\begin{tabular}{NNNc}
+
+\hline
+\text{At} &amp;  f'(x) &amp; f''(x) &amp; Because \\
+\hline
+p &amp; 0 &amp; &lt; 0 &amp; Maxima \\
+\hline
+q &amp; 0 &amp; &gt; 0 &amp; Minima \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Now that we have a strategy in place, we can start to find $m$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="63"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+f'(x) &amp;= 6\cdot \left(x^2 - 3mx + 2m^2 \right) \\
+\therefore f'(x) &amp;= 0 \text{ when } x = m, 2m
+\end{align}
+%text
+
+\incorrect
+%
+\begin{align}
+
+f'(x) &amp;= 6\cdot \left(x^2 - 4mx + 3m^2 \right) \\
+\therefore f'(x) &amp;= 0 \text{ when } x = m, 3m
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+f'(x) &amp;= 6\cdot \left(x^2 - 4mx + 3m^2 \right) \\
+\therefore f'(x) &amp;= 0 \text{ when } x = m, 3m
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+f'(x) &amp;= \ddx \left(\fx \right) \\
+&amp;= 6x^2 - 18mx + 12m^2 \\
+&amp;= 6\cdot \left(x^2 - 3mx + 2m^2 \right) \\
+&amp;= 6\cdot \left(x-m \right)\cdot \left(x-2m \right)
+\end{align}
+%text
+ Therefore, extremas are at $x = m, 2m$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="33"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ p = m\text{ and } q = 2m \]
+
+\incorrect
+\[ p = 2m\text{ and } q = m \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ p = 2m\text{ and } q = m \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Now $f''(x)$ comes into play
+%
+\begin{align}
+
+f''(x) &amp;= \ddx f'(x) = 6 \ddx \left(x^2 - 3mx + 2m^2 \right) \\
+&amp;= 6\cdot \left(2x - 3m \right)
+\end{align}
+%text
+ Note also that
+%
+\[ f''(x) = \begin{cases}
+
+6\cdot (2m-3m) &lt; 0 \text{ when } x = m \\
+6\cdot (4m - 3m) &gt; 0\text{ when } x = 2m
+\end{cases} \]
+%text
+ Hence, $\underbrace{p = m}_{\text{Maxima}}$ and $\underbrace{q = 2m}_{\text{Minima}}$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="33"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ p^2 = q \implies m = 2 \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Every fact in the problem has been given for a reason
+ So, let us use the fact that $p^2 = q$
+%
+\begin{align}
+
+p &amp;= m \text{ and } q = 2m \\
+\text{Also }p^2 &amp;= q \implies m^2 = 2m \\
+\text{ or } m\cdot(m-2) &amp;= 0\implies m = 0,2
+\end{align}
+%text
+ But $m &gt; 0$ (not $\geq 0$). Therefore, $m=2$ is the only acceptable solution%
+</tex>
+      </reason>
+      <skills>
+        <skill id="25"/>
+      </skills>
+    </step>
+  </steps>
+</question>

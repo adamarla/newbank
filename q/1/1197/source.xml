@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="21">
+  <customCommands/>
+  <statement>
+    <tex>\newcommand\ea{x+\sqrt{x^2+a^2}}
+\newcommand\eb{\left(\tan\phi + \sec\phi \right)}
+%text
+If $y = \log \left[\ea \right]$, then show that 
+\[ \qquad\qquad (x^2+a^2)\doublediff + x\dydx = 0 \]
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+\begin{align}
+	\text{If } x &amp;= a\tan\phi\text{ then } \\
+	y &amp;= \log a + \log \left(\tan\phi + \sec\phi \right)
+\end{align}
+
+</tex>
+      <tex correct="false"> 
+
+\begin{align}
+	\text{If } x &amp;= a\tan\phi\text{ then } \\
+	y &amp;= \log \left(\tan\phi + \sec\phi \right)
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+	\text{If } x &amp;= a \tan\phi\text{ then } \\
+	y &amp;= \log \left(a\tan\phi + \sqrt{a^2\tan^2\phi + a^2} \right) \\
+	&amp;= \log \left(a\tan\phi + a\sqrt{\tan^2\phi + 1} \right) \\
+	&amp;= \underbrace{\log \left(a\tan\phi + a\sec\phi \right)}_{\tan^2\phi + 1 = \sec^2\phi} \\
+	&amp;= \log \left[a\cdot \left(\tan\phi + \sec\phi \right) \right] \\
+	&amp;= \log a + \log \left(\tan\phi + \sec\phi \right)
+\end{align}
+
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="55"/>
+      <skill id="32"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\[ \dydx = \frac{\cos\phi}{a}\]
+
+</tex>
+      <tex correct="false"> 
+
+\[ \dydx = \frac{1}{a}\cdot \frac{\cos^3\phi}{1+\sin\phi} \]
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="51"/>
+      <skill id="33"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+\text{If } x = a\tan\phi &amp;\text{ then } dx = a\sec^2\phi\cdot d\phi \\
+\implies \ddx\phi &amp;= \frac{1}{a\sec^2\phi} 
+\end{align} 
+
+And therefore 
+
+\begin{align} 
+\dydx &amp;= \ddx \left[\log a + \log \eb \right] \\
+	&amp;= \underbrace{\frac{1}{\eb}\cdot \left(\sec\phi\tan\phi + \sec^2\phi \right)\cdot \ddx\phi}_{\text{Chain Rule}} \\
+	&amp;= \frac{\sec\phi\cdot\eb}{\eb}\cdot \left(\frac{1}{a\sec^2\phi} \right) \\
+	&amp;= \frac{\cos\phi}{a}
+\end{align}
+
+</tex>
+      <tex correct="false">
+
+\[ \doublediff = -\frac{\sin\phi\cdot\cos^2\phi}{a^2} \] 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\[ \doublediff = -\frac{\sin\phi}{a} \]
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="51"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+	\dydx = \frac{\cos\phi}{a} &amp;\implies \ddx \left(\dydx \right) = \ddx \frac{\cos\phi}{a} \\
+	\therefore \doublediff &amp;= \underbrace{-\frac{\sin\phi}{a}\cdot \ddx \phi}_{\text{Chain Rule again}} \\
+	&amp;= -\frac{\sin\phi}{a}\cdot \frac{1}{a\sec^2\phi} \\
+	&amp;= -\frac{\sin\phi\cdot\cos^2\phi}{a^2}
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+\doublediff &amp;= -\frac{\sin\phi\cdot\cos^2\phi}{a^2} = -\frac{\sin\phi\cos\phi}{a}\cdot \dydx \\
+&amp;= -\frac{\tan\phi}{a\sec^2\phi} \cdot \dydx = -\frac{x}{x^2+a^2}\cdot \dydx
+\end{align}
+
+And hence 
+\[ \qquad (x^2+a^2)\cdot\doublediff + x\cdot\dydx = 0 \]
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="32"/>
+    </skills>
+  </step>
+</question>

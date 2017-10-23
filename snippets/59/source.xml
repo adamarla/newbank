@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The area under the curve $y = \sqrt{x-1}$ between $x=1$ and $x=5$ is as shown below
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{wrong.svg}
+\end{align}
+%text
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ $y = \sqrt{x-1} \implies y^2 = x - 1$. This looks like a parabola 
+ Bit notice also that $ y =0$ when $x = 1$. Hence, if anything, the parabola should look like this
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{right.svg}
+\end{align}
+%text
+ And the required area is the shaded bit%
+</tex>
+  </reason>
+            <skills>
+    <skill id="66"/>
+  </skills>
+</snippet>

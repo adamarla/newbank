@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \prob{A} = \prob{A\cap B} + \prob{A\cap B'} \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ An event $A$ can happen when another event $B$ also happens (see below)
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{97-A.svg}
+\end{align}
+%text
+ Or, $A$ can happen despite $B$ (see below)
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{97-B.svg}
+\end{align}
+%text
+ There is no third possibility. Which is why
+\[ \qquad \prob{A} = \prob{A\cap B} + \prob{A\cap B'} \]
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="17"/>
+  </skills>
+</snippet>

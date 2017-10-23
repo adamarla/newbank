@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ $F(x,y) = \dfrac{y\cdot \trma + x}{x\cdot\trma}$ is \underline\text{not} a homogenous function%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+F(x,y) &amp;= \dfrac{y\cdot\trma + x}{x\cdot \trma} \\
+&amp;= \dfrac{x \left[\frac{y}{x}\cdot \trma + 1 \right]}{x\cdot\trma} \\
+&amp;= \dfrac{\frac{y}{x}\trma + 1}{\trma} = g \left(\frac{y}{x} \right)
+\end{align}
+%text
+ In other words, $F(x,y)$ is \underline\text{effectively} also a function of $\dfrac{y}{x}$. And this makes $F(x,y)$ a homogenous function%
+</tex>
+  </reason>
+            <skills>
+    <skill id="93"/>
+  </skills>
+</snippet>

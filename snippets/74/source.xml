@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If $\phi = \angb$ then $\cos\phi=\frac{4}{5}$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ In the triangle below $\tan\phi = \dfrac{4}{3}$
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{74-A.svg}
+\end{align}
+%text
+ And one can also see that $\cos\phi = \dfrac{3}{5}$%
+</tex>
+  </reason>
+            <skills>
+    <skill id="39"/>
+  </skills>
+</snippet>

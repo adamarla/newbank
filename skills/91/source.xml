@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Guess-timating values}
+         
+         Estimating the value of an expression \underline{without}
+calculating it exactly</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Sometimes, knowing the exact value of an expression is not as important as knowing what the value might be like $\left( &lt;0, &gt; 5\right)$ etc 
+ Just having a sense of the value can guide the logic of what you do next
+ For example, you might need to determine whether $\sin \left(\frac\pi{2} - \frac{3}{2} \right) &gt; 0$ or $&lt; 0$ in order to solve a problem 
+ You would need to get a little creative
+%
+\begin{align}
+
+\pi \approx 3&amp;\text{ but } \pi &gt; 3 \\
+\text{And so, }\left(\frac{\pi-3}{2} \right) &amp;= \frac\pi{2} - \frac{3}{2} &gt; 0 \\
+\text{Also } \left(\frac\pi{2}-\frac{3}{2} \right) &amp;\to 0 \\
+\text{Hence, } \sin \left(\frac\pi{2}-\frac{3}{2} \right) &amp;&gt; 0
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

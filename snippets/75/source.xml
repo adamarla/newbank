@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \sin \left(\sin^{-1}\f + \cos^{-1}\f \right) = 1 \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ We know that
+\[ \qquad \sin^{-1}x + \cos^{-1} x = \frac\pi{2} \]
+ And therefore,
+\[ \qquad \sin^{-1} \f + \cos^{-1} \f = \frac\pi{2} \]
+ Hence
+\[ \quad \sin \left(\sin^{-1}\f + \cos^{-1}\f\right) = \sin\frac\pi{2} = 1\]
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="41"/>
+  </skills>
+</snippet>

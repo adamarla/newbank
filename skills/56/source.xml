@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Parametric Curves}
+What they are ; Finding a point, tangent or normal on the curve</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Ordinarily, we expect curves to be of the form $y = f(x)$ 
+ But if both $x$ and $y$ are expressed in terms of a third variable/parameter, then we have what is called a \underline\text{parametric curve}
+ And therefore, \underline\text{instead of one} $y = f(x)$ type equation, \underline\text{we will have two equations} -- both in terms of the parameter $(t)$
+\[ \quad x = f(t)  \text{ and }  y = g(t) \]
+ The curve is still plotted in $x-y$. It is only expressed in terms of $t$
+ \textbf{Coordinates of a point $A$ }
+ A point $A$ on the curve will have the coordinates
+\[ \qquad A = (x,y) = \left(f(t), g(t) \right)\]
+ \textbf{Slope of the tangent at $A$}
+ The slope of the tangent will continue to be $\dfrac{dy}{dx }$. However,
+\[ \qquad\qquad \dfrac{dy}{dx} = \frac{dy / dt}{dx / dt}\]
+%
+</tex>
+  </reason>
+</skill>

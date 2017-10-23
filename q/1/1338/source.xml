@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="21">
+  <customCommands/>
+  <statement>
+    <tex>%text
+Find $\dfrac{dy}{dx}$ if $(x^2+y^2)^2 = xy$
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+\begin{align}
+	(x^2+y^2)^2 &amp;= xy \\
+	\therefore 2\log \left(x^2+y^2 \right) &amp;= \log x + \log y 
+\end{align}
+
+</tex>
+      <tex correct="false">
+
+\begin{align}
+	(x^2+y^2)^2 &amp;= xy \\
+	\therefore 2\log \left(x^2+y^2 \right) &amp;= \log x \cdot \log y 
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+Recall that 
+\begin{align}
+	\log a^b = b\cdot\log a \text{ and }&amp;\log \left(a\cdot b \right) = \log a + \log b \\
+	\therefore \log \left(x^2+y^2 \right)^2 &amp;= \log \left(x\cdot y \right) \\
+	\implies 2\log \left(x^2 + y^2 \right) &amp;= \log x + \log y 
+\end{align}
+
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="55"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex>
+
+\begin{align}
+	2\log \left(x^2 + y^2 \right) &amp;= \log x + \log y \\
+	\implies \frac{2}{\left(x^2 + y^2 \right)} \left[2x + 2y\frac{dy}{dx} \right] &amp;= \frac{1}{x} + \frac{1}{y}\frac{dy}{dx}
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+This is straight-up differentiation using the following two results 
+\[ \quad\frac{d}{dx}\log y = \frac{1}{y}\frac{dy}{dx}\text{ and } \frac{d}{dx} x^n = n\cdot x^{n-1}\]
+%
+\begin{align}
+2\log (x^2+y^2) &amp;= \log x + \log y  \\
+\therefore 2\frac{d}{dx} \log \left(x^2 + y^2 \right) &amp;= \frac{d}{dx} \left[\log x + \log y \right] \\
+\text{or }\frac{2}{(x^2+y^2)}\frac{d}{dx}(x^2+y^2) &amp;= \frac{1}{x} + \frac{1}{y}\frac{dy}{dx} \\
+\therefore \frac{2}{(x^2+y^2)}\left[ 2x + 2y\frac{dy}{dx}\right] &amp;= \frac{1}{x} + \frac{1}{y}\frac{dy}{dx}
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="33"/>
+      <skill id="51"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex>
+
+And hence, $\dfrac{dy}{dx} = \dfrac{y}{x}\left[ \dfrac{y^2-3x^2}{3y^2-x^2} \right]$
+
+</tex>
+      <tex correct="false">
+
+And hence, $\dfrac{dy}{dx} = \dfrac{y}{x}$
+
+</tex>
+    </options>
+    <reason>
+      <tex>
+
+%text
+It is only some algebra in this step
+
+%
+\begin{align}
+\frac{2}{x^2+y^2}\left[ 2x + 2y\frac{dy}{dx}\right] &amp;= \frac{1}{x} + \frac{1}{y}\frac{dy}{dx}\\
+\frac{4x}{x^2+y^2} + \frac{4y}{x^2+y^2}\frac{dy}{dx} &amp;= \frac{1}{x} + \frac{1}{y}\frac{dy}{dx} \\
+\left[ \frac{4y}{x^2+y^2}-\frac{1}{y} \right]\frac{dy}{dx} &amp;= \left[\frac{1}{x}-\frac{4x}{x^2+y^2} \right]\\
+or \frac{dy}{dx} &amp;= \frac{y}{x}\left[ \frac{y^2-3x^2}{3y^2-x^2} \right]
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="1"/>
+    </skills>
+  </step>
+</question>

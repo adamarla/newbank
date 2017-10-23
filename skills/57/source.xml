@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Equation of a line in $x-y$ plane}
+How to find the equation given two points on the line or one point and the line's slope</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Remember
+\item{Only one line can pass through
+two points}
+\item{Whilst infinite lines can pass
+through a point, only one of those
+lines can have a given slope} In the table below, $A$ and $B$ are two points and $m$ is the slope of the line
+ Depending on what you know, the table also shows \underline\text{how to find the equation}  of the line 
+
+%
+\begin{align}
+\begin{tabular}{NNNN}
+
+\hline
+A &amp; B &amp; m &amp; \text{Equation}  \\
+\hline
+\checkmark &amp; \checkmark &amp; \text{X} &amp; \frac{y-y_A}{x- x_A} = \frac{y_B - y_A}{x_B - x_A} \\
+\hline
+\checkmark  &amp; \text{X}  &amp; \checkmark &amp; \frac{y-y_A}{x-x_A} = m \\
+\hline
+\text{X} &amp; \checkmark &amp; \checkmark &amp; \frac{y - y_B}{x-x_B} = m \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ \textbf{\small{If given the intercepts} } If you are told that the line cuts the $x$-axis at $A = \left(a,0 \right)$ and the $y$-axis at $B = \left(0,b \right)$, then the equation of the line is 
+%
+\begin{align}
+
+\frac{y - 0}{x-a} &amp;= \frac{b-0}{0-a} \implies -ay = bx - ba \\
+\therefore bx + ay &amp;= ba \implies \underbrace{\frac{x}{a} + \frac{y}{b} = 1}_{\text{Divide throught by $a\cdot b$}}\\
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

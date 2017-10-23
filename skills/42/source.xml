@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Inverse Trigonometry (Reciprocals)}
+
+\small{\textbf{Example} }$\quad \sin^{-1}\dfrac{1}{x} = \csc^{-1}
+x$</tex>
+  </render>
+  <reason>
+    <tex>%text
+ We will prove one result, namely
+\[ \qquad \sin^{-1}\frac{1}{x} = \csc^{-1} x\]
+ $\ldots$ and then perhaps you can try and prove the other results given below
+%
+\begin{align}
+
+\csc\theta &amp;= x \implies \frac{1}{\sin\theta} =x \\
+\therefore \sin\theta &amp;= \frac{1}{x}
+\implies \theta = \sin^{-1}\frac{1}{x} \\
+\text{But }\theta &amp;= \csc^{-1} x \\
+\therefore \csc^{-1}x &amp;= \sin^{-1}\frac{1}{x}
+\end{align}
+%text
+ Similarly
+%
+\begin{align}
+
+\sec^{-1} x &amp;= \cos^{-1}\frac{1}{x} \\
+\cot^{-1} x &amp;= \tan^{-1}\frac{1}{x} \quad (x &gt;  0) \\
+&amp;= -\pi + \cot^{-1} x \quad (x &lt; 0)
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

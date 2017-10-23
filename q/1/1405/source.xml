@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Find the value of 
+    \[ \qquad y = \sin \left(2\tan^{-1}2 \right)\]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ $\tan^{-1}2$ is an angle. And therefore
+\[ \quad \phi = \tan^{-1} 2\implies y = \dfrac{2\tan\phi}{1+\tan^2\phi}\]
+
+\incorrect
+$\tan^{-1}2$ is an angle. And therefore
+\[ \quad \phi = \tan^{-1} 2\implies y = \dfrac{2\tan\phi}{1-\tan^2\phi}\]
+%
+</tex>
+        <tex correct="false">%text
+ $\tan^{-1}2$ is an angle. And therefore
+\[ \quad \phi = \tan^{-1} 2\implies y = \dfrac{2\tan\phi}{1-\tan^2\phi}\]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Yes, $\tan^{-1} 2$ is an angle. And if that angle be $\phi$, then
+%
+\begin{align}
+
+y &amp;= \sin \left(2\phi \right) = 2\sin\phi\cdot\cos\phi \\
+&amp;= \dfrac{2\sin\phi\cos\phi}{\underbrace{\sin^2\phi + \cos^2\phi}_{=1}} = \underbrace{\dfrac{2\tan\phi}{1+\tan^2\phi}}_{\text{Divide throughout by }\cos^2\phi}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="39"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ And hence, $y = \sin \left(2\tan^{-1} 2 \right) = \dfrac{4}{5}$
+\incorrect
+And hence, $y = \sin \left(2\tan^{-1} 2 \right) = \dfrac{3}{5}$%
+</tex>
+        <tex correct="false">%text
+ And hence, $y = \sin \left(2\tan^{-1} 2 \right) = \dfrac{3}{5}$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+y &amp;= \dfrac{2\tan\phi}{1+\tan^2\phi} \text{ where } \underbrace{\tan\phi = 2}_{\phi = \tan^{-1} 2} \\
+\therefore y &amp;= \dfrac{2\times 2}{1+2^2} = \dfrac{4}{5}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="1"/>
+      </skills>
+    </step>
+  </steps>
+</question>

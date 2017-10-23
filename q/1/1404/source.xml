@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Find the minimum (or maximum) value of 
+     \[ \qquad \qquad f(x) = x\cdot e^x \]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ $f'(x) = \dfx$. And therefore, $f(x)$ has an extrema at $x = -1$
+\incorrect
+$f'(x) = \dfx$. And therefore, $f(x)$ has an extrema at $x = 0,-1$%
+</tex>
+        <tex correct="false">%text
+ $f'(x) = \dfx$. And therefore, $f(x)$ has an extrema at $x = 0,-1$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+f'(x) &amp;= \underbrace{x\ddx e^x + e^x \ddx x }_{\text{Product Rule}} \\
+&amp;= x\cdot e^x + e^x = \dfx
+\end{align}
+%text
+ Now, $e^x \neq 0$ for all values of $x$. Hence,
+\[ \qquad\qquad f'(x) = 0 \implies x = -1 \]
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="31"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{NcN}
+
+\hline
+&amp; Type &amp; \text{Value} \\
+\hline
+x = -1 &amp; Minima &amp; -\frac{1}{e} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+%
+\begin{align}
+\begin{tabular}{NcN}
+
+\hline
+&amp; Type &amp; \text{Value} \\
+\hline
+x = -1 &amp; Minima &amp; -\frac{1}{2e} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+\begin{tabular}{NcN}
+
+\hline
+&amp; Type &amp; \text{Value} \\
+\hline
+x = -1 &amp; Minima &amp; -\frac{1}{2e} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ We know that $f'(x) = 0$ at $x=-1$. To know, however, whether it is a maxima or a minima, one must look at $f''(x)$
+%
+\begin{align}
+
+f''(x) &amp;= \ddx f'(x) = \ddx \dfx \\
+&amp;= (x+1)\ddx e^x + e^x\ddx (x+1) \\
+&amp;= (x+1) \cdot e^x + e^x = \ddfx \\
+f''(-1) &amp;= e^{-1} = \frac{1}{e} &gt; 0
+\end{align}
+%text
+ As $f''(x) &gt; 0$  at $x=-1$, therefore we have a minima at $x=-1$. And the minimum value is
+\[ \qquad f_{min} = f(-1) = -1\cdot e^{-1} = -\frac{1}{e}\]
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="63"/>
+      </skills>
+    </step>
+  </steps>
+</question>

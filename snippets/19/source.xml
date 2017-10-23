@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[\int_0^1\cot^{-1}\left(\dfrac{1}{1-x} \right)\cdot dx = \int_0^1\tan^{-1} x\cdot dx \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+\cot^{-1} \dfrac{1}{z} &amp;= \tan^{-1} z \\
+\therefore \cot^{-1} \left(\frac{1}{1-x} \right) &amp;= \tan^{-1} \left(1-x \right) \\
+\implies \int_0^1 \cot^{-1} \left(\frac{1}{1-x} \right)\cdot dx &amp;= \int_0^1 \tan^{-1} \left(1-x \right)\cdot dx
+\end{align}
+%text
+ But recall that
+%
+\begin{align}
+
+\int_0^a f(x)\cdot dx &amp;= \int_0^a f(a-x)\cdot dx  \\
+\therefore\int_0^1 \tan^{-1} \left(1-x \right)\cdot dx &amp;= \int_0^1\tan^{-1} \left[1-\left(1-x \right) \right]\cdot dx \\
+&amp;=\int_0^1\tan^{-1} x\cdot dx
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="45"/>
+  </skills>
+</snippet>

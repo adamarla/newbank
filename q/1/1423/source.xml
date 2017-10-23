@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Evaluate the following 
+     \[ \qquad \intg\fx\cdot dx  \]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ From $-\infty\to\infty, f(x) = \expa$ behaves as follows
+%
+\begin{align}
+\begin{tabular}{NNNNN}
+
+\hline
+&amp;  x&lt;-1 &amp; x\in \left[-1,0 \right) &amp; x\in \left[0,1 \right] &amp; x &gt; 1 \\
+\hline
+f(x) &amp; &lt; 0 &amp; \geq 0 &amp; \leq 0 &amp; &gt; 0 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+From $-\infty\to\infty, f(x) = \expa$ behaves as follows
+%
+\begin{align}
+\begin{tabular}{NNNNN}
+
+\hline
+&amp;  x&lt;-1 &amp; x\in \left[-1,0 \right) &amp; x\in \left[0,1 \right] &amp; x &gt; 1 \\
+\hline
+f(x) &amp; &lt; 0 &amp; \leq 0 &amp; \geq 0 &amp; &gt; 0 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ From $-\infty\to\infty, f(x) = \expa$ behaves as follows
+%
+\begin{align}
+\begin{tabular}{NNNNN}
+
+\hline
+&amp;  x&lt;-1 &amp; x\in \left[-1,0 \right) &amp; x\in \left[0,1 \right] &amp; x &gt; 1 \\
+\hline
+f(x) &amp; &lt; 0 &amp; \leq 0 &amp; \geq 0 &amp; &gt; 0 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+f(x) &amp;= \expa = x\cdot (x^2-1) \\
+&amp;= x\cdot (x-1)\cdot (x+1)
+\end{align}
+%text
+ By looking at how each \underline\text{individual term} is in \underline\text{different intervals}, we can know how $f(x)$ behaves in those intervals
+%
+\begin{align}
+\begin{tabular}{NNNNN}
+
+\hline
+&amp;  x &amp; x-1 &amp; x+1 &amp; f(x) = \expa \\
+\hline
+x &lt; -1 &amp; - &amp; - &amp; - &amp; - \\
+\hline
+x\in \left[-1,0\right) &amp; - &amp; - &amp; + &amp; + \\
+\hline
+x\in \left[0,1 \right] &amp; + &amp; - &amp; + &amp; - \\
+\hline
+x &gt; 1 &amp; + &amp; + &amp; + &amp; + \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="73"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ And therefore
+%
+\begin{align}
+
+A &amp;= \intg \fx\cdot dx \\
+&amp;= \int_{-1}^0 \expa\cdot dx + \int_0^1 \left(x-x^3 \right)\cdot dx \\
+&amp;+ \int_1^2 \expa\cdot dx
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ We established in the last step that
+%
+\begin{align}
+\begin{tabular}{NNNNN}
+
+\hline
+&amp;  x &lt; -1 &amp; x\in \left[-1,0 \right) &amp; x\in \left[0,1 \right] &amp; x &gt; 1\\
+\hline
+\expa &amp; - &amp; + &amp; - &amp; + \\
+\hline
+\fx &amp; x-x^3 &amp; x^3 - x &amp; x-x^3 &amp; x^3 - x \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Which is why
+%
+\begin{align}
+
+A &amp;= \intg \fx\cdot dx \\
+&amp;= \int_{-1}^0 \expa\cdot dx + \int_0^1 \left(x-x^3 \right)\cdot dx \\
+&amp;+ \int_1^2 \expa\cdot dx
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="74"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ Which gives $A = \dfrac{7}{2} $
+\incorrect
+Which gives $A = \dfrac{5}{2}$%
+</tex>
+        <tex correct="false">%text
+ Which gives $A = \dfrac{5}{2}$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ 
+%
+\begin{align}
+
+A &amp;= \int_{-1}^0 \expa\cdot dx + \int_0^1 \left(x-x^3 \right)\cdot dx \\
+&amp;+ \int_1^2 \expa\cdot dx \\
+&amp;= \expb_{-1}^0  + \expc_0^1 + \expb_1^2 \\
+&amp;= \left[0-\left(-\frac{1}{2} \right) \right] + \left[\left(\frac{1}{2} \right)-0 \right] + \left[2- \left(-\frac{1}{2} \right) \right] \\
+&amp;= \frac{7}{2}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="48"/>
+      </skills>
+    </step>
+  </steps>
+</question>

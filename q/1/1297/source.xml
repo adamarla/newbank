@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="22">
+  <customCommands/>
+  <statement>
+    <tex>\newcommand\dnm{\left(\cos\theta + 2 \right)}
+\newcommand\drv{\frac{\cos\theta\cdot \left(4-\cos\theta \right)}{\dnm^2}}
+
+%text
+Is $f \left(\theta \right)$ increasing or decreasing in $ \left[0, \frac{\pi}{2} \right]$?
+\[\qquad \qquad f \left(\theta \right) = \dfrac{4\sin\theta}{\dnm} - \theta\]
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+	f' \left(\theta \right) &amp;= 4 \left[\frac{\dnm\cdot \cos\theta + \sin^2\theta}{\dnm^2}\right]- 1  \\
+	&amp;= \frac{\cos\theta\cdot \left(4-\cos\theta \right)}{\dnm^2}
+\end{align}
+
+</tex>
+      <tex correct="false"> 
+
+\begin{align}
+	f' \left(\theta \right) &amp;= 4 \left[\frac{\dnm\cdot\cos\theta  + \sin^2\theta}{\dnm}\right] - 1 \\
+	&amp;= \left[\frac{2 + 7\cos\theta}{\dnm} \right]
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+We need $f' \left(\theta \right)$ to ascertain whether or not the function is increasing or decreasing 
+
+\begin{align}
+&amp;f'\left(\theta \right) = 4\frac{d}{d\theta} \left[\frac{\sin\theta}{\dnm}  \right] - \frac{d}{d\theta} \theta \\
+&amp;= 4 \underbrace{\frac{\dnm\cdot \frac{d}{d\theta}\sin\theta - \sin\theta\cdot \frac{d}{d\theta}\dnm}{\dnm^2}}_{\text{Quotient Rule}} - 1 \\
+&amp;= 4 \left[\frac{\dnm\cdot\cos\theta + \sin^2\theta}{\dnm^2} \right] - 1\\
+&amp;= 4 \underbrace{\left[\frac{1 + 2\cos\theta}{\dnm^2} \right]}_{\cos^2\theta + \sin^2\theta = 1} - 1 = \frac{\left(4 + 8\cos\theta \right) - \dnm^2}{\dnm^2} \\
+&amp;= \frac{4 + 8\cos\theta - \cos^2\theta - 4\cos\theta - 4}{\dnm^2} \\
+&amp;= \frac{\cos\theta\cdot \left(4-\cos\theta \right)}{\dnm^2}
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="31"/>
+      <skill id="33"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\small\[ f' \left(\theta \right) = \drv \geq 0\text{ for } \theta\in \left[0,\frac{\pi}{2} \right]\]\normalsize
+
+Hence, $f \left(\theta \right)$ is \underline{an increasing function} in the given range 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+We know that 
+\[ \quad f' \left(\theta \right) = \drv \]
+
+Now, if $\theta\in \left[0,\frac\pi{2} \right]$, then 
+
+\begin{itemize}
+\item {$\cos\theta &gt; 0$} 
+\item {$\dnm^2 &gt; 0$ and }
+\item {$ \left(4-\cos\theta \right) &gt; 0 \quad \left(\because -1\leq \cos\theta \leq 1 \right)$ }
+\end{itemize} 
+
+As \underline{all three terms} in $f' \left(\theta \right) &gt; 0$, therefore $f' \left(\theta \right) &gt; 0$ for $\theta\in \left[0, \frac{\pi}{2} \right]$ \newline 
+
+Which means that $f \left(\theta \right)$ must be \underline{increasing} in the said interval</tex>
+    </reason>
+    <skills>
+      <skill id="63"/>
+    </skills>
+  </step>
+</question>

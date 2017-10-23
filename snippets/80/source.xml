@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \int \expc^2\cdot dx = x + \sin x + C \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+&amp;\int \expc^2\cdot dx \\
+&amp;= \int \left[\underbrace{\sin^2 \left(\frac{x}{2} \right) + \cos^2 \left(\frac{x}{2} \right)}_{=1} + \underbrace{2\expa\cdot\expb}_{=\sin x}\right]dx \\
+&amp;= \int \left(1 + \sin x \right)\cdot dx = \int dx + \int \sin x\cdot dx  \\
+&amp;= x -\cos x + C
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="48"/>
+  </skills>
+</snippet>

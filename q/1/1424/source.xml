@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Find the particular solution of the differential equation 
+    \[ \fy\fx\cdot dx + 2xy\cdot dy = 0\]
+    given that $ y = 0$ when $x = 1$</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ Given below are \underline\text{two possible strategies}
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+&amp; \text{Re-write as}  \\
+\hline
+A &amp; \underbrace{\left(\frac{1}{x^2}-\frac{y^2}{x^2} \right)\fx dx + 2\frac{y}{x} dy = 0}_{\text{Solve as a homogenous differential equation}} \\
+\hline
+B &amp; \underbrace{-\frac{2y}{\fy}dy = \frac{\fx}{x}dx}_{\text{Solve by separating variables}}\\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Of these, only \underline\text{Strategy $B$ is valid}
+\incorrect
+Given below are \underline\text{two possible strategies}
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+&amp; \text{Re-write as}  \\
+\hline
+A &amp; \underbrace{\left(\frac{1}{x^2}-\frac{y^2}{x^2} \right)\fx dx + 2\frac{y}{x} dy = 0}_{\text{Solve as a homogenous differential equation}} \\
+\hline
+B &amp; \underbrace{-\frac{2y}{\fy}dy = \frac{\fx}{x}dx}_{\text{Solve by separating variables}}\\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Of these, only \underline\text{Strategy $A$ is valid}%
+</tex>
+        <tex correct="false">%text
+ Given below are \underline\text{two possible strategies}
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+&amp; \text{Re-write as}  \\
+\hline
+A &amp; \underbrace{\left(\frac{1}{x^2}-\frac{y^2}{x^2} \right)\fx dx + 2\frac{y}{x} dy = 0}_{\text{Solve as a homogenous differential equation}} \\
+\hline
+B &amp; \underbrace{-\frac{2y}{\fy}dy = \frac{\fx}{x}dx}_{\text{Solve by separating variables}}\\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Of these, only \underline\text{Strategy $A$ is valid}%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+\fy&amp;\fx dx + 2xy\cdot dy = 0 \\
+\implies\dydx &amp;= \frac{-2xy}{\fy\cdot\fx} \\
+&amp;= \underbrace{-\dfrac{2\frac{y}{x}}{\left(\frac{1}{x^2}-\frac{y^2}{x^2} \right)\fx}}_{\text{Divide throughtout by }x^2} \\
+&amp;\neq F \left(\frac{y}{x} \right)
+\end{align}
+%text
+ Hence, Strategy $A$ \underline\text{is not valid}. However
+%
+\begin{align}
+
+-2xy\cdot dx &amp;= \fy\cdot\fx\cdot dx \\
+\text{or } \frac{-2y}{\fy}\cdot dy &amp;= \frac{\fx}{x}\cdot dx
+\end{align}
+%text
+ The variables have separated cleanly. And hence, Strategy $B$ suggests a way forward%
+</tex>
+      </reason>
+      <skills>
+        <skill id="53"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ If $w = \fx$ and $z = \fy$, then
+%
+\begin{align}
+
+\int \frac{dz}{z} &amp;= \int w\cdot dw \\
+\therefore \log z &amp;= \frac{w^2}{2} + C \\
+\implies \fy^2 &amp;= k\cdot e^{\fx^2}
+\end{align}
+%text
+
+\incorrect
+If $w = \fx$ and $z = \fy$, then
+%
+\begin{align}
+
+\int \frac{dz}{z} &amp;= \int \frac{dw}{w}\\
+\therefore \log z &amp;= \log w + C  \\
+\implies \frac{\fy}{\fx} &amp;= k
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ If $w = \fx$ and $z = \fy$, then
+%
+\begin{align}
+
+\int \frac{dz}{z} &amp;= \int \frac{dw}{w}\\
+\therefore \log z &amp;= \log w + C  \\
+\implies \frac{\fy}{\fx} &amp;= k
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+w = \fx &amp;\implies dw = \frac{dx}{x} \\
+z = \fy &amp;\implies dz = -2y\cdot dy\\
+\therefore \frac{-2y}{\fy}\cdot dy &amp;= \frac{\fx}{x}\cdot dx \\
+\implies \frac{dz}{z} &amp;= w\cdot dw \\
+\text{or }\int \frac{dz}{z} &amp;= \int w\cdot dw \\
+\implies \log z &amp;= \frac{w^2}{2} + C_1 \\
+\text{or } 2\log z &amp;= \log z^2 = w^2 + C \\
+\implies z^2 &amp;= e^{w^2 + C} \\
+&amp;= e^C\cdot e^{w^2} = k\cdot e^{w^2}\\
+\therefore \fy^2 &amp;= k\cdot e^{\fx^2}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="55"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+k\cdot e^{\fx^2} &amp;= k\cdot e\cdot x^2\cdot x^{\log x} \\
+\therefore \fy^2 &amp;= k_2\cdot x^{ \left(\log x + 2 \right)}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+k\cdot e^{\fx^2} &amp;= k\cdot e^{\left(1+2\log x + \left(\log x \right)^2 \right)} \\
+&amp;= k\cdot \left[ e^1\cdot e^{2\log x}\cdot e^{\log x\cdot \log x}\right] \\
+&amp;= \underbrace{k\cdot \left[e^1\cdot \elogx^2\cdot \elogx^{\log x} \right]}_{a^{bc} = \left(a^b \right)^c} \\
+&amp;= \underbrace{k_2 \cdot \left(x\right)^2\cdot \left(x \right)^{\log x}}_{e^{\log x} = x} \\
+&amp;= k_2\cdot x^{\left( \log x + 2\right)}
+\end{align}
+%text
+ And hence, the \underline\text{final answer} is
+\[\qquad\qquad \fy^2 = k_2 \cdot x^{\left(\log x + 2 \right)}\]
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="55"/>
+      </skills>
+    </step>
+  </steps>
+</question>

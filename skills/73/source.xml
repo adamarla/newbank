@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{When is $f(x) = \frac{p(x)}{q(x)} \geq 0\text{ or } \leq 0$?}
+Determining the values of $x$ for which a rational function is $\geq 0$ or $\leq 0$</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+\[ \qquad x + 2 \geq 0 \implies x \geq -2 \]
+ That was easy. But what if $f(x)$ is a little more complicated, say a rational function, like
+\[ \quad f(x) = \frac{(x-1)\cdot (x+3)}{x-2}, x\neq 2 \]
+ When is $f(x) \geq 0$ and when is it $\leq 0$? 
+ One only needs to be methodical to solve such inequalities. First, determine the "roots" of $f(x)$ as shown below
+%
+\begin{align}
+\begin{tabular}{lN}
+
+\hline
+&amp; \text{Roots} \\
+\hline
+Numerator &amp; x = 1, -3 \\
+\hline
+Denominator &amp; x = 2 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Then \underline\text{split the number line at the roots} and determine the sign of each individual term in $f(x)$ -- and therefore of $f(x)$
+%
+\begin{align}
+\begin{tabular}{NNNNN}
+
+\hline
+&amp;  x &lt; -3 &amp; (-3,1) &amp; (1,2) &amp; &gt; 2 \\
+\hline
+x-1 &amp; - &amp; - &amp; + &amp; + \\
+\hline
+x + 3  &amp; - &amp; + &amp; + &amp; + \\
+\hline
+x - 2 &amp; - &amp; - &amp; - &amp; + \\
+\hline
+\frac{(x-1)\cdot (x+3)}{x-2} &amp; - &amp; + &amp; - &amp; + \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

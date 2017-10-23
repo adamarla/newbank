@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>%text
+Find the particular solution, satisfying the 
+given condition, for the following differential
+equation
+\[ \quad\frac{dy}{dx} -\frac{y}{x} + \csc\frac{y}{x} = 0 ; y = 0\text{ when }  x = 1 \] 
+Note: $\csc =$ cosec
+%</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+
+\[ \qquad \frac{dy}{dx} = \underbrace{\frac{y}{x} - \csc\frac{y}{x}}_{F(x,y)}\]
+ And as $F \left(\lambda x,\lambda y \right) = F(x,y)$, therefore the given equation is a homogenous differential equation
+\incorrect
+\[ \qquad \frac{dy}{dx} - \frac{1}{x}y =  - \csc\frac{y}{x} \]
+
+The above is of the form
+\[ \qquad \frac{dy}{dx} + P(x)\cdot\frac{dy}{dx} = Q(x) \]
+
+Hence, this is a \underline\text{linear differential equation}%
+</tex>
+        <tex correct="false">%text
+
+\[ \qquad \frac{dy}{dx} - \frac{1}{x}y =  - \csc\frac{y}{x} \]
+ The above is of the form
+\[ \qquad \frac{dy}{dx} + P(x)\cdot\frac{dy}{dx} = Q(x) \]
+ Hence, this is a \underline\text{linear differential equation}%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ When written as follows
+\[ \qquad \dydx - \frac{1}{x}y = \underbrace{-\csc\frac{y}{x}}_{Q} \]
+ the given differential equation \underline\text{may look like} a first-order linear differential equation
+ But if it is to be a linear differential equation, then $Q = f(x)$ only - which it is not 
+ Instead, $Q = \csc\frac{y}{x} = g \left(x,y \right)$ -  a function of both $x$ and $y$ 
+ However, when written as
+\[ \qquad \dydx = \frac{y}{x} - \csc\frac{y}{x} = F \left(x,y \right)\]
+ it becomes clear that what we have is a \underline\text{homogenous} differential equation%
+</tex>
+      </reason>
+      <skills>
+        <skill id="53"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ If $ y = vx$, then
+\[\qquad \frac{dx}{x} = -\sin v\cdot dv\]
+
+\incorrect
+If $ y = vx$, then
+\[\qquad \frac{dv}{dx} - v = -\csc v\]
+%
+</tex>
+        <tex correct="false">%text
+ If $ y = vx$, then
+\[\qquad \frac{dv}{dx} - v = -\csc v\]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ If we let $\dfrac{y}{x} = v$, then
+%
+\begin{align}
+
+y = v\cdot x \implies \frac{dy}{dx} &amp;= v + x\cdot\frac{dv}{dx} \\
+\therefore \frac{dy}{dx} - \frac{y}{x} &amp;= -\csc\frac{y}{x}\\
+\implies \left(v+x \frac{dv}{dx}\right) -v &amp;= -\csc v \\
+\text{or } x\frac{dv}{dx} &amp;= -\csc v \\
+\implies \frac{dx}{x} &amp;= -\sin v\cdot dv
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="31"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ And therefore,
+%
+\begin{align}
+
+\logx &amp;= \cos v + C \text{ where } C = -1 \\
+\implies y &amp;= x\cdot\cos^{-1} \left(\logx + 1 \right)
+\end{align}
+%text
+
+\incorrect
+And therefore,
+%
+\begin{align}
+
+\logx &amp;= \cos v + C \text{ where } C = 0 \\
+\implies y &amp;= x\cdot \cos^{-1} \left(\logx \right)
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ And therefore,
+%
+\begin{align}
+
+\logx &amp;= \cos v + C \text{ where } C = 0 \\
+\implies y &amp;= x\cdot \cos^{-1} \left(\logx \right)
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+\frac{dx}{x} &amp;= -\sin v\cdot dv \\
+\implies \int\frac{dx}{x} &amp;= \int -\sin v\cdot dv \\
+\therefore \logx  &amp;= \cos v + C \\
+\text{or } \log\vert x\vert &amp;= \cos\frac{y}{x} + C \\
+\text{Now } y = 0 &amp; \text{ when }  x = 1 \\
+\therefore \log \vert 1\vert &amp;= \cos 0 + C \\
+\implies 0 &amp;= 1 + C \text{ or } C = -1\\
+\therefore \log\vert x\vert &amp;= \cos\frac{y}{x} - 1\\
+\text{or } y &amp;= x\cdot\cos^{-1}\left(\log\vert x\vert + 1 \right)
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="48"/>
+      </skills>
+    </step>
+  </steps>
+</question>

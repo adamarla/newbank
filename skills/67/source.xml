@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Integrals \#5}
+
+Results for  $\int \sqrt{x^2 \pm a^2}
+\cdot dx$</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{Integral} &amp; \text{Evaluates to}  \\
+\hline
+\int \sqrt{x^2-a^2}\cdot dx &amp; \frac{x}{2}\sqrt{x^2-a^2} - \frac{a^2}{2}\log\left\vert x + \sqrt{x^2-a^2} \right\vert + C \\
+\hline
+\int \sqrt{x^2+a^2}\cdot dx &amp; \frac{x}{2}\sqrt{x^2+a^2} + \frac{a^2}{2}\log\left\vert x + \sqrt{x^2+a^2} \right\vert + C \\
+\hline
+\int\sqrt{a^2-x^2}\cdot dx &amp; \frac{x}{2}\sqrt{a^2-x^2} + \frac{a^2}{2}\sin^{-1}\frac{x}{a} + C \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

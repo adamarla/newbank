@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If $f'(x) = e^{-x}$, then $f(x)$ is a strictly increasing function%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ $f'(x) = e^{-x} &gt; 0$ for all values of $x$
+ It can also never be equal to $0$ 
+ Hence, $f(x)$ is not just increasing, it is strictly increasing%
+</tex>
+  </reason>
+            <skills>
+    <skill id="63"/>
+  </skills>
+</snippet>

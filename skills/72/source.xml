@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Probability Basics}
+The concept and its mathematical formulation</tex>
+  </render>
+  <reason>
+    <tex>%text
+ When a dice is rolled, we can get 6 possible numbers. The likelihood of getting a specific number -- for example 1 -- is \underline\text{defined as} $p = \frac{1}{6}$ 
+ Generally speaking, if an event $A$ can occur in $N$ ways out of possible $M$ ways, then the probability of $A$ occurring is \[\qquad P(A) = \dfrac{N}{M}, N\leq M\] Note that probability is always a number between 0 and 1
+ Also understand that a probability is a probability - not a guarantee. In our dice example, the probability of getting a 1 was $\frac{1}{6}$ 
+ This \underline\text{does not mean} that if we roll the dice 6 times, then we are guaranteed to get a 1 in one of the rolls. We might get no 1's -- or all 1's
+ What $p= \frac{1}{6}$ means is that if we roll a dice say $N =$ 10 times or 100 times or a million times, then \underline\text{in the long run}, we should \underline\text{expect to get} $\frac{N}{6}$ 1's%
+</tex>
+  </reason>
+</skill>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Find the value of $\sqrt{e^{\int_0^1 f(x)\cdot dx}}$ where 
+    \[ f(x) = \fxe,\, \vert x\vert \leq 1  \]
+    
+    \textit{(This problem looks tougher than it is)}</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ $f(x)$ is a geometric series. And therefore
+\[ \qquad\qquad f(x) = \frac{2}{2-x} \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Notice that each term in $f(x)$ is of the form
+\[ \qquad\qquad a_n = \frac{x^n}{2^n},\, \left(n\geq 0 \right)\]
+ Which means
+%
+\begin{align}
+
+a_{n+1} = \frac{x^{n+1}}{2^{n+1}} &amp;= \frac{x^n}{2^n}\cdot\frac{x}{2} = a_n\cdot\frac{x}{2} \\
+\implies r &amp;= \frac{x}{2}\,\text{ (common ratio)} \\
+\therefore f(x) &amp;= \fxe \\
+&amp;= \underbrace{\frac{1}{1-\frac{x}{2}} = \frac{2}{2-x}}_{\text{Sum of infinite series}}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="137"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ \int_0^1 f(x)\cdot dx = \log 2^2 = \log 4 \]
+
+\incorrect
+\[ \int_0^1 f(x)\cdot dx = \log 2 \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ \int_0^1 f(x)\cdot dx = \log 2 \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+f(x) &amp;= \frac{2}{2-x} \\
+\therefore \int_0^1 f(x)\cdot dx &amp;= \int_0^1\frac{2}{2-x}\cdot dx \\
+\text{Let } z = 2-x &amp;\implies dx = -dz  \\
+\therefore \int_0^1 f(x)\cdot dx &amp;= \underbrace{-2\int_2^1\frac{dz}{z}}_{z = 2\text{ when } x = 0} = 2\int_1^2\frac{dz}{z} \\
+\therefore \int_0^1 f(x)\cdot dx &amp;= 2 \left[\log z \right]_1^2 \\
+&amp;= 2 \left[\log 2 - \log 1 \right] \\
+&amp;= 2\log 2 = \log 2^2
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="48"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ \text{Therefore } \sqrt{e^{\int_0^1 f(x)\cdot dx}} = 2 \]
+
+\incorrect
+\[ \text{Therefore } \sqrt{e^{\int_0^1 f(x)\cdot dx}} = \sqrt{2\log 2} \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ \text{Therefore } \sqrt{e^{\int_0^1 f(x)\cdot dx}} = \sqrt{2\log 2} \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+\intg &amp;= \log 2^2 = \log 4 \\
+\therefore e^{\intg} &amp;= \underbrace{e^{\log 4} = 4}_{e^{\log a} = a}\\
+\implies \sqrt{e^{\intg}} &amp;= \sqrt{4} = 2
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="55"/>
+      </skills>
+    </step>
+  </steps>
+</question>

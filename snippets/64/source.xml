@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If $f(x)=\cos^2 x$ and $g(x) = \dfrac{1-\cos 2x}{2}$, then
+\[ \qquad A = \intg f(x) \cdot dx + \intg g(x) \cdot dx = 1 \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+A &amp;= \intg \left[f(x) + g(x) \right]\cdot dx  \\
+&amp;= \intg \left[\cos^2 x + \underbrace{\frac{1-\cos2x}{2}}_{=\sin^2 x} \right]\cdot dx \\
+&amp;= \intg dx = \frac\pi{2}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="28"/>
+  </skills>
+</snippet>

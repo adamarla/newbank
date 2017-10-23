@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ y = \left[\expa + \expb \right]^2\implies y' = \cos x\]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ 
+%
+\begin{align}
+
+y &amp;= \left[\expa + \expb \right]^2  \\
+\ddx{y} &amp;= \underbrace{2\expc\cdot\ddx \expc}_{\text{Chain Rule}} \\
+&amp;= 2\expc \cdot \left[\frac{\cos\frac{x}{2}}{2} - \frac{\sin\frac{x}{2}}{2} \right] \\
+&amp;= \left[\expa + \expb \right]\cdot \left[\expb - \expa \right] \\
+&amp;= \underbrace{\cos^2 \left(\frac{x}{2} \right) - \sin^2 \left(\frac{x}{2} \right) = \cos x}_{\cos 2\theta = \cos^2\theta - \sin^2\theta}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="51"/>
+  </skills>
+</snippet>

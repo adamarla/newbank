@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="25">
+  <customCommands/>
+  <statement>
+    <tex>\newcommand\sq{ \left(v + \frac{1}{2} \right)^2 + \left( \frac{\sqrt{3}}{2}\right)^2} 
+\newcommand\dnm{ \left(v^2 + v + 1\right)}
+
+%text
+Solve the following differential equation 
+\[ \quad \left(x-y \right)\frac{dy}{dx} = x + 2y \]%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+$\left(x-y \right)\dfrac{dy}{dx} = x + 2y$ is a homogenous differential equation 
+
+</tex>
+      <tex correct="false"> 
+
+$\left(x-y \right)\dfrac{dy}{dx} = x + 2y$ is a first-order linear differential equation 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+Before we can solve a differential equation, we must first know what kind of differential equation it is 
+
+\begin{align}
+	\left(x-y \right)\frac{dy}{dx} &amp; = x + 2y \implies \frac{dy}{dx} = \frac{x+2y}{x-y} \\ 
+	&amp;\text{or } \frac{dy}{dx} = \frac{1 + 2\left(\frac{y}{x} \right)}{1- \frac{y}{x}} = F \left(\frac{y}{x} \right) 
+\end{align}
+
+$\frac{dy}{dx} = F \left(\frac{y}{x} \right)$ is what a \underline{homogenous} differential equation looks like. Hence, the given differential equation is homogenous 
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="53"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+If $ y = v\cdot x$, then 
+\[ \qquad \frac{dx}{x} = \frac{1-v}{v^2+v+1}\cdot dv \]
+
+</tex>
+      <tex correct="false"> 
+
+If $ y = v\cdot x$, then 
+\[ \qquad \frac{dx}{x} = \frac{1+v}{v^2+v+1}\cdot dv \]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+For homogenous diffrential equations, we set $y = v\cdot x$. And hence, 
+
+\begin{align}
+\frac{dy}{dx} =  \frac{1+2 \left(\frac{y}{x} \right)}{1 - \frac{y}{x}} &amp;\implies \frac{d}{dx} \left(v\cdot x \right) = \frac{1+2v}{1-v} \\
+\text{or } \underbrace{v + x \frac{dv}{dx}}_{\text{Product Rule}} &amp;= \frac{1+2v}{1-v} \\
+x \frac{dv}{dx} &amp;= \frac{1+2v}{1-v} - v = \frac{v^2+v+1}{1-v} \\
+\therefore \frac{dx}{x} &amp;= \frac{1-v}{v^2+v+1}\cdot dv
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="54"/>
+      <skill id="31"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+\text{If } z &amp;= \dnm \text{ then } \\
+\int \frac{dx}{x} &amp;= \int \frac{1-v}{\dnm}\cdot dv \\ 
+&amp;= \int \frac{A\cdot \frac{d}{dx} \dnm + B }{\dnm}\cdot dv  \\
+&amp;= \underbrace{-\frac{1}{2}\int \frac{dz}{z} + \frac{3}{2}\int \frac{dv}{\dnm}}_{A = -\frac{1}{2}\text{ and } B = \frac{3}{2}}
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+Notice that the degree of the numerator $(1-v)$ is just \underline{one less} than the degree of the denominator $\dnm$. At such times, it is best to 
+\small\[ \qquad \text{Numerator} = A \frac{d}{dx}\text{(Denominator)} + B \]\normalsize
+
+Which is why 
+\begin{align}
+\int \frac{dx}{x} &amp;= \int \frac{1-v}{v^2+v+1}\cdot dx \\ 
+\text{If } 1 - v &amp;= A\cdot \frac{d}{dv}\dnm + B \\
+\text{then } 1- v &amp;= A\cdot (2v+1) + B \\
+\implies A &amp;= -\frac{1}{2}\text{ and } B = \frac{3}{2}\\
+\therefore I &amp;= \int \frac{1-v}{\dnm}\cdot dv \\
+&amp;= -\frac{1}{2}\int \frac{dz}{z} + \frac{3}{2}\int \frac{dv}{\dnm} \\
+\text{where } z &amp;= \dnm 
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="64"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+\text{In }I &amp;= \underbrace{-\frac{1}{2}\int \frac{dz}{z}}_P + \underbrace{\frac{3}{2}\int \frac{dv}{\dnm}}_Q + C \\
+P &amp;= \log \sqrt{\frac{x^2}{y^2 + xy + x^2}} 
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+	I &amp;= \underbrace{-\frac{1}{2}\int \frac{dz}{z}}_P + \underbrace{\frac{3}{2}\int \frac{dv}{\dnm}}_Q + C \\
+	P &amp;= -\frac{1}{2}\log \vert z\vert = -\frac{1}{2}\log \vert\dnm\vert \\
+	&amp;= -\frac{1}{2}\log\left\vert \left(\frac{y}{x} \right)^2 + \frac{y}{x} + 1 \right\vert \\
+	&amp;= -\frac{1}{2}\log\left\vert \frac{y^2 + xy + x^2}{x^2}\right\vert  \\
+	&amp;= \underbrace{\frac{1}{2}\log\left\vert \frac{x^2}{y^2+xy+x^2}\right\vert}_{\log \frac{1}{b} = -\log b } \\
+	&amp;= \underbrace{\log \sqrt{\frac{x^2}{y^2+xy+x^2}}}_{ a\log b = \log b^a }
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="48"/>
+      <skill id="55"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+\text{And in }I &amp;= \underbrace{-\frac{1}{2}\int \frac{dz}{z}}_P + \underbrace{\frac{3}{2}\int \frac{dv}{\dnm}}_Q + C \\
+Q &amp;= \sqrt{3}\tan^{-1} \left(\frac{2y+x}{\sqrt{3} x } \right)
+\end{align}
+
+Which gives 
+\small\[ I = \log \sqrt{\frac{x^2}{y^2+xy+x^2}} + \sqrt{3}\tan^{-1} \left(\frac{2y+x}{\sqrt{3} x } \right) + C\]\normalsize
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+Q &amp;= \underbrace{\frac{3}{2}\int \frac{dv}{\dnm} = \frac{3}{2}\int \frac{dv}{\sq}}_{\text{Complete the squares}} \\
+&amp;= \frac{3}{2}\cdot \frac{1}{\frac{\sqrt{3}}{2}}\cdot\tan^{-1} \left(\frac{v+\frac{1}{2}}{\frac{\sqrt{3}}{2}} \right) \\
+&amp;= \sqrt{3}\cdot\tan^{-1} \left(\frac{2v+1}{\sqrt{3}} \right) = 
+\sqrt{3}\tan^{-1} \left(\frac{2y+x}{\sqrt{3} x } \right)
+\end{align}
+
+And therefore 
+\small\[ I = \log \sqrt{\frac{x^2}{y^2+xy+x^2}} + \sqrt{3}\tan^{-1} \left(\frac{2y+x}{\sqrt{3} x } \right) + C \]\normalsize</tex>
+    </reason>
+    <skills>
+      <skill id="62"/>
+      <skill id="48"/>
+    </skills>
+  </step>
+</question>

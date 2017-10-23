@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>A fair die is tossed $4$ times. If the toss gives a $5$ or a $6$, then we say that the toss was a success. Else it is considered a failure \newline 
+    
+    If this set of $4$ tosses is done many times over, then on an average how many successes should we expect in a given set?</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex correct="false">%text
+ If $N$ be the number of successes in a single set of $4$ tosses, then we need to
+ - Write the \underline\text{probability distribution} table for a set of $4$ throws
+ - Find the $N$ that has the \underline\text{highest probability} of occurring%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ If $N$ be the number of successes in a given set, then $N = 0,1,2,3$ or $4$ 
+ Each of these values would have a certain probability of occurring, as shown in the table below
+%
+\begin{align}
+\begin{tabular}{NNNNNN}
+
+\hline
+N = &amp; 0 &amp; 1&amp; 2 &amp; 3 &amp; 4  \\
+\hline
+\text{Probability} &amp; \prob{0} &amp; \prob{1} &amp; \prob{2} &amp; \prob{3} &amp; \prob{4} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ This is nothing more than a probability distribution table
+ And, we need to find the \underline\text{expected} $N$ -- not the most likely $N$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="18"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+N &amp; \prob{N} &amp; \prob{N}\cdot N  \\
+\hline
+0 &amp; \combi{4}{0}\psc^0\pf^4 = \frac{16}{81} &amp; 0 \\
+\hline
+1 &amp; \combi{4}{1}\psc^1\pf^3 = \frac{32}{81} &amp; \frac{32}{81} \\
+\hline
+2 &amp; \combi{4}{2}\psc^2\pf^2 = \frac{8}{27} &amp; \frac{16}{27} \\
+\hline
+3 &amp; \combi{4}{3}\psc^3\pf^1 = \frac{8}{81} &amp; \frac{24}{81} \\
+\hline
+4 &amp; \combi{4}{4}\psc^4\pf^0 = \frac{1}{81} &amp; \frac{4}{81} \\
+\hline
+E(N) &amp; &amp; \frac{4}{3} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+N &amp; \prob{N} &amp; \prob{N}\cdot N  \\
+\hline
+0 &amp; \psc^0\pf^4 = \frac{16}{81} &amp; 0 \\
+\hline
+1 &amp; \psc^1\pf^3 = \frac{8}{81} &amp; \frac{8}{81} \\
+\hline
+2 &amp; \psc^2\pf^2 = \frac{4}{81} &amp; \frac{8}{81} \\
+\hline
+3 &amp; \psc^3\pf^1 = \frac{2}{81} &amp; \frac{6}{81} \\
+\hline
+4 &amp; \psc^4\pf^0 = \frac{1}{81} &amp; \frac{4}{81} \\
+\hline
+E(N) &amp; &amp; \frac{26}{81} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+N &amp; \prob{N} &amp; \prob{N}\cdot N  \\
+\hline
+0 &amp; \psc^0\pf^4 = \frac{16}{81} &amp; 0 \\
+\hline
+1 &amp; \psc^1\pf^3 = \frac{8}{81} &amp; \frac{8}{81} \\
+\hline
+2 &amp; \psc^2\pf^2 = \frac{4}{81} &amp; \frac{8}{81} \\
+\hline
+3 &amp; \psc^3\pf^1 = \frac{2}{81} &amp; \frac{6}{81} \\
+\hline
+4 &amp; \psc^4\pf^0 = \frac{1}{81} &amp; \frac{4}{81} \\
+\hline
+E(N) &amp; &amp; \frac{26}{81} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ The probability of a \underline\text{single} success is
+\[ \qquad p = \frac{ \left\lbrace 5,6\right\rbrace}{ \left\lbrace 1,2,3,4,5,6\right\rbrace} = \frac{2}{6} = \frac{1}{3} \]
+ And therefore $q = 1- p = \frac{2}{3}$ 
+ The probability of $N$ successes however is
+\[ \qquad \prob{N} = \combi{4}{N}\cdot p^n\cdot q^{4-N} \]
+ Which is why
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+N &amp; \prob{N} &amp; \prob{N}\cdot N  \\
+\hline
+0 &amp; \combi{4}{0}\psc^0\pf^4 = \frac{16}{81} &amp; 0 \\
+\hline
+1 &amp; \combi{4}{1}\psc^1\pf^3 = \frac{32}{81} &amp; \frac{32}{81} \\
+\hline
+2 &amp; \combi{4}{2}\psc^2\pf^2 = \frac{8}{27} &amp; \frac{16}{27} \\
+\hline
+3 &amp; \combi{4}{3}\psc^3\pf^1 = \frac{8}{81} &amp; \frac{24}{81} \\
+\hline
+4 &amp; \combi{4}{4}\psc^4\pf^0 = \frac{1}{81} &amp; \frac{4}{81} \\
+\hline
+E(N) &amp; \sum_{N=1}^4 \prob{N}\cdot N &amp; \frac{4}{3} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="20"/>
+      </skills>
+    </step>
+  </steps>
+</question>

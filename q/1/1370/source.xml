@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>%text
+Solve the differential equation 
+\[ \qquad \cos^2 x\cdot \frac{dy}{dx} + y = \tan x \]
+%</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+
+\[ \qquad \cos^2 x\cdot \dydx + y = \tan  x\]
+ is a first-order linear differential equation
+\incorrect
+%
+\begin{align}
+
+\cos^2 x\cdot\dydx + y &amp;= \tan x \\
+\implies \dydx &amp;= \dfrac{\tan x - y}{\cos^2 x}
+\end{align}
+%text
+ Hence, the given differential equation is homogenous%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+\cos^2 x\cdot\dydx + y &amp;= \tan x \\
+\implies \dydx &amp;= \dfrac{\tan x - y}{\cos^2 x}
+\end{align}
+%text
+ Hence, the given differential equation is homogenous%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+\cos^2 x\cdot\dydx + y &amp;= \tan x \\
+\implies \dydx + \sec^2 x\cdot y &amp;= \expa
+\end{align}
+%text
+ This equation is of the form
+\[ \qquad \dydx + P(x)\cdot y = Q(x) \]
+ which we know is a \underline\text{first-order linear} differential equation%
+</tex>
+      </reason>
+      <skills>
+        <skill id="53"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+\dydx + \sec^2x\cdot y &amp;= \tan x\cdot\sec^2 x \\
+\implies \ddx \left(\intgf\cdot y \right) &amp;= \intgf \left(\expa \right)
+\end{align}
+%text
+
+\incorrect
+%
+\begin{align}
+
+\dydx + \sec^2x\cdot y &amp;= \tan x\cdot\sec^2 x \\
+\implies \ddx \left(e^{\sec x}\cdot y \right) &amp;= e^{\sec x} \left(\expa \right)
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+\dydx + \sec^2x\cdot y &amp;= \tan x\cdot\sec^2 x \\
+\implies \ddx \left(e^{\sec x}\cdot y \right) &amp;= e^{\sec x} \left(\expa \right)
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ As this is a first-order linear differential equation, we first need to find the integrating factor $(I)$
+
+%
+\begin{align}
+
+I &amp;= e^{\int P(x)\cdot dx} = e^{\int \sec^2\cdot dx} = \intgf
+\end{align}
+%text
+ On multiplying throughout with $I$, we get 
+%
+\begin{align}
+
+\intgf \dydx + \intgf \left(\sec^2x \cdot y \right) &amp;= \intgf \left(\expa \right) \\
+\overbrace{\ddx \left(\intgf\cdot y \right)}^{\uparrow} &amp;= \intgf \left(\expa \right)
+\end{align}
+%text
+ This is the point of the integrating factor. It takes an equation of the form
+\[ \qquad \dydx + P(x)\cdot y = Q(x) \]
+ and converts it into
+\[ \qquad \ddx \left[I(x)\cdot y \right] = G(x) \]
+ which makes it easier for us to find $y$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="54"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+\ddx \left(\intgf \cdot y \right) &amp;= \intgf \left(\expa \right) \\
+\therefore \intgf\cdot y &amp;= \int \intgf \left(\expa \right)\cdot dx
+\end{align}
+%text
+ \underline\text{To evaluate the integral}, we must do the following substitution
+\[ \qquad \qquad z = \tan x \]
+
+\incorrect
+%
+\begin{align}
+
+\ddx \left(\intgf \cdot y \right) &amp;= \intgf \left(\expa \right) \\
+\therefore \intgf\cdot y &amp;= \int \intgf \left(\expa \right)\cdot dx
+\end{align}
+%text
+ \underline\text{To evaluate the integral}, we must do the following substitution
+\[ \qquad \qquad z = \sec x \]
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+\ddx \left(\intgf \cdot y \right) &amp;= \intgf \left(\expa \right) \\
+\therefore \intgf\cdot y &amp;= \int \intgf \left(\expa \right)\cdot dx
+\end{align}
+%text
+ \underline\text{To evaluate the integral}, we must do the following substitution
+\[ \qquad \qquad z = \sec x \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+\ddx \left(\intgf \cdot y \right) &amp;= \intgf \left(\expa \right) \\
+\therefore \intgf\cdot y &amp;= \int \intgf \left(\expa \right)\cdot dx
+\end{align}
+%text
+ So far, so good. But notice also that
+\[ \qquad \ddx \tan x = \sec^2 x\]
+ And hence, if we let $z = \tan x$, then $dz = \sec^2x\cdot dx$ and
+%
+\begin{align}
+
+\int \intgf \left(\expa \right)\cdot dx &amp;= \int e^z\cdot z \cdot dz
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="32"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+y\cdot \intgf &amp;= \int e^z z\cdot dz = \left(z-1 \right)\cdot e^z + C \\
+\therefore y &amp;= \left(\tan x -1 \right) + \frac{C}{\intgf}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+A &amp;= y\cdot\intgf = \int e^z z\cdot dz \\
+&amp;= \underbrace{z\int e^z\cdot dz - \int \left[ \frac{d}{dz}z\int e^z\cdot dz\right] \cdot dz}_{\text{Integration by parts}} \\
+&amp;= ze^z - \int \left[\int e^z\cdot dz \right]\cdot dz \\
+&amp;= ze^z - \int e^z\cdot dz = ze^z - e^z + C \\
+&amp;= \left(z-1 \right)\cdot e^z + C \\
+&amp;= \left(\tan x - 1 \right)\cdot \intgf + C
+\end{align}
+%text
+ And hence,
+%
+\begin{align}
+
+y\cdot\intgf &amp;= \left(\tan x -1 \right)\cdot \intgf + C \\
+\text{or } y &amp;= \left(\tan x - 1 \right) + \frac{C}{\intgf}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="50"/>
+      </skills>
+    </step>
+  </steps>
+</question>

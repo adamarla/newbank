@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If $f'(x) = \dfx$, then $f(x)$ has a local minima at $x = 2$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+f'(x) &amp;= 0 \text{ when } x = 2 \\
+f''(x) &amp;= \ddx f'(x) = \ddx \left[\dfx \right] \\
+&amp;= \underbrace{\dfrac{(x-1)\ddx (x-2) - (x-2)\ddx (x-1)}{\left(x-1 \right)^2}}_{\text{Quotient Rule}} \\
+&amp;= \ddfx &gt; 0 \text{ for all }x \neq 1
+\end{align}
+%text
+ Hence, we have an extrema at $x=2$. And $f''(2) &gt; 0 \implies $minima at $x=2$%
+</tex>
+  </reason>
+            <skills>
+    <skill id="0"/>
+  </skills>
+</snippet>

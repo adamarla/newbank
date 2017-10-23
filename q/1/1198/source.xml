@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="23">
+  <customCommands/>
+  <statement>
+    <tex>\newcommand\xma{\left(x-a \right)}
+\newcommand\xpa{\left(x+a \right)}
+\newcommand\pma{ \left(\phi-2a \right)}
+
+%text
+Evaluate the following integral 
+\[ \qquad I = \int \frac{\sin \xma}{\sin \xpa}\cdot dx \]
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+\begin{align}
+	\text{If } \phi &amp;= \xpa \text{ then } \\
+	\frac{\sin\xma}{\sin \xpa} &amp;= \cos 2a - \sin 2a\cdot \frac{\cos\phi}{\sin\phi}
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+You might be tempted to expand $\sin\xma$ and $\sin \xpa$ \newline 
+
+Try that. But you will find that the resulting expression is not any easier to work with.  Perhaps, a little creativity is required 
+
+\begin{align}
+	\text{If } \phi = \xpa &amp;\text{ then } \xma = \phi - 2a \\
+	\therefore \frac{\sin\xma}{\sin\xpa} &amp;= \frac{\sin\pma}{\sin\phi} \\
+	&amp;= \frac{\sin\phi\cdot\cos 2a + \cos\phi\cdot\sin 2a}{\sin\phi} \\
+	&amp;= \cos 2a + \sin 2a\cdot \frac{\cos\phi}{\sin\phi}
+\end{align} 
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="32"/>
+      <skill id="28"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\[ I = \cos 2a\cdot\xpa + \sin 2a\cdot \log \sin \xpa + C \]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\[ I = \cos 2a\cdot\xpa + \frac{\sin 2a}{\sin^2\xpa} + C \]
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="48"/>
+    </skills>
+  </step>
+</question>

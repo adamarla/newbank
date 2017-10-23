@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>%text
+It is standard practice to take a chest
+\xray of a person suspected of having 
+tuberculosis $(TB)$. The probability of 
+detecting $TB$ in a person actually suffering
+from it is $\frac{99}{100}$. However, the probability 
+of a healthy person being diagnosed with 
+$TB$ is $\xntb$\newline 
+
+In a certain city, 1 in 600 people suffers from $TB$. A person is selected 
+at random and is diagnosed with $TB$. What is the probability that the person 
+actually has the disease?
+%</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ If we define the following two events $\ldots$
+%
+\begin{align}
+\begin{tabular}{Nl}
+
+\hline
+\text{Event} &amp; \text{Meaning}  \\
+\hline
+X &amp; \xray\text{ says person has $TB$} \\
+\hline
+TB &amp; \text{Person actually has $TB$} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ $\ldots$ then
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{What we know} &amp; \text{What we have to find} \\
+\hline
+\prob{TB} = \frac{1}{600} &amp; \condp{TB}{X} = ? \\
+\hline
+\condp{X}{TB} = \xtb &amp; \\
+\hline
+\condp{X}{\overline{TB}} = \xntb &amp; \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+If we define the following two events $\ldots$
+%
+\begin{align}
+\begin{tabular}{Nl}
+
+\hline
+\text{Event} &amp; \text{Meaning}  \\
+\hline
+X &amp; \xray\text{ says person has $TB$} \\
+\hline
+TB &amp; \text{Person actually has $TB$} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ $\ldots$ then
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{What we know} &amp; \text{What we have to find} \\
+\hline
+\condp{TB}{X} = \xtb &amp; \prob{TB} = ? \\
+\hline
+\condp{\overline{TB}}{X} = \xntb &amp; \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ If we define the following two events $\ldots$
+%
+\begin{align}
+\begin{tabular}{Nl}
+
+\hline
+\text{Event} &amp; \text{Meaning}  \\
+\hline
+X &amp; \xray\text{ says person has $TB$} \\
+\hline
+TB &amp; \text{Person actually has $TB$} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ $\ldots$ then
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{What we know} &amp; \text{What we have to find} \\
+\hline
+\condp{TB}{X} = \xtb &amp; \prob{TB} = ? \\
+\hline
+\condp{\overline{TB}}{X} = \xntb &amp; \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ The \xray is a \underline\text{seemingly reliable} way to detect $TB$. But it is obviously not perfect
+\[ \qquad \underbrace{\condp{X}{TB} = \xtb}_{\text{\xray says $TB$ and the person actually has $TB$}}\]
+ As we have been told, it is entirely possible that the \xray says a person has $TB$ when he actually does not
+\[ \qquad \underbrace{\condp{X}{\overline{TB}}= \xntb}_{\text{\xray says $TB$ for a healthy person}} \]
+ Moreover, in this town, 1 in every 600 people has $TB$
+\[ \qquad \therefore \prob{TB} = \frac{1}{600} \]
+ And what we would like to know is that \underline\text{if the \xray says $TB$} then does the person \underline\text{actually have it}
+\[ \qquad \condp{TB}{X} = ? \]
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="36"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ \condp{TB}{X} = \fcondp{TB}{X} = \frac{110}{709} \]
+
+\incorrect
+\[ \condp{TB}{X} = \fcondp{TB}{X} = \frac{410}{837} \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ \condp{TB}{X} = \fcondp{TB}{X} = \frac{410}{837} \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ From Bayes' Theorem, we know that
+%
+\begin{align}
+
+\condp{TB}{X} &amp;= \fcondp{TB}{X} \\
+\text{where } \prob{X} &amp;= \condp{X}{TB}\prob{TB} \\
+&amp;+ \condp{X}{\overline{TB}}\prob{\overline{TB}} \\
+&amp;= \underbrace{\xtb\cdot\frac{1}{600} + \xntb\cdot\frac{599}{600}}_{\text{Rule of Total Probability}} \\
+&amp;= \left[ \frac{6381}{600\times 1000}\right] \\
+\therefore \condp{TB}{X} &amp;= \dfrac{\xtb\cdot\frac{1}{600}}{\frac{6381}{600\cdot 1000}} = \frac{990}{6381} = \frac{110}{709}
+\end{align}
+%text
+ This is a surprisingly low number. If a person is known to have $TB$, then there is a $99\%$ chance that his \xray will confirm the disease 
+ But, the converse is not true. If a person's \xray shows $TB$, then there is only about a $15.6\% = \frac{110}{709}$ chance that he actually does have $TB$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="14"/>
+      </skills>
+    </step>
+  </steps>
+</question>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Show that the semi-vertical angle of the cone with maximum volume and given 
+    slant height is $\ans$</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+\includegraphics[scale=0.45]{img_right.svg}
+\end{align}
+%text
+
+\incorrect
+%
+\begin{align}
+
+\includegraphics[scale=0.45]{img_wrong.svg}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+\includegraphics[scale=0.45]{img_wrong.svg}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ The problem statement says that the slant-height $(L)$ is known and that the volume is the maximum possible 
+ Hence, our objective is as follows
+%
+\begin{align}
+
+\includegraphics[scale=0.45]{figure.svg}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="36"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ \qquad V = \kexp \sin^2\theta\cdot \cos\theta \]
+
+\incorrect
+\[ \qquad V = \kexp \sin\theta\cdot \cos^2\theta \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ \qquad V = \kexp \sin\theta\cdot \cos^2\theta \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Referring to the figure from before
+\[ \qquad R = L\sin\theta \text{ and } H = L\cos\theta \]
+ And hence,
+%
+\begin{align}
+
+V &amp;= \frac{1}{3}\pi R^2 H = \frac{1}{3}\pi \left(L\sin\theta \right)^2\cdot \left( L\cos\theta \right) \\
+&amp;= \kexp \sin^2\theta\cdot \cos\theta
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="32"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+V' &amp;= \kexp\cdot\cos\theta\cdot \left(3\cos^2\theta - 1 \right)
+\end{align}
+%text
+ Which means, $V$ has extreme values at \[\qquad \theta = 0\text{ and } \theta = \ans\]
+\incorrect
+%
+\begin{align}
+
+V' &amp;= \kexp\cdot\sin\theta\cdot \left(3\cos^2\theta - 1 \right)
+\end{align}
+%text
+ Which means, $V$ has extreme values at \[\qquad \theta = \frac{\pi}{2}\text{ and } \theta = \ans\]%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+V' &amp;= \kexp\cdot\sin\theta\cdot \left(3\cos^2\theta - 1 \right)
+\end{align}
+%text
+ Which means, $V$ has extreme values at \[\qquad \theta = \frac{\pi}{2}\text{ and } \theta = \ans\]%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+V &amp;= \kexp \sin^2\theta\cdot\cos\theta \\
+\therefore \frac{dV}{d\theta} &amp;= V' = \underbrace{\kexp \left[2\sin\theta\cos^2\theta - \sin^3\theta \right]}_{\text{Product Rule}} \\
+&amp;= \kexp\cdot\sin\theta \left(2\cos^2\theta-\sin^2\theta \right) \\
+&amp;= \kexp \cdot\sin\theta\cdot \underbrace{\left(3\cos^2\theta - 1 \right)}_{\sin^2\theta = 1 - \cos^2\theta} \\
+\text{So } V' &amp;= 0 \implies \sin\theta = 0\text{ or } \cos\theta = \frac{1}{\sqrt{3}} \\
+\text{or } \theta &amp;= \sin^{-1} 0 = 0\text{ and }\theta = \cos^{-1} \frac{1}{\sqrt{3}}
+\end{align}
+%text
+ Hence, the \underline\text{extremas} occur when \[ \qquad \theta=0\text{ and } \theta = \cos^{-1} \frac{1}{\sqrt{3}} \]%
+</tex>
+      </reason>
+      <skills>
+        <skill id="31"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{NNNc}
+
+\hline
+\theta &amp; V' &amp; V'' &amp; Meaning  \\
+\hline
+0 &amp; 0 &amp; 2\kexp &amp; Minima \\
+\hline
+\cos^{-1} \frac{1}{\sqrt{3}} &amp; 0 &amp; -\frac{2\sqrt{2}}{\sqrt{3}}\kexp &amp; Maxima \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Hence, $V$ is maximum when $\theta = \cos^{-1} \frac{1}{\sqrt{3}}$
+\incorrect
+%
+\begin{align}
+\begin{tabular}{NNNc}
+
+\hline
+\theta &amp; V' &amp; V'' &amp; Meaning  \\
+\hline
+0 &amp; 0 &amp; \kexp &amp; Minima \\
+\hline
+\cos^{-1} \frac{1}{\sqrt{3}} &amp; 0 &amp; -\frac{2}{3}\kexp &amp; Maxima \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Hence, $V$ is maximum when $\theta = \cos^{-1} \frac{1}{\sqrt{3}}$%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+\begin{tabular}{NNNc}
+
+\hline
+\theta &amp; V' &amp; V'' &amp; Meaning  \\
+\hline
+0 &amp; 0 &amp; \kexp &amp; Minima \\
+\hline
+\cos^{-1} \frac{1}{\sqrt{3}} &amp; 0 &amp; -\frac{2}{3}\kexp &amp; Maxima \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Hence, $V$ is maximum when $\theta = \cos^{-1} \frac{1}{\sqrt{3}}$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Common sense says that
+\[ \qquad V \geq 0 \text{ and } V\to 0\text{ as }\theta\to 0 \]
+ Hence, the minimum volume the cone can have is $0$ at $\theta = 0$ 
+ And therefore, at the other $\theta$ for which $V\neq 0$ must be the maxima 
+ Nevertheless, if you want to be dead sure, then find $V''$ 
+%
+\begin{align}
+
+&amp;V' = \kexp\sin\theta\cdot \left(3\cos^2\theta -1 \right) \\
+\therefore &amp;V'' = \frac{d}{d\theta}V' = \kexp \frac{d}{d\theta} \left[\sin\theta\cdot (3\cos^2\theta -1) \right] \\
+&amp;= \kexp \underbrace{\left[ \ea\cdot \cos\theta + \sin\theta\cdot \left(-6\cos\theta\sin\theta \right)\right]}_{\text{Product Rule}}\\
+&amp;= \kexp \cos\theta\cdot\left(3\cos^2\theta-6\cos\theta\sin\theta-1 \right) \\
+&amp;= 2\kexp &gt; 0 \text{ for } \theta = 0 \\
+&amp;= \underbrace{-\frac{2\sqrt{2}}{\sqrt{3}}\kexp &lt; 0 \text{ for } \theta = \cos^{-1} \frac{1}{\sqrt{3}}}_{\cos\theta = \frac{1}{\sqrt{3}} \implies \sin\theta = \sqrt{1- \frac{1}{3}} = \sqrt{\frac{2}{3}}}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="63"/>
+      </skills>
+    </step>
+  </steps>
+</question>

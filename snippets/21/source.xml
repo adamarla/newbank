@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The area enclosed by the curve $y=2\sqrt{x}$, the \xaxis and the line $x=1$ is as shown below
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{wrong.svg}
+\end{align}
+%text
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ $y=2\sqrt{x}\implies y^2 = 4x$. This is a parabola that opens to the right. Hence, the required area is as shown below
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{right.svg}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="66"/>
+  </skills>
+</snippet>

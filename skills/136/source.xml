@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Section formula}
+         
+         Finding the coordinates of the point that divides a \underline{line segment}
+in the ratio $m:n$</tex>
+  </render>
+  <reason>
+    <tex>%text
+ The figure below shows a \underline\text{line segment $AB$} that is divided at $P$ in the ratio $m:n$ 
+
+%
+\begin{align}
+
+\includegraphics[scale=1.65]{136-A.svg}
+\end{align}
+%text
+ From the figure, we can see that
+%
+\begin{align}
+
+x &amp;= x_1 + \left(\frac{m}{m+n} \right)\cdot \left(x_2 - x_1 \right) \\
+\implies x &amp;= \frac{mx_2 + nx_1}{m+n}
+\end{align}
+%text
+ Similarly,
+%
+\begin{align}
+
+y &amp;= y_1 + \left(\frac{m}{m+n} \right)\cdot \left(y_2 - y_1 \right) \\
+\implies y &amp;= \frac{my_2 + ny_1}{m+n} \\
+\therefore P &amp;= \left(\frac{mx_2 + nx_1}{m+n}, \frac{my_2 + ny_1}{m+n} \right)
+\end{align}
+%text
+ \textbf{Mid-point Formula } 
+ If $m:n = 1:1$, then $P$ is the mid-point of $AB$. And therefore
+\[ \qquad \underbrace{P = \left(\frac{x_1 + x_2}{2}, \frac{y_1+y_2}{2} \right)}_{m : n = 1:1}\]
+%
+</tex>
+  </reason>
+</skill>

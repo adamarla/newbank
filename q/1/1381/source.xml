@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Using integration, find the area lying above the \xaxis and included between the circle $x^2 + y^2 = 8x$ and the parabola $y^2 = 4x$</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ The circle is centered at $C = \left(4,0 \right)$ and has radius $R = 4$ as shown below
+%
+\begin{align}
+
+\includegraphics[scale=1.2]{1381-A.svg}
+\end{align}
+%text
+
+\incorrect
+The circle is centered at $C = \left(0,0 \right)$ and has radius $R = \sqrt{8} = 2\sqrt{2}$ as shown below
+%
+\begin{align}
+
+\includegraphics[scale=1.2]{1381-B.svg}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ The circle is centered at $C = \left(0,0 \right)$ and has radius $R = \sqrt{8} = 2\sqrt{2}$ as shown below
+%
+\begin{align}
+
+\includegraphics[scale=1.2]{1381-B.svg}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ The equation we have been given for the circle is \underline\text{not} in the standard form. Hence, we must first make it so
+%
+\begin{align}
+
+x^2 + y^2 &amp;= 8x \\
+\left(x^2-8x \right)	 + y^2 &amp;= 0 \\
+\underbrace{\left(x^2-8x + 16 \right)}_{\text{Completing the squares}} &amp;+ y^2 - 16 = 0 \\
+\left(x-4 \right)^2 + y^2 &amp;= 16
+\end{align}
+%text
+ Now, it is in standard form. And we can see that the circle's center is at $C = \left(4,0 \right)$ and it's radius is $R = \sqrt{16} = 4$. Hence, the circle would look like this
+%
+\begin{align}
+
+\includegraphics[scale=1.2]{1381-A.svg}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="65"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+\includegraphics[scale=0.2]{1381-C.svg}
+\end{align}
+%text
+ $A = \left(4,4 \right)$ and the shaded portion is the required area
+\incorrect
+%
+\begin{align}
+
+\includegraphics[scale=0.2]{1381-D.svg}
+\end{align}
+%text
+ $A = \left(4,4 \right)$ and the shaded portion is the required area%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+\includegraphics[scale=0.2]{1381-D.svg}
+\end{align}
+%text
+ $A = \left(4,4 \right)$ and the shaded portion is the required area%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ The parabola is \underline\text{initially inside the circle}. How do we know that? Well, just find the $y$ for both the circle and the parabola when $x=1$. The curve for which $y$ is \underline\text{higher} is outside
+ Now, the two curves will intersect when
+%
+\begin{align}
+
+y^2 = 4x = \underbrace{8x-x^2}_{\text{Circle}}&amp;\text{ or } x^2 - 4x = 0  \\
+\implies x\cdot \left(x-4 \right) &amp;= 0\text{ or } x = 0,4
+\end{align}
+%text
+ Which gives us \underline\text{three} points of intersection -- $O = (0,0), A = (4,4)$ and $B=(4,-4)$ 
+ But the required area must be \underline\text{above} the \xaxis and \underline\text{between} the two curves. Hence, it would be as shown
+%
+\begin{align}
+
+\includegraphics[scale=0.2]{1381-C.svg}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="69"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ The required area $R$ will be 
+%
+\begin{align}
+
+R &amp;= \intga - \intgb \\
+&amp;= \left[\frac{x-4}{2}\sqrt{\expa} + 8\sin^{-1}\frac{x-4}{4} - \frac{4}{3}x^{\frac{3}{2}}\right]_0^4 \\
+&amp;= 4\pi - \frac{32}{3}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ From the figure we can see that 
+%
+\begin{align}
+
+R &amp;= \underbrace{\intga}_{\text{Under the circle}} - \underbrace{\int_0^4 \sqrt{4x}\cdot dx}_{\text{Under the parabola}} \\
+&amp;= \underbrace{\intga}_M - \underbrace{\intgb}_N
+\end{align}
+%text
+ Now, in $M$ if $z = x-4$, then $dz = dx$
+%
+\begin{align}
+
+\text{So, } &amp;\int \sqrt{\expa}\cdot dx = \int\sqrt{4^2-z^2}\cdot dz \\
+&amp;= \underbrace{\left[\frac{z}{2}\sqrt{16-z^2} + \frac{16}{2}\sin^{-1} \left(\frac{z}{4} \right) \right] + C}_{\int \sqrt{a^2 - z^2}\cdot dx = ?} \\
+&amp;= \left[\frac{x-4}{2}\sqrt{\expa} + 8\sin^{-1} \left(\frac{x-4}{4} \right) \right] + C \\
+\therefore M &amp;= \left[\frac{x-4}{2}\sqrt{\expa} + 8\sin^{-1} \left(\frac{x-4}{4} \right) \right]_0^4 \\
+&amp;= \left[\left(0+0 \right) - \left\lbrace 0 + 8\sin^{-1} \left(\frac{0-4}{4} \right)\right\rbrace \right] \\
+&amp;= -8\sin^{-1} \left(-1\right) = -8\cdot -\frac{\pi}{2} = 4\pi \\
+N &amp;= 2\int_0^4\sqrt{x} = 2 \left[\frac{x^{\frac{3}{2}}}{\frac{3}{2}} \right]_0^4 = \frac{4}{3} \left[x^{\frac{3}{2}} \right]_0^4  \\
+&amp;= \frac{4}{3} \left[4^{\frac{3}{2}} - 0 \right] = \frac{4}{3}\cdot 8 = \frac{32}{3} \\
+R &amp;= M - N = 4\pi - \frac{32}{3} \\
+&amp;\approx 4\cdot \frac{22}{7} - \frac{32}{3} = \frac{40}{21} \text{ (approximately)}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="67"/>
+      </skills>
+    </step>
+  </steps>
+</question>

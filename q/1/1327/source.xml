@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="23">
+  <customCommands/>
+  <statement>
+    <tex>%text
+Evaluate the following \[\qquad \qquad \int\dfrac{\sec^2 x}{3 + \tan x}\cdot dx \]
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex> 
+
+If $z = \tan x + 3$, then 
+\[ I = \int \frac{\sec^2 x}{\tan x+3}\cdot dx = \int \frac{dz}{z} \]
+
+</tex>
+      <tex correct="false"> 
+
+If $z = \tan x + 3$, then 
+\begin{align}
+	\tan x &amp;= z-3 \\
+	\therefore \sec^2 x &amp;= \left(1+\tan^2 x \right) = \left[\left(z-3 \right)^2 + 1 \right] \\
+	&amp;= z^2 -6z + 10  \\
+	\therefore I &amp;= \int \frac{\sec^2 x}{\tan x + 3}\cdot dx \\
+	&amp;= \int \frac{z^2-6z + 10}{z}\cdot dz \\ 
+	&amp;= \int z\cdot dz - 6\int dz + 10\int \frac{dz}{z}
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+Well, if $z = \tan x + 3$, then $dz = \sec^2 x\cdot dx$\newline 
+
+And therefore 
+\begin{align}
+	I &amp;= \int \frac{\sec^2 x}{\tan x+3}\cdot dx = \int \frac{dz}{z}
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="32"/>
+      <skill id="33"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\[ \qquad I = \log \vert \tan x + 3\vert + C \] 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+We did the hard part. Now we just apply the standard result 
+
+\begin{align}
+	I &amp;= \int \frac{dz}{z} = \log \vert z\vert  + C \\ 
+	&amp;= \log \vert \tan x + 3\vert + C 
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="48"/>
+    </skills>
+  </step>
+</question>

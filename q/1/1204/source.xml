@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="28">
+  <customCommands/>
+  <statement>
+    <tex>%text
+$A$ speaks the truth in 60\% of the cases, while 
+$B$ in 90\% of the cases. In what percent of cases 
+are they likely to contradict each other in stating 
+the same fact? In the cases of contradiction do 
+you think, the statement of $B$ will carry more 
+weight as he speaks truth in more number of 
+cases than $A$? 
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+Given the following events 
+%
+\begin{center}
+\begin{tabular}{NcN}
+\midrule
+\text{Event} &amp; \text{Meaning} &amp; \text{Probability} \\ 
+\midrule 
+A &amp; \text{$A$ speaks the truth} &amp; 0.6 \\
+\midrule
+B &amp; \text{$B$ speaks the truth} &amp; 0.9 \\ 
+\midrule 
+C &amp; \text{$A$ and $B$ contradict} &amp; ? \\
+\midrule 
+\end{tabular}
+\end{center} 
+%
+\[ P(C) = P \left[\left(A\cap B' \right) \cup \left(A'\cap B \right)\right] = 0.42 \]
+
+</tex>
+      <tex correct="false">
+
+Given the following events 
+%
+\begin{center}
+\begin{tabular}{NcN}
+\midrule
+\text{Event} &amp; \text{Meaning} &amp; \text{Probability} \\ 
+\midrule 
+A &amp; \text{$A$ speaks the truth} &amp; 0.6 \\
+\midrule
+B &amp; \text{$B$ speaks the truth} &amp; 0.9 \\ 
+\midrule 
+C &amp; \text{$A$ and $B$ contradict} &amp; ? \\
+\midrule 
+\end{tabular}
+\end{center} 
+%
+\[ P(C) = P \left[\left(A\cap B \right) \cup \left(A'\cap B' \right)\right] = 0.58 \]
+
+
+</tex>
+    </options>
+    <reason>
+      <tex>
+
+\begin{center}
+  \begin{tabular}{ccc}
+   \toprule
+        $A$&amp; $B$ &amp; \text{Contradiction?} \\
+   \midrule
+   \text{Lies} &amp; \text{Lies} &amp; \text{No} \\ 
+    \midrule 
+    \text{Lies} &amp; \text{Does not lie} &amp; \text{Yes} \\ 
+    \midrule 
+    \text{Does not lie} &amp; \text{Lies} &amp; \text{Yes} \\
+    \midrule 
+    \text{Does not lie} &amp; \text{Does not lie} &amp; \text{No} \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+By looking at the table above, we can \underline{define}  the event $C$ 
+\[ \qquad C = \left(A'\cap B \right) \cup \left(A\cap B' \right)\]
+
+And hence 
+\begin{align}
+P(C) &amp;= P \left[ \left(A'\cap B \right) \cup \left(A\cap B' \right)\right] \\
+&amp;= \left[P(A')\cdot P(B) \right] + \left[P(A)\cdot P(B') \right] \\
+&amp;= \underbrace{\left(0.4\times 0.9 \right)}_{P(A') = 1-P(A)} + \underbrace{\left(0.6\times 0.1 \right)}_{P(B') = 1-P(B)} = 0.42
+\end{align}
+
+Hence, $A$ and $B$ \underline{will contradict each other} $42\%$ of the times 
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="36"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex>
+
+In case of a contradiction, $A$ is more reliable than $B$ if 
+\[ \qquad \condp{A}{C} &gt; \condp{B}{C} \]
+Otherwise, $B$ is more reliable  
+
+</tex>
+      <tex correct="false">
+
+In case of a contradiction, $A$ is more reliable than $B$ if 
+\[ \qquad \condp{C}{A} &gt; \condp{C}{B} \]
+Otherwise, $B$ is more reliable 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{center}
+  \begin{tabular}{Nl}
+   \toprule
+        \text{Probability} &amp; \text{Of} \\
+   \midrule 
+   \condp{A}{C} &amp; \text{$A$ speaking truth given} \\
+   &amp; contradiction $C$\\
+    \midrule 
+    \condp{C}{A} &amp; \text{Contradiction $C$ given $A$} \\
+    &amp; \text{speaking the truth} \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+Now, if a contradiction has occurred, then what we really want to compare are the probabilities of $A$ and $B$ speaking the truth\newline 
+
+ The one who is more likely to be speaking the truth is more reliable. Hence, we need to do the following comparison 
+
+\[ \qquad \condp{A}{C} &gt; \condp{B}{C} \]
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="38"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex>
+
+\begin{align}
+	\condp{A}{C} &amp;= \fcondp{A}{C} \\
+	&amp;= \frac{0.1\times 0.6}{0.42} = \frac{1}{7} \\
+	\condp{B}{C} &amp;= \fcondp{B}{C} \\
+	&amp;= \frac{0.4\times 0.9}{0.42} = \frac{6}{7}
+\end{align}
+
+As $\condp{B}{C} &gt; \condp{A}{C}$, therefore $B$ is (a whole lot) more reliable than $A$ 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+From Bayes' Theorem we know that 
+\begin{align}
+	\condp{A}{C} &amp;= \fcondp{A}{C} \\
+	\text{and }\condp{B}{C} &amp;= \fcondp{B}{C} 
+\end{align}
+
+We know $P(A), P(B)$ and $P(C)$. But what are $\condp{C}{A}$ and $\condp{C}{B}$? 
+
+\begin{center}
+  \begin{tabular}{NlN}
+   \toprule
+        &amp;  \text{What needs to happen} &amp; \text{Equals} \\
+   \midrule 
+   \condp{C}{A} &amp; \text{$B$ must lie for contradiction} &amp; P(B')\\
+    \midrule 
+    \condp{C}{B} &amp; \text{$A$ must lie for contradiction} &amp; P(A') \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+And hence, we can say that 
+\begin{align}
+\condp{A}{C} &amp;= \fcondp{A}{C} \\
+&amp;= \frac{0.1\times 0.6}{0.42} =  \frac{1}{7} \\
+\text{and }\condp{B}{C} &amp;= \fcondp{B}{C}  \\
+&amp;= \frac{0.4\times 0.9}{0.42} = \frac{6}{7} 
+\end{align}
+
+As $\condp{B}{C} &gt; \condp{A}{C}$, therefore $B$ is more reliable than $A$ in case of contradiction (and even otherwise)</tex>
+    </reason>
+    <skills>
+      <skill id="14"/>
+    </skills>
+  </step>
+</question>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Random Variables}
+And their probability distribution</tex>
+  </render>
+  <reason>
+    <tex>%text
+ If a random variable $(X)$ can have \underline\text{only} values from the set $\lbrace x_1, x_2, \ldots x_n\rbrace$, then it's \underline\text{probability distribution is a table} that lists the values and the probabilties of getting those values - as shown below
+%
+\begin{align}
+\begin{tabular}{NNNNN}
+
+\hline
+X &amp; x_1 &amp; x_2 &amp; \ldots &amp; x_n \\
+\hline
+P(X=x_i) &amp; p_1 &amp;p_2&amp; \ldots &amp; p_n \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ As $X$ can only be one of $x_1, x_2 \ldots  x_n $, hence it should come as no surprise that \[ \qquad\qquad \sum_{k=1}^n p_k = 1 \]%
+</tex>
+  </reason>
+</skill>

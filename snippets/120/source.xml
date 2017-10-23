@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The following relation is also a function
+\[ \quad R = \left\lbrace (4,6),(3,9),(-11,6), (3,11) \right\rbrace\]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Notice the two pairs $(3,9)$ and $(3,11)$. For the same $x (=3)$ we have two different $y (=9,11)$ 
+ Hence, this cannot be a function. For a relation to be a function, each $x$ must map to \underline\text{exactly one $y$}
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="2"/>
+  </skills>
+</snippet>

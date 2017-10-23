@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Logarithm Basics}
+Definition and algebra of logarithmic terms</tex>
+  </render>
+  <reason>
+    <tex>%text
+ By definition, \[ \qquad \log_b a = c \implies b^c = a \] In the above expression, both $a$ and $b$ are positive real numbers. $c$ can be negative 
+ Most of the time, however, we would only be writing $\log a = c$. It is understood that the logarithm is to the \underline\text{base $e$}
+ \textbf{Algebra of logarithmic terms }
+%
+\begin{align}
+
+\log (m\cdot n) &amp;= \log m + \log n \\
+\log \frac{m}{n} &amp;= \log m - \log n \\
+\log a^b &amp;= b\cdot \log a \\
+e^{\log m} &amp;= m \\
+\log e^{n} &amp;= n\cdot\log e = n\,(\because \log e = 1)
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

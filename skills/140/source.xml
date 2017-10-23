@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{The Inverse Element}
+What is it?</tex>
+  </render>
+  <reason>
+    <tex>%text
+ For a binary operation $*$ defined as $a*b$ where \underline\text{both} $a,b\in A$, $b$ is \underline\text{inverse of $a$} if
+\[ \qquad \qquad a * b = e = b * a \]
+ where $e\in A$ is the \underline\text{identity element}
+ Notice that every $a$ will have it's own inverse $b$ even though the $e$ is the same for all $a$ 
+ And it is possible that there is no inverse for some $a\in A$
+ For example, for $A = \left\lbrace -1,1,-2,2,3 \right\rbrace$ and a binary operator $*$ defined as $a*b = a + b$
+\[ \qquad e = 0\text{ because } a * e = e * a = a \]
+ Hence, one would think that the \underline\text{inverse} of $a=3$ would be $b = a^{-1} = -3$ 
+ But $-3\notin A$. And therefore $a=3$ has no inverse for $a=3$ in $A$%
+</tex>
+  </reason>
+</skill>

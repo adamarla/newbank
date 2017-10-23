@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="21">
+  <customCommands/>
+  <statement>
+    <tex>\newcommand\sine{\sin \left( \log x + \phi \right) }
+\newcommand\cosine{\cos \left( \log x + \phi \right)}
+\newcommand\scos{\cos \left(\log x \right) }
+\newcommand\ssin{\sin \left(\log x \right) }
+
+%text
+If $y = 3\cdot \cos \left(\log x \right) + 4\cdot \sin \left(\log x \right)$, then show 
+that \[ \qquad \qquad x^2\cdot \frac{d^2 y}{dx^2} + x\cdot \frac{dy}{dx} + y = 0 \]
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+	y &amp;= 3\cdot \cos \left(\log x \right) + 4\cdot \sin \left(\log x \right) \\ 
+	&amp;= N\cdot \left[\frac{3}{N} \cdot \cos \left(\log x \right) + \frac{4}{N}\cdot \sin \left(\log x \right) \right] \\
+	&amp;= N\cdot \sine  \\
+	\text{where } N &amp;= 5,\,\sin\phi = \frac{3}{5}\text{ and } \cos\phi = \frac{4}{5}
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+Notice that $3^2 + 4^2 = 5^2$. Hence, if there were a triangle such as the one below 
+
+\begin{center} 
+\includegraphics[scale=1.7]{figure.svg} 
+\end{center} 
+
+then $\cos\phi = \frac{4}{5}$ and $\sin\phi = \frac{3}{5}$. And hence, 
+
+\begin{align}
+	y &amp;= 5 \left[\frac{3}{5}\scos  + \frac{4}{5} \ssin \right] \\
+	&amp;= 5 \underbrace{\left[\sin\phi \cdot \scos + \cos\phi\cdot \ssin \right]}_{\sin A\cos B + \cos A\sin B = \sin \left(A+B \right)} \\
+	&amp;= 5 \cdot \sine 
+\end{align}
+
+So, instead of two trigonometric terms -- $\scos$ and $\ssin$ -- we now have just one -- $\sine$ -- in $y$. Should make life easier! 
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="32"/>
+      <skill id="28"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+y &amp;= 5 \sine \\ 
+y' &amp;= \frac{dy}{dx} = \frac{5}{x} \cosine \\
+y'' &amp;= \frac{d^2 y}{dx^2} = -\frac{5}{x^2} \left[ \sine + \cosine \right]
+\end{align}
+
+</tex>
+      <tex correct="false"> 
+
+\begin{align}
+y &amp;= 5 \sine \\ 
+y' &amp;= \frac{dy}{dx} = 5\cdot\cosine \\ 
+y'' &amp;= \frac{d^2 y}{dx^2} = \frac{5}{x^2} \left[x\cdot\sine + \cosine \right]
+\end{align}
+
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+y &amp;= 5 \cdot \sine \\
+\therefore y' &amp;= 5\cdot\frac{d}{dx}\sine \\
+&amp;= 5 \underbrace{\left[\cosine\cdot \frac{d}{dx} \left(\log x + \phi \right) \right]}_{\text{Chain Rule. $\phi$ is a constant}} \\ 
+&amp;= 5\cdot \frac{\cosine}{x} \\
+y'' &amp;= 5 \underbrace{\left[ \dfrac{x\cdot \frac{d}{dx}\cosine - \cosine\cdot 1}{x^2}\right]}_{\text{Quotient Rule}} \\
+&amp;= 5 \left[ \frac{\overbrace{-\frac{x}{x}\cdot \sine}^{\text{Chain Rule}} -\cosine}{x^2}\right] \\
+&amp;= -\frac{5}{x^2} \left[\sine + \cosine \right]
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="31"/>
+      <skill id="51"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+y'' &amp;= 	-\frac{5}{x^2} \left[\sine + \cosine \right] \\
+&amp;= -\frac{y}{x^2} - \frac{y'}{x}  \quad\text{ (hence proved) }
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+\begin{align}
+y'' &amp;= 	-\frac{5}{x^2} \left[\sine + \cosine \right] \\
+&amp;= -\frac{\overbrace{5\cdot\sine}^{ y}}{x^2} -\frac{1}{x}\cdot \underbrace{\left[ \frac{5\cdot\cosine}{x}\right]}_{y'} \\
+&amp;= -\frac{y}{x^2} -\frac{y'}{x} \implies x^2\cdot y'' + x\cdot y' + y = 0
+\end{align}
+
+Hence proved !</tex>
+    </reason>
+    <skills>
+      <skill id="32"/>
+    </skills>
+  </step>
+</question>

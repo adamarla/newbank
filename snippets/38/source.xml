@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If $y = \dfrac{2x}{1-x^2}$ and $x = \tan\phi$ then
+\[ \qquad\qquad \ddx y = \sec^2\phi\cdot \ddx\phi\]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ We are not asking you to evaluate $\ddx  y$. Only to check the given line
+%
+\begin{align}
+
+x &amp;= \tan\phi\implies y = \frac{2\tan\phi}{1-\tan^2\phi} \\
+\text{or } y &amp;= \tan 2\phi \\
+\therefore \ddx y &amp;= \underbrace{\frac{d}{d\phi}y\cdot \ddx \phi}_{\text{Chain Rule}} \\
+&amp;= \sec^2 (2\phi)\cdot \ddx\phi
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="51"/>
+  </skills>
+</snippet>

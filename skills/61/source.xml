@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Standard Integrals \#3}
+
+Important integrals like 
+\small\[ \int \tan x \cdot dx, \int \frac{dx}{x^2-a^2}, \int \frac{dx}{\sqrt{x^2+a^2}}
+\]\normalsize</tex>
+  </render>
+  <reason>
+    <tex>%text
+ The following integrals are rather important and should be remembered
+ The results are being presented without proof. However, with the correct substitution, one can derive all of the following results 
+
+%
+\begin{align}
+\begin{tabular}{MN}
+
+\hline
+\text{Integral} &amp; \text{Evaluates to}  \\
+\hline
+\int\tan x\cdot dx &amp; \log \vert \sec x \vert + C \\
+\hline
+\int \cot x \cdot dx &amp; \log\vert \sin x \vert + C \\
+\hline
+\int \sec x\cdot dx &amp; \log\vert \sec x + \tan x\vert + C \\
+\hline
+\int \csc x \cdot dx &amp; \log\vert \csc x - \cot x\vert + C \\
+\hline
+\int \frac{dx}{x^2-a^2} &amp; \frac{1}{2a}\cdot \log \left\vert \frac{x-a}{x+a}\right\vert + C   \\
+\hline
+\int \frac{dx}{a^2-x^2} &amp; \frac{1}{2a}\cdot \log \left\vert \frac{a-x}{a+x}\right\vert + C \\
+\hline
+\int \frac{dx}{x^2 + a^2} &amp; \frac{1}{a}\cdot\tan^{-1} \left(\frac{x}{a} \right) + C \\
+\hline
+\int \frac{dx}{\sqrt{x^2-a^2}} &amp; \log \vert x + \sqrt{x^2-a^2} \vert + C  \\
+\hline
+\int \frac{dx}{\sqrt{x^2+a^2}} &amp; \log \vert x + \sqrt{x^2+a^2} \vert + C  \\
+\hline
+\int \frac{dx}{\sqrt{a^2-x^2}} &amp; \sin^{-1} \left(\frac{x}{a} \right) + C \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

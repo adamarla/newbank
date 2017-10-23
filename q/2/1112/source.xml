@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Let $A = \Q\times\Q$, where $\Q$ is the set of rational numbers, and $*$ be a binary operation defined on $A$ as 
+    \[ \quad \left(a,b \right) * \left(c,d \right) = \left(a c,b + a d \right)\] where $\left(a,b \right), \left(c,d \right)\in A$. Given this, find 
+    \begin{itemize}
+    \item{ the identity element in $A$} 
+    \item{ the inverse of some $(a,b)\in A$}
+    \end{itemize}</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ As per the question,
+%
+\begin{align}
+
+\left(a,b \right), \left(c,d \right)&amp;\in A = \Q\times\Q \\
+\implies a,b,c,d &amp;\in \Q
+\end{align}
+%text
+
+\incorrect
+As per the question
+%
+\begin{align}
+
+\left(a,b \right), \left(c,d \right)&amp;\in A = \Q\times\Q \\
+\implies a,b,c,d &amp;\in A
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ As per the question
+%
+\begin{align}
+
+\left(a,b \right), \left(c,d \right)&amp;\in A = \Q\times\Q \\
+\implies a,b,c,d &amp;\in A
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Nothing in the problem statement is written without a reason. Which is why it is important to understand every bit of it 
+ $A = \Q\times\Q \implies A$ is the \underline\text{Cartesian product} of two $\Q$ sets 
+ Hence, $A$ will be made up of elements like $\left(x,y \right)$ where both $x,y\in\Q$ 
+ Had $A = \Q\times\Q\times\Q$, then $A$ would have been composed of elements like $\left(x,y,z \right)$ where $x,y,z\in\Q$. See the pattern? 
+ And therefore, in this question
+\[ \quad \left(a,b \right), \left(c,d \right)\in A\text{ but } a,b,c,d\in\Q \]
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="141"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ If $I = (i,j)$ be the identity element, then
+%
+\begin{align}
+
+I * (a,b) &amp;= (a,b)*I = (a,b) \\
+\therefore I &amp;= (1,0)
+\end{align}
+%text
+
+\incorrect
+If $I = (i,j)$ be the identity element, then
+%
+\begin{align}
+
+I * (a,b) &amp;= (a,b)*I = (a,b) \\
+\therefore I &amp;= (0,1)
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ If $I = (i,j)$ be the identity element, then
+%
+\begin{align}
+
+I * (a,b) &amp;= (a,b)*I = (a,b) \\
+\therefore I &amp;= (0,1)
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ If $I$ be the identity element, then all of the following conditions are true for $I$
+%
+\begin{align}
+\begin{tabular}{N}
+
+\hline
+\text{Condition}  \\
+\hline
+I\text{ is an element like }\left(i,j \right)\text{ where }i,j\in\Q \\
+\hline
+I \in A \\
+\hline
+\left(a,b \right)*\underbrace{\left(i,j \right)}_I = \left(i,j \right)* \left(a,b \right) = \left(a,b \right) \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Using the last condition,
+%
+\begin{align}
+
+(a,b) * (i,j) &amp;= \left(ai, b + aj \right) = (a,b) \\
+\implies ai &amp;= a \text{ and } b + aj = b \\
+\therefore i &amp;= 1 \text{ and } j = 0 \\
+\text{or } I &amp;= (i,j) = (1,0) \in A
+\end{align}
+%text
+ Notice also that
+%
+\begin{align}
+
+I * (a,b) &amp;= (1,0)*(a,b) \\
+&amp;= (a, 0 + b) = (a,b)
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="100"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ If $X = (x,y) = (a,b)^{-1}$, then
+\[ \qquad X = \left(\frac{1}{a}, -\frac{b}{a} \right),\, a \neq 0\]
+ Therefore, the inverse of $(a,b)$ is $\left(\dfrac{1}{a}, -\dfrac{b}{a} \right)$ as long as $a\neq 0$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ If $X = (x,y) = (a,b)^{-1}$, then
+%
+\begin{align}
+
+(a,b) * (x,y) &amp;= I = (1,0) \\
+\implies \left(ax, b + ay \right) &amp;= (1,0) \\
+\text{or } ax &amp;= 1 \text{ and } b + ay = 0 \\[-10pt]
+\therefore x &amp;= \frac{1}{a} \text{ and } y = \frac{-b}{a}
+\end{align}
+%text
+ Hence, the \underline\text{inverse element} of $(a,b)$ is
+\[\qquad X = \left(\dfrac{1}{a},-\dfrac{b}{a} \right), a \neq 0\]
+ Notice that any element with $a=0$, like $(0,3)$, has \underline\text{no inverse element}%
+</tex>
+      </reason>
+      <skills>
+        <skill id="140"/>
+      </skills>
+    </step>
+  </steps>
+</question>

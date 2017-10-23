@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The area $(A)$ of the region enclosed by the lines $x = y, x + y =2$ and the \xaxis is given by
+\[ \qquad A = \int_0^1 \left(-x+2 \right)\cdot dx + \int_1^2 x\cdot dx \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ The required area $(A)$ is as shown in the figure below
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{figure.svg}
+\end{align}
+%text
+ The two lines intersect at $P = (1,1)$. Hence, the required area is
+\[ \qquad A = \int_0^1 x\cdot dx + \int_1^2 \left(-x+2 \right)\cdot dx \]
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="60"/>
+  </skills>
+</snippet>

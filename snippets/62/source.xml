@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The area under the curve $y = \log x$ from $x = 0.5$ to $x = 2$ will be given by
+\[ \qquad A = \intga \log x \cdot dx + \intgb \log x\cdot dx \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ The value of $\int_{0.5}^2 \log x\cdot dx$ \underline\text{might not} be the same as the area under the curve 
+ Note that $\log x &lt; 0$ for $x &lt; 1$. Therefore
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\text{Range} &amp; f(x)\cdot dx  &amp; \int_a^b f(x)\cdot dx  \\
+\hline
+0.5\to 1 &amp; &lt; 0 &amp; &lt; 0 \\
+\hline
+1\to 2 &amp; &gt;0  &amp; &gt; 0 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ We want the \underline\text{total area} under the curve -- not the net area. Hence,
+\[ \quad A = \left\vert \intga \log x\cdot dx\right\vert + \intgb \log x\cdot dx \]
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="36"/>
+  </skills>
+</snippet>

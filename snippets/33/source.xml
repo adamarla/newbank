@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If $f(x) = \fx$ and $g(x) = \gx$ then $f'(x) &gt; g'(x)$ for $x\in (-1,1)$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+f'(x) &amp;= \ddx \fx = x^2 + x \\
+g'(x) &amp;= \ddx \gx = x + 1 \\
+f'(x) &amp;&gt; g'(x) \implies x^2 + x &gt; x + 1 \\
+\text{or } x^2 - 1 &amp;&gt; 0 \implies (x-1)\cdot (x+1) &gt; 0
+\end{align}
+%text
+ Below are all the possible scenarios
+%
+\begin{align}
+\begin{tabular}{NNNN}
+
+\hline
+&amp; x &lt; -1 &amp; (-1,1) &amp; &gt; 1 \\
+\hline
+x - 1 &amp; - &amp; - &amp; + \\
+\hline
+x + 1 &amp; - &amp; + &amp; + \\
+\hline
+x^2 - 1 &amp; + &amp; - &amp; + \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Therefore, if anything, $f'(x) &gt; g'(x)$ for $x\in (-\infty, -1)\cup (1,\infty)$%
+</tex>
+  </reason>
+            <skills>
+    <skill id="73"/>
+  </skills>
+</snippet>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="23">
+  <customCommands/>
+  <statement>
+    <tex>Evaluate the following integral 
+\[ \int \dfrac{e^x\cdot (x-4)}{(x-2)^3}\cdot dx \]
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex> 
+
+\begin{align}
+\frac{(x-4)\cdot e^x}{(x-2)^3} &amp;= \left[\underbrace{\frac{1}{(x-2)^2}}_A+\underbrace{\frac{-2}{(x-2)^3}}_B\right]\cdot e^x 
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+A little creative algebra required here
+
+\begin{align}
+	\frac{(x-4)\cdot e^x}{(x-2)^3} &amp;= e^x\cdot \left[ \dfrac{(x-2) - 2}{(x-2)^3}\right] \\
+	&amp;= e^x\cdot \left[ \frac{1}{(x-2)^2} - \frac{2}{(x-2)^3}\right]
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="32"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+In the last step
+\begin{align}
+	\frac{dA}{dx} &amp;= B \\ 
+\end{align}
+</tex>
+      <tex correct="false"> 
+In the last step 
+\begin{align}
+	\frac{dB}{dx} &amp;= A 
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+\begin{align}
+	\frac{d}{dx}\frac{1}{(x-2)^2} &amp;= \frac{-2}{(x-2)^3} = B \\ 
+	\text{But }\frac{d}{dx} \frac{-2}{(x-2)^3} &amp;= \frac{6}{(x-2)^4} \neq A 
+\end{align}
+
+Hence, we can see that \[ \frac{dA}{dx} = B \]
+</tex>
+    </reason>
+    <skills>
+      <skill id="31"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+\begin{align}
+	\int e^x\cdot \left(A + A' \right)\cdot dx &amp;= e^x\cdot A + C \\ 
+	\therefore \int e^x \left[\frac{1}{(x-2)^2}-\frac{2}{(x-2)^3} \right]\cdot dx &amp;= \frac{e^x}{(x-2)^2} + C 
+\end{align}
+</tex>
+      <tex correct="false"> 
+\begin{align}
+	\int e^x\cdot \left(A + A' \right)\cdot dx &amp;= e^x\cdot A' + C \\ 
+	\therefore \int e^x \left[\frac{1}{(x-2)^2}-\frac{2}{(x-2)^3} \right]\cdot dx &amp;= -\frac{2\cdot e^x}{(x-2)^3} + C 
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+Recall the \underline{standard result}
+\[ \int e^x\cdot \left[f(x) + f'(x) \right]\cdot dx = e^x\cdot f(x) + C\]
+
+Now, we have shown that 
+\begin{align}
+	\int e^x \left[\frac{1}{(x-2)^2} - \frac{2}{(x-2)^3} \right]\cdot dx &amp;= \int e^x \left[A + A' \right]\cdot dx \\
+	\text{where } A &amp;= \frac{1}{(x-2)^2} \\
+	\therefore \int e^x \left[\frac{(x-4)}{(x-2)^3} \right]\cdot dx &amp;= \dfrac{e^x}{(x-2)^2} + C 
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="50"/>
+    </skills>
+  </step>
+</question>

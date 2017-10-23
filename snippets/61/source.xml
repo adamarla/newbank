@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ In the figure below, the two parabolas are $y = \sqrt{2-x}$ and $y=\sqrt{x}$. And hence, the following is true
+%
+\begin{align}
+
+\int_0^2 \sqrt{2-x}\cdot dx &amp;= \int_0^2 \sqrt{x}\cdot dx \\
+\therefore P &amp;= Q
+\end{align}
+%text
+
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{figure.svg}
+\end{align}
+%text
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ We can infer the following
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\text{Equation} &amp; \text{Vertex at} &amp; y\text{ defined if}    \\
+\hline
+y = \sqrt{2-x} &amp; (2,0) &amp; x \leq 2 \\
+\hline
+y = \sqrt{x} &amp; (0,0) &amp; x \geq 0 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ And hence we can see that
+%
+\begin{align}
+\begin{tabular}{Nl}
+
+\hline
+\text{Expression} &amp;  Meaning \\
+\hline
+\int_0^2 \sqrt{2-x}\cdot dx &amp; Area from $0\to 2 = P+R$ \\
+\hline
+\int_0^2 \sqrt{x}\cdot dx &amp; Area from $0\to 2 = Q+R$ \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Moreover
+%
+\begin{align}
+
+\int_0^2 \sqrt{2-x}\cdot dx &amp;= \underbrace{\int_0^2 \sqrt{2- \left(2-x \right)}\cdot dx}_{\int_0^a f(x) dx = \int_0^a f (a-x)\cdot dx} \\
+&amp;= \int_0^2 \sqrt{x}\cdot dx \\
+\therefore P+R &amp;= Q + R \\
+\text{or } P &amp;= Q
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="45"/>
+  </skills>
+</snippet>

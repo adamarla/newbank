@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Evaluate the following 
+     \[ \qquad I = \int\dfrac{\sqrt{x}}{\sqrt{a^3-x^3}}\cdot dx \]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ Given below are \underline\text{three possible strategies} on how to attack the problem
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{Strategy} &amp; \text{First step} \\
+\hline
+A &amp; I = \int\dfrac{\sqrt{x}}{\sqrt{\left(a-x \right)\left(a^2+x^2 + ax \right)}}\cdot dx  \\
+\hline
+B &amp; \text{Let } z = x^{\frac{3}{2}} \\
+\hline
+C &amp; \text{Let } x = a\sin\theta \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Of these, \underline\text{Strategy $B$} is the best way forward
+\incorrect
+Given below are \underline\text{three possible strategies} on how to attack the problem
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{Strategy} &amp; \text{First step} \\
+\hline
+A &amp; I = \int\dfrac{\sqrt{x}}{\sqrt{\left(a-x \right)\left(a^2+x^2 + ax \right)}}\cdot dx  \\
+\hline
+B &amp; \text{Let } z = x^{\frac{3}{2}} \\
+\hline
+C &amp; \text{Let } x = a\sin\theta \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Of these, \underline\text{Strategy $A$} is the best way forward%
+</tex>
+        <tex correct="false">%text
+ Given below are \underline\text{three possible strategies} on how to attack the problem
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{Strategy} &amp; \text{First step} \\
+\hline
+A &amp; I = \int\dfrac{\sqrt{x}}{\sqrt{\left(a-x \right)\left(a^2+x^2 + ax \right)}}\cdot dx  \\
+\hline
+B &amp; \text{Let } z = x^{\frac{3}{2}} \\
+\hline
+C &amp; \text{Let } x = a\sin\theta \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Of these, \underline\text{Strategy $A$} is the best way forward%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Sometimes, you will just have to try multiple options before finding the one that makes life easiest
+ Notice however the $\sqrt{x}$ in the numerator
+%
+\begin{align}
+
+\text{If }z = x^{\frac{3}{2}} &amp;\text{ then } \frac{dz}{dx} = \frac{3}{2}\sqrt{x} \\
+\implies \sqrt{x}\cdot dx &amp;= \frac{2}{3} dz \\
+\text{and } I &amp;= \frac{2}{3}\int\dfrac{dz}{\sqrt{a^3 - z^2}}
+\end{align}
+%text
+ \underline\text{This looks a lot more manageable!}%
+</tex>
+      </reason>
+      <skills>
+        <skill id="32"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+I &amp;= \frac{2}{3}\intga \\
+\implies I &amp;= \frac{2}{3}\expa + C
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ If $z = x^{\frac{3}{2}}$, then why can't $b = a^{\frac{3}{2}}$
+%
+\begin{align}
+
+\text{Hence, if } b &amp;= a^{\frac{3}{2}}\text{ then } \\
+I &amp;= \frac{2}{3}\intgb \\
+\therefore I &amp;= \frac{2}{3}\sin^{-1} \left(\frac{z}{b} \right) + C \\
+&amp;= \frac{2}{3}\sin^{-1} \left(\dfrac{\xa}{\ab} \right) + C \\
+&amp;= \frac{2}{3}\expa + C
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="61"/>
+      </skills>
+    </step>
+  </steps>
+</question>

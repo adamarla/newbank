@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If $f'(x) = \log x$, then the function $f(x)$ is increasing in $(0,1)$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ $\log x &lt; 0$ for $x \in (0,1)$. Hence, $f(x)$ is decreasing -- not increasing -- for $x\in (0,1)$%
+</tex>
+  </reason>
+            <skills>
+    <skill id="63"/>
+  </skills>
+</snippet>

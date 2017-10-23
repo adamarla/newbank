@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \intg \cos^2 x \cdot dx = \frac\pi{2} \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+\intg \cos^2\cdot dx &amp;= \intg \left[\frac{1+\cos 2x}{2} \right]\cdot dx \\
+&amp;= \frac{1}{2} \left[\intg dx + \intg \cos 2x\cdot dx \right] \\
+&amp;= \frac{1}{2} \left[x + \frac{\sin 2x}{2} \right]_0^\pi \\
+&amp;= \frac{1}{2} \left[ \left(\pi + 0 \right) - \left(0 + 0 \right) \right] \\
+&amp;= \frac\pi{2}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="48"/>
+  </skills>
+</snippet>

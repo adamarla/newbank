@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ y = \tan^{-1} 1 + \sin^{-1}\third + \cos^{-1}\third = \frac\pi{2} \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Recall the standard result
+\[ \qquad \sin^{-1} x + \cos^{-1} x = \frac\pi{2} \]
+ And therefore,
+%
+\begin{align}
+
+\tan^{-1} &amp;= \frac\pi{4} \\
+\text{and } \sin^{-1} \third &amp;+ \cos^{-1}\third = \frac\pi{2} \\
+\therefore y &amp;= \frac\pi{4} + \frac\pi{2} = \frac{3\pi}{4}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="41"/>
+  </skills>
+</snippet>

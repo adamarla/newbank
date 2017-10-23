@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Evaluate the following integral 
+	\[ \qquad A = \intg \sin x\cdot \cos 3x\cdot dx \]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+
+\[ \sin x\cdot\cos 3x = \frac{1}{2} \left(\sin 4x - \sin 2x \right)\]
+
+\incorrect
+\[ \sin x\cdot \cos 3x = \frac{1}{2} \left(\cos 4x + \cos 2x \right)\]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ \sin x\cdot \cos 3x = \frac{1}{2} \left(\cos 4x + \cos 2x \right)\]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ The standard result is
+\[ \sin (A-B) + \sin (A+B) = 2\sin A\cdot \cos B \]
+ Which is why
+%
+\begin{align}
+
+2\sin x\cos 3x &amp;= \sin (x-3x) + \sin (x+3x)  \\
+\text{or }\sin x\cdot\cos 3x &amp;= \frac{1}{2} \left(\sin 4x - \sin 2x \right)
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="29"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ \therefore A = \half\intg \left(\sin 4x - \sin 2x \right)\cdot dx = 0 \]
+
+\incorrect
+\[ \therefore A = \half\intg \left(\sin 4x - \sin 2x \right)\cdot dx = \frac\pi{2} \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ \therefore A = \half\intg \left(\sin 4x - \sin 2x \right)\cdot dx = \frac\pi{2} \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+A &amp;= \half\intg \left(\sin 4x-\sin 2x \right)\cdot dx \\
+&amp;= \half \underbrace{\left[ -\frac{\cos 4x}{4} + \frac{\cos 2x}{2}\right]_0^\pi}_{\int \sin Nx\cdot dx = -\frac{\cos Nx}{N}} \\
+&amp;= \half \left[\left(-\frac{1}{4} + \half \right) - \left(-\frac{1}{4}+\half \right) \right] \\
+&amp;= 0
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="48"/>
+      </skills>
+    </step>
+  </steps>
+</question>

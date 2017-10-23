@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Using integration, find the area bounded by the lines 
+    \[\qquad  y = 2 + x, y = 2 - x\text{ and } x = 2 \]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{img_prefab-1.svg}
+\end{align}
+%text
+
+\incorrect
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{img_prefab-2.svg}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{img_prefab-2.svg}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ From the given equations of the lines, we can infer the following
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+\text{Line} &amp; \text{Cuts $x-$axis at} &amp; \text{Cuts $y-$ axis at}  \\
+\hline
+y = 2 + x &amp; (-2,0) &amp; (0,2) \\
+\hline
+y = 2 - x &amp; (2,0) &amp; (0,2) \\
+\hline
+x = 2 &amp; (2,0) &amp; \text{Never} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Which gives us the following picture. The shaded region is the required area $R$
+%
+\begin{align}
+
+\includegraphics[scale=1.4]{figure.svg}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="26"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ R = \int_0^2 \left(x+2 \right)\cdot dx - \int_0^2 \left(2-x \right)\cdot dx \]
+
+\incorrect
+\[ R = \int_0^2 \left(2-x \right)\cdot dx - \int_0^2 \left(x+2 \right)\cdot dx \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ R = \int_0^2 \left(2-x \right)\cdot dx - \int_0^2 \left(x+2 \right)\cdot dx \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Between $x=0$ and $x=2$, the line $y = x+2$ is above the line $y = 2-x$
+ Hence, the required area $R$ will be
+%
+\begin{align}
+
+R &amp;= \int_0^2 \left(2+x \right)\cdot dx - \int_0^2 \left(2-x \right)\cdot dx
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="26"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ R = 4\text{ sq. units} \]
+
+\incorrect
+\[ R = 2\text{ sq. units} \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ R = 2\text{ sq. units} \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+R &amp;= \int_0^2 \left(x+2 \right)\cdot dx - \int_0^2 \left(2-x \right)\cdot dx\\
+&amp;= \underbrace{\int_0^2 \left(x+2 - 2 + x \right)\cdot dx }_{\int_a^b f(x) dx + \int_a^b g(x)dx = \int_a^b \left(f(x) + g(x) \right)\cdot dx} \\
+&amp;= 2 \int_0^2 x\cdot dx = 2 \left[\frac{x^2}{2} \right]_0^2 = 4\text{ sq. units}
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="45"/>
+      </skills>
+    </step>
+  </steps>
+</question>

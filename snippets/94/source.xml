@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ $\itanx + \itany = c$ is the general solution of
+\[ \qquad \left(1+x^2 \right)\cdot dy + \left(1+y^2 \right)\cdot dx = 0 \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ If $\itanx + \itany = c$, then
+%
+\begin{align}
+
+&amp;\ddx \itanx + \ddx \itany = \underbrace{\ddx c = 0}_{\ddx\text{constant} = 0}\\
+&amp;\implies \frac{1}{1+x^2} + \underbrace{\frac{1}{1+y^2}\cdot \dydx}_{\text{Chain Rule}} = 0 \\
+&amp;\text{or }\frac{1}{1+y^2}\cdot \dydx = -\frac{1}{1+x^2} \\
+&amp;\text{or }\trma\cdot dy = -\trmb\cdot dx \\
+&amp;\text{or }\trma\cdot dy + \trmb\cdot dx = 0
+\end{align}
+%text
+ In other words, if
+\[\quad \trma\cdot dy + \trmb\cdot dx = 0\] is the differential equation, then
+
+\[ \quad \itanx + \itany = c\]
+ is the general solution%
+</tex>
+  </reason>
+            <skills>
+    <skill id="52"/>
+  </skills>
+</snippet>

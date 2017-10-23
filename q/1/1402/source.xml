@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>If $y = \dfrac{2x}{1-x^2}$, then find $\dfrac{d}{dx}y$</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+\text{Let } x &amp;= \sin\phi \implies dx = \cos\phi\cdot d \phi \\
+\text{and } y &amp;= \sin 2\phi \\
+\therefore \ddx y &amp;= \underbrace{\frac{d}{d\phi} y \cdot \ddx \phi}_{\text{Chain Rule}} = (2\cos2\phi)\cdot \ddx \phi
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ $x=\sin\phi$ is the wrong substitution to make 
+ Instead, try $x = \tan\phi$
+%
+\begin{align}
+
+x &amp;= \tan\phi \implies dx = \sec^2\phi\cdot d\phi \\
+\text{and } y &amp;= \frac{2\tan\phi}{1-\tan^2\phi} = \tan 2\phi \\
+\therefore \ddx y &amp;= \underbrace{\frac{d}{d\phi}y\cdot \ddx \phi}_{\text{Chain Rule}} = (2\sec^2 2\phi)\cdot \ddx\phi
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="51"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+\ddx y &amp;= 2\cdot \dfrac{\sec^2 2\phi}{\sec^2\phi} \\
+\therefore \ddx y &amp;= 2 \left[\dfrac{\psq}{\msq^2} \right]
+\end{align}
+%text
+
+\incorrect
+%
+\begin{align}
+
+\ddx y &amp;= 2\cdot \dfrac{\sec^2 2\phi}{\sec^2\phi} \\
+\therefore \ddx y &amp;= 2 \left[\dfrac{\msq^2}{\psq} \right]
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+\ddx y &amp;= 2\cdot \dfrac{\sec^2 2\phi}{\sec^2\phi} \\
+\therefore \ddx y &amp;= 2 \left[\dfrac{\msq^2}{\psq} \right]
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+\ddx y &amp;= \underbrace{2 \sec^2 2\phi \cdot \ddx \phi = \frac{2\sec^2 2\phi}{\sec^2\phi}}_{\text{Recall that } dx = \sec^2\phi\cdot d\phi}  \\
+&amp;= \underbrace{2 \left[\dfrac{1 + \tan^2 2\phi}{1+\tan^2\phi} \right]}_{\sec^2\theta = 1 + \tan^2\theta} \\
+&amp;= 2 \left[\dfrac{1 + \left(\frac{2\tan\phi}{1-\tan^2\phi} \right)^2}{1 + \tan^2\phi} \right] \\
+&amp;= 2 \left[\dfrac{1 + \left(\frac{2x}{1-x^2} \right)^2}{1+x^2} \right] \\
+&amp;= 2 \left[\dfrac{\left(1-x^2 \right)^2 + 4x^2}{\left(1-x^2 \right)^2\cdot \left(1+x^2 \right)} \right] \\
+&amp;= 2 \left[\dfrac{x^4 + 2x^2 + 1}{\left(1-x^2 \right)^2\cdot \left(1+x^2 \right)} \right] \\
+&amp;= 2 \left[\dfrac{\left(1+x^2 \right)^2}{\left(1-x^2 \right)^2\cdot \left(1+x^2 \right)} \right] \\
+&amp;= 2 \left[\dfrac{\left(1+x^2 \right)}{\left(1-x^2 \right)^2} \right]
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="28"/>
+      </skills>
+    </step>
+  </steps>
+</question>

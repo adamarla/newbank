@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Relation Types}
+Meaning of reflexive, transitive, symmetric and equivalent relations</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Best if we just took some examples before reading any definitions
+ Given a set $A = \left\lbrace 1,2,3\right\rbrace$, let us define the following relations
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+&amp; \text{Recipe} &amp; \text{Will give} \\
+\hline
+\small{R_1} &amp; \small{\left\lbrace (a,b): a \leq b\right\rbrace} &amp; \small{\lbrace (1,1),(1,2),(1,3),(2,2),(2,3),(3,3)\rbrace} \\
+\hline
+\small{R_2} &amp; \small{\left\lbrace (a,b): a = b \right\rbrace} &amp; \small{\left\lbrace (1,1),(2,2), (3,3)\right\rbrace} \\
+\hline
+\small{R_3} &amp; \small{\left\lbrace (a,b): a \geq b\right\rbrace} &amp; \small{\lbrace (1,1),(2,1),(2,2),(3,1),(3,2),(3,3)\rbrace} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ The three relations have also been classified below. As you read the table, remember the "recipes" we defined above
+%
+\begin{align}
+\begin{tabular}{lMNNN}
+
+\hline
+\text{Type} &amp; \text{Meaning} &amp; R_1 &amp; R_2 &amp; R_3 \\
+\hline
+\text{Reflexive} &amp; (a,a)\in R\text{ for all } a &amp; \checkmark &amp; \checkmark &amp; \checkmark \\
+\hline
+\text{Symmetric} &amp; (a,b)\in R\implies (b,a)\in R &amp; X &amp; \checkmark &amp; X \\
+\hline
+\text{Transitive} &amp; (a,b), (b,c)\in R \implies (a,c)\in R &amp; \checkmark &amp; \checkmark &amp; \checkmark \\
+\hline
+\text{Equivalent} &amp; \text{Is all three of the above} &amp; X &amp; \checkmark &amp; X \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Note that these are \underline\text{not either-or} conditions
+ A relation can be transitive but not reflexive or reflexive but not symmetric. It comes down to what the relation is%
+</tex>
+  </reason>
+</skill>

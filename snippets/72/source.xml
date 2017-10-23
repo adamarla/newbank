@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \cos^{-1} \left(\cos\frac{8\pi}{7} \right) = \frac{6\pi}{7} \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ If $\cos^{-1} x = \theta$ then $\theta \in \left[0,\pi \right]$. But note that $\frac{8}{7} &gt; 1\implies\frac{8\pi}{7} &gt; \pi$ 
+ Which means that $\angb\notin\prng$. And hence $\cos^{-1}\left( \cos\angb\right)\neq\angb$ 
+ Instead, notice that
+%
+\begin{align}
+
+\cos \left(\angb \right) &amp;= \cos \left(2\pi-\angb \right) \\
+&amp;= \cos \left(\angc \right) \\
+\text{And }\frac{6}{7} &amp;&lt; 1\implies \angc\in\prng \\
+\therefore \cos^{-1}\left(\cos\angb \right) &amp;= \angc
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="39"/>
+  </skills>
+</snippet>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Simplifying expressions}
+Using techniques like rationalization, variable substitution etc.</tex>
+  </render>
+  <reason>
+    <tex>%text
+ In Math, you can change how something looks as long you don't change its value. For example
+%
+\begin{align}
+
+\sqrt{\dfrac{1-\sin x}{1+\sin x}} &amp;= \dfrac{\sqrt{1-\sin x}}{\sqrt{1+\sin x}}\times\dfrac{\sqrt{1+\sin x}}{\sqrt{1+\sin x}} \\
+&amp;= \dfrac{\sqrt{1-\sin^2 x}}{\sqrt{\left(1+\sin x \right)^2}} = \dfrac{\cos x}{1+\sin x}
+\end{align}
+%text
+ And sometimes changing how an expression looks makes it easier to work with 
+ Hence, if you see something that looks big \&amp; complicated or looks like something you need (but not exactly), then you should look for ways of simplifying the expression
+ There are no rules. You will just have to be creative!%
+</tex>
+  </reason>
+</skill>

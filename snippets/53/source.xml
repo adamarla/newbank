@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ $f(x) = \sqrt{x}$ and $g(x) = x$ change at the same rate at $x=\frac{1}{4}$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+f'(x) = \frac{1}{2\sqrt{x}}&amp;\text{ and } g'(x) = 1  \\
+\text{so } \frac{1}{2\sqrt{x}} = 1&amp;\implies \sqrt{x} = \frac{1}{2} \\
+\text{or } x &amp;= \frac{1}{4}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="33"/>
+  </skills>
+</snippet>

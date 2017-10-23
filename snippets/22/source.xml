@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ $f(x) = \sin x\cdot \cos x$ is not continuous at $x = \frac{\pi}{2}$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ $\sin x$ is continuous for all $x$. So is $\cos x$
+ And as the product of two continuous functions is also continuous, therefore so is \[ \qquad f(x) = \sin x\cdot \cos x \]%
+</tex>
+  </reason>
+            <skills>
+    <skill id="34"/>
+  </skills>
+</snippet>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Piece-wise Functions}
+Ability to read, understand \&amp; work with piece-wise defined functions</tex>
+  </render>
+  <reason>
+    <tex>%text
+ When a function is defined differently in different regions of it's domain, we say that the function is  defined in pieces - or \underline\text{piece-wise defined}
+ For example, $f(x) = \vert x\vert$ is defined as
+%
+\[ \qquad f(x) = \begin{cases}
+
+-x, x &lt; 0 \\
+x, x\geq 0
+\end{cases} \]
+%text
+ Notice, the different definitions of $f(x)$ for $x\geq 0$ and $x &lt;  0$%
+</tex>
+  </reason>
+</skill>

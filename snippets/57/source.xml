@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ Circle $C_1$ is centered at the origin and has radius $R_1 = 1$. Circle $C_2$ is enclosed entirely inside $C_1$ as shown
+%
+\begin{align}
+
+\includegraphics[scale=0.2]{figure.svg}
+\end{align}
+%text
+ The area of the shaded region is therefore
+\[  A = \int_0^1 \sqrt{1-x^2}\cdot dx - \int_0^1 \sqrt{\frac{1}{4} - x^2}\cdot dx \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{NNNN}
+
+\hline
+\text{Circle} &amp; \text{Center} &amp; \text{Radius} &amp; \text{Equation}  \\
+\hline
+C_1 &amp; (0,0) &amp; 1 &amp; x^2 + y^2 = 1 \\
+\hline
+C_2 &amp; \left(\frac{1}{2},0 \right) &amp; \frac{1}{2} &amp; \left(x-\frac{1}{2} \right)^2 + y^2 = \frac{1}{4} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ And therefore \small\[ A = \underbrace{\int_0^1 \sqrt{1-x^2}\cdot dx}_{\text{Area under }C_1} - \underbrace{\int_0^1 \sqrt{\frac{1}{4} - \left(x-\frac{1}{2} \right)^2}\cdot dx}_{\text{Area under }C_2} \]%
+</tex>
+  </reason>
+            <skills>
+    <skill id="65"/>
+  </skills>
+</snippet>

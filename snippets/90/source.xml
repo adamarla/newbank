@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ The integrating factor $(I)$ of the following differential equation
+\[ \qquad \left(\trma -\trmb \right)\cdot \frac{dx}{dy} = 1\, (x\neq 0)\]
+ is $I = e^{2\sqrt{x}}$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+\left(\trma - \trmb \right)\cdot \frac{dx}{dy} &amp;= 1 \\
+\implies \trma - \trmb &amp;= \dydx \\
+\text{or } \dydx + \underbrace{\trmb}_{P(x)} &amp;= \trma
+\end{align}
+%text
+ This looks like a \underline\text{first-order} linear differential equation with $P(x) = \frac{1}{\sqrt{x}}$ 
+ Hence $I = e^{\int P(x)\cdot dx} = e^{\int \frac{dx}{\sqrt{x}}} = e^{2\sqrt{x}}$%
+</tex>
+  </reason>
+            <skills>
+    <skill id="54"/>
+  </skills>
+</snippet>

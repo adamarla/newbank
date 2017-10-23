@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ $f(x) = \vert x\vert + \vert x - 1\vert$ is discontinuous at $x= 0,1$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ First, know what $f(x)$ is
+%
+\[ f(x) = \begin{cases}
+
+-x + (1-x) = 1-2x\text{ for } x &lt; 0 \\
+x + (1-x) = 1\text{ for } 0\leq x &lt; 1 \\
+x + (x-1) = 2x - 1 \text{ for } x \geq 1
+\end{cases} \]
+%text
+ And hence at $x=0$
+%
+\begin{align}
+
+\lim_{x\to 0^-} f(x) &amp;= \lim_{x\to 0^-} \left(1-2x \right) = 1 \\
+\lim_{x\to 0^+} f(x) &amp;= \lim_{x\to 0^+} \left(1 \right) = 1 \\
+\end{align}
+%text
+ $\lim_{x\to 0} f(x) = f(0) = 1$. Therefore, $f(x)$ is continuous at $x=0$ 
+ Similarly, at $x=1$
+%
+\begin{align}
+
+\lim_{x\to 1^-} f(x) &amp;= \lim_{x\to 1^-} \left(1\right) = 1 \\
+\lim_{x\to 1^+} f(x) &amp;= \lim_{x\to 1^+} \left(2x-1 \right) = 1 \\
+\end{align}
+%text
+ Again $\lim_{x\to 1}f(x) = f(1)$. Hence, $f(x)$ is continuous at $x=1$ also%
+</tex>
+  </reason>
+            <skills>
+    <skill id="13"/>
+  </skills>
+</snippet>

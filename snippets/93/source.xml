@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ y^2\dydx\ + y^2 + 1 = 0 \implies y -x = \tan^{-1} y + C\]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+
+y^2 \cdot \dydx + y^2 + 1 &amp;= 0 \\
+\therefore \frac{y^2}{y^2+1}\cdot\dydx + 1 &amp;= 0 \\
+\text{or }\dfrac{y^2}{y^2+1}\cdot dy &amp;= -dx  \\
+\left[1 - \frac{1}{y^2+1} \right] dy &amp;= -dx \\
+\text{Hence }\int dy - \int \frac{dy}{y^2+1} &amp;= -\int dx \\
+\text{or } y - \tan^{-1} y &amp;= -x + C \\
+\implies x + y &amp;= \tan^{-1} y + C
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="54"/>
+  </skills>
+</snippet>

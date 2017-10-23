@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ R = \left\lbrace (-10,3), (-7,3), (3,3), (11,3) \right\rbrace\]
+ is a relation but not a function%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Each $x$ in each $(x,y)\in R$ maps to a single $y (=3)$. Hence, the given relation is a function. In fact, the given relation is a \underline\text{constant function} 
+ Note that this is different from the case where a single $x$ maps to multiple $y's$. In that case the relation would not have been a function%
+</tex>
+  </reason>
+            <skills>
+    <skill id="2"/>
+  </skills>
+</snippet>

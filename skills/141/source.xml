@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Cartesian Product of Sets}
+What does $A\times B$ mean when $A$ and $B$ are both sets?</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Given two \underline\text{non-empty} sets $A$ and $B$, we define $A\times B$ as the \underline\text{set of all ordered pairs} $(x,y)$ where $x\in A$ and $y\in B$ 
+ Symbolically, we write this as
+\[ \quad A\times B = \left\lbrace (x,y)\,\vert\, x\in A, y\in B \right\rbrace\]
+ Now, some examples
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+A &amp; B &amp; A\times B \\
+\hline
+\left\lbrace 1,2\right\rbrace &amp; \left\lbrace 3,4\right\rbrace &amp;
+\left\lbrace (1,3),(1,4),(2,3),(2,4) \right\rbrace\\
+\hline
+\left\lbrace a\right\rbrace &amp; \left\lbrace b,c\right\rbrace &amp;
+\left\lbrace (a,b),(a,c)\right\rbrace \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Once again, $A\times B$ is also a set. But it is a set of elements like $(a,b)$ instead of just $a$ or $b$ 
+ Moreover, the idea can be extended to finding $A\times B\times C$
+ The set $A\times B\times C$ will made up of elements like $(a,b,c)$%
+</tex>
+  </reason>
+</skill>

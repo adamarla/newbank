@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ $f(x) = x - \log x$ is defined for all $x\in\mathbb{R}$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+&amp; \text{Not defined if} &amp; \text{Domain} \\
+\hline
+x &amp; &amp; \mathbb{R} \\
+\hline
+\log x &amp; x \leq 0 &amp; \mathbb{R}^+ \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ The domain of $f(x)$ is the \underline\text{stricter} of the two domains listed above
+ Hence, the domain is $\mathbb{R}^+ \text{ or } x &gt; 0$%
+</tex>
+  </reason>
+            <skills>
+    <skill id="75"/>
+  </skills>
+</snippet>

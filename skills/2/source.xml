@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Relation Basics}
+What is a relation? And how is it different from a function?</tex>
+  </render>
+  <reason>
+    <tex>%text
+ A relation $R$ between two sets $A$ and $B$ is \underline\text{another set}. It is a set composed of ordered pairs $(a,b)$ where $a\in A$ and $b\in B$
+ Both $A$ and $B$ must be non-empty. However, $R$ can be empty. But whatever $R$ may be, $R\subset A\times B$
+ $R$ can be expressed in either set-builder form or roster notation (just as sets) 
+ For example, given two sets $A = \left\lbrace 1,2\right\rbrace$ and $B = \left\lbrace 1,2,3\right\rbrace$, if we define
+\[ \quad R = \left\lbrace (a,b) : b=a^2, a\in A, b\in B\right\rbrace\]
+ then $R = \left\lbrace (1,1) \right\rbrace$ only
+ Notice that $(2,4) \notin R$ because $4\notin B$. Similarly, $(3,9)\notin R$ because $9\notin B$
+ A relation is a function \underline\text{only if} for every $a\in A$ there is only one $b\in B$
+ Remember, every function is a relation but every relation is not a function%
+</tex>
+  </reason>
+</skill>

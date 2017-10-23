@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Conditions for differentiability}
+When is a function $f(x)$ said to be differentiable at $x=a$</tex>
+  </render>
+  <reason>
+    <tex>%text
+ A function $f(x)$ is differentiable at $x=a$ if one can \underline\text{unambiguosly} say what the rate of change $f'(x)$ at $x=a$ is 
+ So, $f(x)$ must first be continuous at $x=a$. If $f(x)$ is not defined or is otherwise not continuous at $x=a$, then it cannot have a $f'(x)$ at $x=a$ 
+ 
+ Hence, it cannot have an unambiguous $f'(x)$. Which means it cannot be said to be differentiable 
+ But even if it is continous, it is differentiable only if
+\[ \qquad \lim_{x\to a^-} f'(x) = \lim_{x\to a^+} f'(x) \]
+ For example, $f(x) = \vert x\vert$ is continuous at $x=0$. But for $x &lt; 0, f'(x) = -1$ and for $x &gt; 0, f'(x) = +1$ 
+ So, what is the rate of change at $x=0$? Is it $-1$ or $+1$? The question cannot be answered. Hence, $f(x)=\vert x\vert$ is not differentiable at $x=0$%
+</tex>
+  </reason>
+</skill>

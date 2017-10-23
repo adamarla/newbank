@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Sums of Trigonometric Ratios}
+\[ \sin A \pm \sin B, \cos A \pm \cos B \ldots \]</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Useful identities (listed without proof)
+%
+\begin{align}
+
+\sin A + \sin B &amp;= 2\cdot\sin\frac{A+B}{2}\cdot\cos\frac{A-B}{2} \\
+\sin A - \sin B &amp;= 2\cdot\cos\frac{A+B}{2}\cdot\sin\frac{A-B}{2}  \\
+\cos A + \cos B &amp;= 2\cdot\cos\frac{A+B}{2}\cdot\cos\frac{A-B}{2} \\
+\cos A - \cos B &amp;= 2\cdot\sin\frac{A+B}{2}\cdot\underbrace{\sin\frac{B-A}{2}}_{\text{Watch out!}}
+\end{align}
+%text
+ The above results can help turn a complicated expression into something simpler 
+ For example \small\[y = \frac{\cos x + \cos 3x}{\sin x + \sin 3x} = \frac{2\cos 2x\cdot \cos x}{2\cdot \sin 3x\cdot \cos x} = \cot 2x\]\normalsize Whether you are trying to evaluate $y$ for many values of $x$ or trying to differentiate (or integrate) $y$, you will find that working with $y=\cot 2x$ is going to be easier
+ In fact, if you can simplify an expression, it is usually a good idea to do so%
+</tex>
+  </reason>
+</skill>

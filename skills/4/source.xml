@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Limits (Basic Arithmetic)} 
+
+\small$\lim_{x\to a}\left[ f(x) + g(x) \right], \lim_{x\to a}\dfrac{f(x)}{g(x)}$\text{ etc.}
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Given two functions $f(x)$ and $g(x)$, if \underline\text{$\lim_{x\to a}f(x)$ and $\lim_{x\to a}g(x)$ exist} independently, then
+%
+\begin{align}
+
+\lim_{x\to a}\left[ f(x) + g(x)\right] &amp;= \lim_{x\to a}f(x) + \lim_{x\to a}g(x)  \\
+\lim_{x\to a}\left[ f(x) - g(x)\right] &amp;= \lim_{x\to a}f(x) - \lim_{x\to a}g(x) \\
+\lim_{x\to a}\left[ f(x)\cdot g(x)\right] &amp;= \lim_{x\to a}f(x)\cdot\lim_{x\to a}g(x)  \\
+\lim_{x\to a}\frac{f(x)}{g(x)} &amp;= \dfrac{\lim_{x\to a}f(x)}{\lim_{x\to a}g(x)},\, \left[ \lim_{x\to a}g(x) \neq 0\right]
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

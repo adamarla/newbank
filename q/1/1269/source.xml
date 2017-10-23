@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="23">
+  <customCommands/>
+  <statement>
+    <tex>\newcommand\fx{ \left(ax+b \right)}
+
+Evaluate $\int (ax+b)^3\cdot dx$
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+If $z = \fx$, then 
+\[ \quad I = \int \fx^3\cdot dx = \frac{1}{a}\int z^3\cdot dz \]
+
+</tex>
+      <tex correct="false"> 
+
+If $z = \fx$, then 
+\[ \quad I = \int \fx^3\cdot dx = \int z^3\cdot dz \]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+	\text{If } z = \fx &amp;\text{ then } dx = \frac{dz}{a} \\
+	\therefore I = \int \fx^3\cdot dx &amp;= \frac{1}{a}\int z^3\cdot dz
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="33"/>
+      <skill id="32"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+And hence $I = \dfrac{\fx^4}{4a} + C $ 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+	I &amp;= \frac{1}{a}\int z^3\cdot dz = \frac{1}{a}\cdot \frac{z^4}{4} + C \\
+	&amp;= \frac{\fx^4}{4a} + C 
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="48"/>
+    </skills>
+  </step>
+</question>

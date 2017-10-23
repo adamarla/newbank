@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Partial fraction decomposition}
+
+Proper/improper rational functions; Doing the following conversion\newline 
+
+$\qquad \dfrac{p(x)}{q(x)} = \dfrac{a(x)}{b(x)} + \dfrac{c(x)}{d(x)}
+$</tex>
+  </render>
+  <reason>
+    <tex>%text
+ \textbf{\small{Proper \&amp; improper rational functions}}
+ $f(x) = \dfrac{p(x)}{q(x)}$, is a \underline\text{proper rational function} if the degree of $p(x) &lt;$ degree of $q(x)$. Otherwise, it is \underline\text{improper}
+ For example, $f(x) = \frac{x}{x^2 +1}$ is proper but $g(x) = \frac{x^2}{x^2 + 1 }$ is not
+ A rational function will take one of the following forms when expressed as the sum of partial fractions
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{Form} &amp; \text{Partial fractions} \\
+\hline
+\text{(Improper)} &amp; A(x) + \frac{B(x)}{C(x)} \\
+\hline
+\frac{px + q}{(x-a)\cdot (x-b)} &amp; \frac{A}{x-a} + \frac{B}{x-b} \\
+\hline
+\frac{px + q}{(x-a)^2} &amp; \frac{A}{x-a} + \frac{B}{(x-a)^2} \\
+\hline
+\frac{px^2 + qx + r}{(x-a)\cdot (x-b)\cdot (x-c)} &amp; \frac{A}{x-a} + \frac{B}{x-b} + \frac{C}{x-c} \\
+\hline
+\frac{px^2 + qx + r}{(x-a)^2\cdot (x-b)} &amp; \frac{A}{x-a} + \frac{B}{(x-a)^2} + \frac{C}{x-b} \\
+\hline
+\frac{px^2 + qx + r}{(x-a)\cdot (x^2+bx+c)} &amp; \frac{A}{x-a} + \frac{Bx+C}{(x^2+bx+c)} \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

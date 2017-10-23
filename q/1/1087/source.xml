@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Find $\dfrac{dy}{dx}$ if $x = \fx$ and $y=\fy$</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+
+\[ \qquad x' = 4\alpha\cdot\cos 3t\cdot \cos t \]
+
+\incorrect
+\[ \qquad x' = 2\alpha\cdot\cos 2t\cdot \cos t \]
+%
+</tex>
+        <tex correct="false">%text
+
+\[ \qquad x' = 2\alpha\cdot\cos 2t\cdot \cos t \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ This is a \underline\text{parametric curve} in which both $x$ and $y$ are defined in terms of a third parameter $t$. Which is why
+%
+\begin{align}
+
+x &amp;= \fx \\
+\therefore \frac{dx}{dt} &amp;= \underbrace{\alpha \left[\left(1+\cos 2t \right)\cdot \left(2\cos 2t \right) - 2\sin^2 2t  \right]}_{\text{Product and Chain Rules}} \\
+&amp;= \alpha \left[2\cos 2t + 2 \underbrace{\left(\cos^2 2t - \sin^2 2t \right)}_{\cos 2\theta = \cos^2\theta - \sin^2\theta} \right] \\
+&amp;= \underbrace{2\alpha \left(\cos 2t + \cos 4t \right)}_{\cos A + \cos B = 2\cos \frac{A+B}{2}\cdot \cos\frac{B-A}{2}} \\
+&amp;= 4\alpha\cdot\cos 3t\cdot \cos t
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="51"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+\frac{dy}{dt} &amp;= 4\beta \cdot\cos 3t \cdot \sin t \\
+\therefore \dydx &amp;= \frac{\beta}{\alpha}\tan t
+\end{align}
+%text
+
+\incorrect
+%
+\begin{align}
+
+\frac{dy}{dt} &amp;= 4\beta \cdot\sin 3t \cdot \cos t \\
+\therefore \dydx &amp;= \frac{\beta}{\alpha}\tan 3t
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+
+\frac{dy}{dt} &amp;= 4\beta \cdot\sin 3t \cdot \cos t \\
+\therefore \dydx &amp;= \frac{\beta}{\alpha}\tan 3t
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+y &amp;= \fy \\
+\therefore \frac{dy}{dt} &amp;= \beta \left[\cos 2t \left(2\sin 2t \right) - 2 \left(1-\cos 2t \right)\sin 2t \right] \\
+&amp;= 2\beta \left[2\sin 2t\cos 2t - \sin 2t  \right] \\
+&amp;= \underbrace{2\beta \cdot \left(\sin 4t - \sin 2t \right)}_{2\sin x\cdot\cos x = \sin 2x } \\
+&amp;= \underbrace{2\beta\cdot \left(2\cos 3t\cdot\sin t \right)}_{\sin A - \sin B = 2\cos \frac{A+B}{2}\cdot \sin \frac{A-B}{2}} \\
+&amp;= 4\beta \cdot\cos 3t \cdot \sin t
+\end{align}
+%text
+ Hence \[ \dydx = \frac{dy / dt}{dx / dt} = \frac{4\beta \cdot\cos 3t \cdot \sin t}{4\alpha\cdot\cos 3t\cdot \cos t} = \frac{\beta}{\alpha}\tan t\]%
+</tex>
+      </reason>
+      <skills>
+        <skill id="51"/>
+      </skills>
+    </step>
+  </steps>
+</question>

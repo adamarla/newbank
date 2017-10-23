@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="21">
+  <customCommands/>
+  <statement>
+    <tex>%text
+If $x^y = e^{x-y}$, then show that
+\[\qquad \frac{dy}{dx} = \frac{\log x}{\left[\log \left(x\cdot e \right) \right]^2}\]
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex>
+
+\[ x^y = e^{x-y} \implies y = \frac{x}{\log x + 1}\]
+
+</tex>
+      <tex correct="false"> 
+
+\[ x^y = e^{x-y} \implies y = \frac{x}{\log x - 1}\]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+	x^y = e^{x-y} \implies y\cdot \log x &amp;= \left(x-y \right)\cdot \underbrace{\log e}_{=1} \\
+	\therefore y\cdot \left(\log x + 1 \right) &amp;= x \\
+	\text{or } y &amp;= \frac{x}{\log x + 1}
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="55"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\[ \frac{dy}{dx} = \frac{\log x}{\left(\log x + 1 \right)^2}\]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+	y &amp;= \frac{x}{\log x + 1} \\ 
+	\implies \frac{dy}{dx} &amp;= \underbrace{\frac{\left(\log x +1 \right)\cdot \frac{d}{dx} x - x \frac{d}{dx}\left(\log x + 1 \right)}{\left(\log x + 1 \right)^2}}_{\text{Quotient Rule}} \\
+	&amp;= \frac{\left(\log x + 1 \right) - x\cdot \frac{1}{x}}{\left(\log x + 1 \right)^2} = \frac{\log x}{\left(\log x + 1 \right)^2}
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="31"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\[ \log x + 1 = \log \left(e\cdot x \right) \implies \frac{dy}{dx} = \frac{\log x}{\left[\log \left(e\cdot x \right) \right]^2}\]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+\log e &amp;= 1 \text{ and } \log a + \log b = \log \left(a\cdot b \right) \\
+\therefore \log x + 1 &amp;= \log x + \log e = \log \left(e\cdot x \right) \\
+\text{And so, } \frac{dy}{dx} &amp;= \frac{\log x}{\left(\log x + 1 \right)^2} = \frac{\log x}{\left[\log \left(e\cdot x \right) \right]^2}
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="55"/>
+    </skills>
+  </step>
+</question>

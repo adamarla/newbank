@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If $f(x) = 1 + x$ and $g(x) = \sqrt{x}$, then
+\[ \qquad\qquad  \frac{d}{dg}f(x) = 2\sqrt{x} \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ We want to differentiate $f(x)$ with respect to $g(x)$ -- not $x$
+%
+\begin{align}
+
+\frac{d}{dg} f(x) &amp;= \frac{df / dx}{dg / dx} \\
+&amp;= \left[\frac{\ddx (1+x) }{\ddx \sqrt{x}} \right] = \frac{1}{\frac{1}{2\sqrt{x}}} = 2\sqrt{x}
+\end{align}
+%text
+ Alternatively, you could have said that
+\[ \quad g(x) = \sqrt{x} \implies f(x) = 1 + g(x)^2 \]
+ And hence,
+%
+\begin{align}
+
+\frac{d}{dg}f(x) &amp;= \frac{d}{dg} \left[1 + g(x)^2 \right] \\
+&amp;= 2g(x) = 2\sqrt{x}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="36"/>
+  </skills>
+</snippet>

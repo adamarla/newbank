@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Independent Events}
+Meaning \&amp; mathematical test of independence</tex>
+  </render>
+  <reason>
+    <tex>%text
+ \textbf{Independent Events} Two events $A$ and $B$ are independent if the happening of one \underline\text{does not } change the probability of the other happening also
+ Mathematically, this is expressed as
+%
+\begin{align}
+
+P \left(A\vert B \right) &amp;= P(A) \\
+P \left(B\vert A \right) &amp;= P(B)
+\end{align}
+%text
+ Now, for any two events $A$ and $B$ \small\[P \left(A\cap B \right) = P \left(A\vert B \right)\cdot P(B) = P \left(B\vert A \right)\cdot P(A)\]\normalsize \underline\text{But if $A$ and $B$ are independent}, then it is also true that
+\[ \qquad P \left(A\cap B \right) = P(A) \cdot P(B)\]
+%
+</tex>
+  </reason>
+</skill>

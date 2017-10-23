@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Integrals \#4}
+
+Trickier integrals. For example, 
+
+\small$\int \dfrac{dx}{\sqrt{ax^2+bx+c}}, \int \dfrac{px+q}{ax^2+bx+c}
+\cdot dx$ \normalsize</tex>
+  </render>
+  <reason>
+    <tex>%text
+ The table below summarizes the strategy to use when one encounters integrals of the following forms
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{Integral} &amp; \text{Convert to}  \\
+\hline
+\int \frac{dx}{\sqrt{ax^2+bx+c}}\cdot dx &amp; \int \frac{dx}{\sqrt{\left(x + \alpha \right)^2 \pm \beta^2}}\\
+\hline
+\int \frac{dx}{ax^2+bx+c}\cdot dx &amp; \int \frac{dx}{\left(x + \alpha \right)^2 \pm \beta^2}\\
+\hline
+\int\frac{ \left( px+q\right) \cdot dx}{\sqrt{ax^2+bx+c}} &amp; \underbrace{ \int \frac{A f'(x) + B}{\sqrt{f(x)}}\cdot dx}_{f(x) = ax^2+bx+c}\\
+\hline
+\int\frac{ \left( px+q\right) \cdot dx}{ax^2+bx+c} &amp; \underbrace{ \int \frac{A f'(x) + B}{f(x)}\cdot dx}_{f(x) = ax^2+bx+c}\\
+\hline
+\end{tabular}
+\end{align}
+%text
+ So, these might be four different types of integrals. But they can be solved using jsut two strategies 
+
+ - Completing the squares, that is, re-writing the \underline\text{denominator} $f(x) = ax^2+bx+c$ as $ \left(x+\alpha \right)^2 \pm \beta$
+ - Re-writing the \underline\text{numerator} as $Af'(x)+B$, where $f(x)$ is the denominator %
+</tex>
+  </reason>
+</skill>

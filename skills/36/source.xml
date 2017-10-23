@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Understanding the problem}
+
+Correctly and fully identifying what
+is being asked in the question
+\end{narrow}
+\reason Everything you need to know to find the answer is given in the question itself\newline Hence, carefully take stock of all facts given in the question. And do not over or under interpret the question \newline You should also not be making any assumptions other than the ones given in the question</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Everything you need to know to find the answer is given in the question itself
+ Hence, carefully take stock of all facts given in the question. And do not over or under interpret the question 
+ You should also not be making any assumptions other than the ones given in the question
+\end{narrow}%
+</tex>
+  </reason>
+</skill>

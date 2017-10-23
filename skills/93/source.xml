@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Homogenous functions}
+Recognizing a function as a homogenous and finding it's degree</tex>
+  </render>
+  <reason>
+    <tex>%text
+ A function $F(x,y)$ is homogenous if
+\[ \qquad F \left(\lambda x, \lambda y \right) = \lambda^n F \left(x,y \right)\, (\lambda\neq 0)\]
+ For example, if $x\to 2x$ and $y\to 2y$ then
+\[ \qquad F(2x,2y) = 2^n\cdot F(x,y) \]
+ Which means that $F(2x,2y)$ could be the same $(n=0)$, double $(n=1)$, quadruple $(n=2)$ etc 
+ It all depends on $n$ - which is called the \underline\text{degree} of the homogenous function 
+ For example, pressure $P = \dfrac{\text{Force}}{\text{Area}}$. If you double both the force $(F)$ applied and the area $(A)$ over which it is applied, the pressure $(P)$ will remain the same 
+ Hence $P=\frac{F}{A}$ is a homogenous function of degree $0$
+ As regards \underline\text{differential equations}, you will be expected to solve \underline\text{only} those where the homogenous function is of \underline\text{degree $0$}%
+</tex>
+  </reason>
+</skill>

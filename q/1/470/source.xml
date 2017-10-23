@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>The figure below shows a \underline{fixed circle} $C_1$ with equation $(x-\va)^2 + y^2 = \vb$ and a \underline{shrinking circle} $C_2$ with radius $r$ centered at the origin. $P$ is the point $(0,r)$, $Q$ is the upper point of intersection of the two circles and $R$ is where the line $PQ$ intersects the $x-$axis. Where will the point $R$ be as $C_2$ shrinks to a point? 
+
+\begin{center}
+\includegraphics[scale=0.3]{470-G.svg}
+\end{center}</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ If the point $R = \left(R_x,0 \right)$, then given the radius $(r)$ of $C_2$, we have to find
+\[ \qquad\qquad \limit R_x \]
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ $R$ lies on the \xaxis. Hence, it must be of the form $\left(R_x,0 \right)$ 
+ Now, as $C_2$ shrinks, it's radius $(r)$ reduces. Which means, both $P$ and $Q$ also change. And therefore, so does the line $PQ$ and the point $R$ where it intersects the \xaxis 
+ Hence, what we need to evaluate is
+\[ \qquad\qquad \limit R_x = ? \]
+ Now that we know what we have to find, we can start doing the Math%
+</tex>
+      </reason>
+      <skills>
+        <skill id="0"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ Points $P$ and $Q$ will be as follows
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+P &amp; Q \\
+\hline
+\left(0,r \right) &amp; \left(\xq,\yq \right) \\
+\hline
+\end{tabular}
+\end{align}
+%text
+
+\incorrect
+Points $P$ and $Q$ will be as follows
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+P &amp; Q \\
+\hline
+\left(0,r \right) &amp; \left(\frac{r^2}{2},\frac{r}{2}\sqrt{4-r^2} \right) \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+        <tex correct="false">%text
+ Points $P$ and $Q$ will be as follows
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+P &amp; Q \\
+\hline
+\left(0,r \right) &amp; \left(\frac{r^2}{2},\frac{r}{2}\sqrt{4-r^2} \right) \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Point $P$ will always be $(0,r)$ 
+ However, point $Q$ is where the circles intersect. And at point $Q$
+%
+\begin{align}
+
+y^2 = r^2 - x^2 &amp;= 4 - (x-2)^2 \\
+\implies r^2 - x^2 &amp;= 4 - \left[x^2 - 4x + 4 \right] \\
+\text{or } r^2 &amp;= 4x \implies x = \frac{r^2}{4} \\
+\text{and } y^2 &amp;= r^2 - \left(\frac{r^2}{4} \right)^2 \\
+\implies y &amp;= \yq
+\end{align}
+%text
+ Hence, the \underline\text{coordinates of point $Q$} are
+\[ \qquad\qquad Q = \left(\xq,\yq \right)\]
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="0"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+
+\frac{r-0}{0-R_x} &amp;= \frac{r-\yq}{0-\xq} \\
+\therefore R_x &amp;= \frac{r^2}{4-\sqrt{16-r^2}}
+\end{align}
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ $P,Q$ and $R$ lie on the same line. Hence, irrespective of which two points on the line we pick, the \underline\text{slope will be the same}
+%
+\begin{align}
+
+\underbrace{\frac{r-0}{0-R_x}}_{\text{Points $P$ and $R$}} &amp;=
+\underbrace{\frac{r-\yq}{0-\xq}}_{\text{Points $Q$ and $R$}} \\
+\therefore R_x &amp;= \left[\dfrac{\frac{r^3}{4}}{r\cdot \left(1-\frac{\sqrt{16-x^2}}{4} \right)} \right] \\
+&amp;= \rx
+\end{align}
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="0"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+ And therefore
+\[ \qquad \limit\rx = 8 \]
+ Which means, that as $C_2$ shrinks to a point, $R$ will move closer and closer to $(8,0)$, that is, $R \to (8,0)$
+\incorrect
+And therefore
+\[ \qquad \limit\rx = 4 \]
+
+Which means, that as $C_2$ shrinks to a point, $R$ will move closer and closer to $(4,0)$, that is, $R \to (4,0)$%
+</tex>
+        <tex correct="false">%text
+ And therefore
+\[ \qquad \limit\rx = 4 \]
+ Which means, that as $C_2$ shrinks to a point, $R$ will move closer and closer to $(4,0)$, that is, $R \to (4,0)$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+
+R_x &amp;= \rx \\
+\therefore \limit R_x &amp;= \limit\rx
+\end{align}
+%text
+ If you plug-in $r =0$ now, then you will get
+\[\qquad \limit R_x = \frac{0}{0} = \text{non-sensical answer}\]
+ Hence, we must do something else 
+%
+\begin{align}
+
+\limit R_x &amp;= \limit \rx \\
+&amp;= \limit \left[\rx \right]\cdot \left[\frac{4+\sqrt{16-r^2}}{4+\sqrt{16-r^2}} \right] \\
+&amp;= \limit \left[\frac{r^2\cdot \left(4+\sqrt{16-r^2} \right)}{4^2-\left(16-r^2 \right)} \right] \\
+&amp;= \limit \left[\frac{r^2\cdot \left(4+\sqrt{16-r^2} \right)}{r^2} \right] \\
+&amp;= \limit \left(4+\sqrt{16-r^2} \right) = 8
+\end{align}
+%text
+ Hence, as $C_2$ shrinks
+\[ \qquad\qquad \limit R \to \left(8,0 \right)\]
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="0"/>
+      </skills>
+    </step>
+  </steps>
+</question>

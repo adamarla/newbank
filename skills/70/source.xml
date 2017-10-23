@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Angles of intersection}
+Finding the intersection angles given the slopes of two lines; Condition for perpendicularity</tex>
+  </render>
+  <reason>
+    <tex>%text
+ In the figure below, two lines with slopes $m_1$ and $m_2$ intersect
+ Notice the triangle that has the $x-$axis as it's base. The three \underline\text{interior angles} of this triangle are
+\[\qquad \underbrace{\phi_2}_P,\underbrace{\pi-\phi_1}_Q\text{ and } \underbrace{B = \phi_1-\phi_2}_{\pi - (P+Q)} \]
+
+%
+\begin{align}
+
+\includegraphics[scale=1.6]{figure.svg}
+\end{align}
+%text
+ Both $A$ and $B$ are angles of intersection
+ However, \underline\text{by convention}, we report the angle of intersection as $\theta \leq 90^\circ$ 
+ Which means $\theta = \tan^{-1}\left\vert \dfrac{m_1 - m_2}{1+m_1\cdot m_2}\right\vert$ 
+ Also, if $\theta=90^\circ$, then $\tan\theta = \infty$. Or
+\[ 1 + m_1\cdot m_2 = 0 \implies \underbrace{m_1\cdot m_2 = -1}_{\text{Condition for orthogonality}} \]
+%
+</tex>
+  </reason>
+</skill>

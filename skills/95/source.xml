@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Three Set Results}
+Standard results involving three sets $A,B$ and $C$</tex>
+  </render>
+  <reason>
+    <tex>%text
+ The following results can be proven graphically by representing three sets $A,B$ and $C$ in a Venn diagram
+ Your textbook will have those proofs. So, we will just list these important results
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\text{Union} &amp; \left(A\cup B \right) \cup C = A\cup \left(B\cup C \right)\\
+\hline
+\text{Intersection} &amp; \left(A\cap B \right) \cap C = A\cap \left(B\cap C \right)\\
+\hline
+\text{Mixed} &amp; A\cap \left(B\cup C \right) = \left(A\cap B \right)\cup \left(A\cap C \right) \\
+\hline
+&amp; A\cup \left(B\cap C \right) = \left(A\cup B \right)\cap \left(A\cup C \right) \\
+\hline
+\end{tabular}
+\end{align}
+%text
+%
+</tex>
+  </reason>
+</skill>

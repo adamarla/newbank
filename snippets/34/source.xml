@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If $f(x) = \log x$ then
+\[ \quad f'(x) + f(x) + f \left(\frac{1}{x} \right) - \frac{1}{x} = 0 \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+f'(x) &amp; f(x) &amp; f \left(\frac{1}{x} \right) \\
+\hline
+\frac{1}{x} &amp; \log x &amp; \log \left(\frac{1}{x} \right) = -\log x \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ And hence
+\[ \quad f'(x) + f(x) + f \left(\frac{1}{x} \right) - \frac{1}{x} = 0 \]
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="33"/>
+  </skills>
+</snippet>

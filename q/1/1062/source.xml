@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>Find the domain and range of the
+      following function 
+      \[ \qquad f(x) = \fx \]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+ $f(x) = \fx$ is defined for all $x \in\mathbb{R}$. Hence, its domain is $\mathbb{R}$
+\incorrect
+$f(x) = \fx$ is defined \underline\text{only for} $x &gt; 1$. Hence, its domain
+is $(1,\infty)$%
+</tex>
+        <tex correct="false">%text
+ $f(x) = \fx$ is defined \underline\text{only for} $x &gt; 1$. Hence, its domain is $(1,\infty)$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Had $f(x) = \dfrac{1}{\fx}$, then yes, one would have to worry about the deonominator turning $0$ (at $x=1$) 
+ But if $f(x) = \fx$, then there is no such problem. In fact, $f(x)$ is defined for any $x\in\mathbb{R}$. Therefore the domain is $\mathbb{R}$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="75"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+f(x) &amp; \text{At} &amp; \text{Value} \\
+\hline
+\text{Minimum} &amp; x=1 &amp; 0 \\
+\hline
+\text{Maximum} &amp; x = -\infty, \infty &amp; \infty \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Hence, the \underline\text{range of $f(x)$} is $[0,\infty)$
+\incorrect
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+f(x) &amp; \text{At} &amp; \text{Value} \\
+\hline
+\text{Minimum} &amp; x=0 &amp; 1 \\
+\hline
+\text{Maximum} &amp; x = -\infty, \infty &amp; \infty \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Hence, the range of $f(x)$ is $[1,\infty)$%
+</tex>
+        <tex correct="false">%text
+
+%
+\begin{align}
+\begin{tabular}{NNN}
+
+\hline
+f(x) &amp; \text{At} &amp; \text{Value} \\
+\hline
+\text{Minimum} &amp; x=0 &amp; 1 \\
+\hline
+\text{Maximum} &amp; x = -\infty, \infty &amp; \infty \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ Hence, the range of $f(x)$ is $[1,\infty)$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ $f(x) = \fx &gt; 0$ for all $x$. But more specifically,
+%
+\begin{align}
+
+%
+f(x) = \vert x-1\vert &amp;= \begin{cases}
+
+-(x-1), x&lt; 1 \\
+(x-1), x\geq 1
+\end{cases} \\
+%text
+
+%
+&amp;= \begin{cases}
+
+1-x, x&lt; 1 \\
+x-1, x\geq 1
+\end{cases}
+%text
+
+\end{align}
+%text
+ And as one can see, $f(x)$ is minimum when $x=1$ with $f(1) = 0$
+ Hence, the range of $f(x)$ is $[0,\infty)$%
+</tex>
+      </reason>
+      <skills>
+        <skill id="13"/>
+      </skills>
+    </step>
+  </steps>
+</question>

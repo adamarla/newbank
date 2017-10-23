@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Integration by Parts:}
+Evaluating $\int f(x)\cdot g(x)\cdot dx$ ; Applying $ILATE$ to ease integration</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Given two functions $f(x)$ and $g(x)$
+\[ \int f\cdot g\cdot dx = f\underbrace{\int g\cdot dx}_A - \underbrace{\int \left[f'\int g\cdot dx \right]\cdot dx}_{B}\]
+ Note that there are \underline\text{2 separate integrals} to evaluate -- $A,$ and $B$
+ \textbf{ILATE} But what is $f(x)$ in, say, $\int x\cdot\sin x\cdot dx$?  There are no right or wrong answers. Only better ones.
+ In the table below, let \underline\text{$f(x)$} be the function that \underline\text{matches first }
+%
+\begin{align}
+\begin{tabular}{ccMM}
+
+\hline
+&amp; \text{Meaning} &amp; \text{Example} &amp; \int x\sin x\cdot dx\\
+\hline
+\text{I} &amp; \text{Inverse Trig.} &amp; \sin^{-1} x, \tan^{-1} x &amp; \\
+\hline
+\text{L} &amp; \text{Logarithmic} &amp; \log x &amp; \\
+\hline
+\text{A} &amp; \text{Algebraic} &amp; x^2, 4x^7 &amp; f(x) =x \\
+\hline
+\text{T} &amp; \text{Trigonometric} &amp; \sin x, \cos 3x &amp; g(x) = \sin x \\
+\hline
+\text{E} &amp; \text{Exponential} &amp; e^x, 7^x &amp; \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ \textbf{An important result } Integration by parts also yields the following important result
+\[ \quad \int e^x\cdot \left[f(x) + f'(x) \right]\cdot dx = e^x\cdot f(x) + C \]
+%
+</tex>
+  </reason>
+</skill>

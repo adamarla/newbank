@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+
+\[ \qquad \underbrace{\tan 1 &gt; \tan^{-1} 1}_{\text{Angles in radians}}  \]
+%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Note that $\dfrac\pi{4} = \dfrac{3.14159\ldots}{4} &lt; 1$
+ Also note that $\dfrac\pi{4} &lt; 1 &lt; \dfrac\pi{2}$ and therefore
+\[ \quad \tan 1 &gt; \tan\frac\pi{4} \implies \tan 1 &gt; 1 \]
+ But $1 &gt; \frac\pi{4} = \tan^{-1} 1$. Therefore
+\[ \underbrace{\tan 1 &gt; 1 &gt; \tan^{-1} 1 \implies \tan 1 &gt; \tan^{-1} 1}_{a &gt; b  &gt; c \implies a &gt; c} \]
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="39"/>
+  </skills>
+</snippet>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<question xmlns="http://www.gradians.com">
+  <customCommands/>
+  <statement>
+    <tex>For what value of $k$ would the following function be continuous at $x=0$ ?
+    \[ \qquad f(x) = \begin{cases}
+    \dfrac{x}{\vert x\vert + 2x^2}, &amp;x\neq 0 \\
+    k,&amp; x = 0
+    \end{cases} \]</tex>
+  </statement>
+  <steps>
+    <step>
+      <options>
+        <tex>%text
+
+%
+\[f(x) = \begin{cases}
+
+\dfrac{x}{-x+2x^2} = \dfrac{1}{2x-1} , &amp; x &lt; 0\\
+k, &amp; x = 0 \\
+\dfrac{x}{x+2x^2} = \dfrac{1}{2x+1}, &amp; x &gt; 0
+\end{cases}\]
+%text
+
+\incorrect
+%
+\[f(x) = \begin{cases}
+
+\dfrac{x}{x+2x^2} = \dfrac{1}{2x+1}, &amp; x \neq 0 \\
+k, &amp; x = 0 \\
+\end{cases}\]
+%text
+%
+</tex>
+        <tex correct="false">%text
+
+%
+\[f(x) = \begin{cases}
+
+\dfrac{x}{x+2x^2} = \dfrac{1}{2x+1}, &amp; x \neq 0 \\
+k, &amp; x = 0 \\
+\end{cases}\]
+%text
+%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+ Recall that
+%
+\[ \qquad \vert x \vert = \begin{cases}
+
+-x, &amp; x &lt; 0\\
+x, &amp; x\geq 0
+\end{cases} \]
+%text
+ And hence
+%
+\[f(x) = \begin{cases}
+
+\dfrac{x}{-x+2x^2} = \dfrac{1}{2x-1} , &amp; x &lt; 0\\
+k, &amp; x = 0 \\
+\dfrac{x}{x+2x^2} = \dfrac{1}{2x+1}, &amp; x &gt; 0
+\end{cases}\]
+%text
+%
+</tex>
+      </reason>
+      <skills>
+        <skill id="13"/>
+      </skills>
+    </step>
+    <step>
+      <options>
+        <tex>%text
+
+\[ \qquad \lim_{x\to 0^-} f(x) \neq \lim_{x\to 0^+} f(x) \]
+ As the limit itself does not exist at $x = 0$, therefore \underline\text{no value} of $k$ could make $f(x)$ continuous at $x = 0$
+\incorrect
+\[ \qquad \lim_{x\to 0^-} f(x) = \lim_{x\to 0^+} f(x) = 1 \]
+
+Therefore $f(x)$ would be continuous at $x=0$ if $k =1$%
+</tex>
+        <tex correct="false">%text
+
+\[ \qquad \lim_{x\to 0^-} f(x) = \lim_{x\to 0^+} f(x) = 1 \]
+ Therefore $f(x)$ would be continuous at $x=0$ if $k =1$%
+</tex>
+      </options>
+      <reason>
+        <tex>%text
+
+%
+\begin{align}
+\begin{tabular}{NN}
+
+\hline
+\lim_{x\to 0^-}f(x) &amp; \lim_{x\to 0^+} f(x) \\
+\hline
+\lim_{x\to 0^-} \dfrac{1}{2x-1} = -1 &amp; \lim_{x\to 0^+} \dfrac{1}{2x+1} = 1 \\
+\hline
+\end{tabular}
+\end{align}
+%text
+ The limits obviously don't match. Hence, there is no way $f(x)$ could be made continuous by any value of $k$ 
+ Hey, just because we ask for a value does not mean there has to be a value!%
+</tex>
+      </reason>
+      <skills>
+        <skill id="7"/>
+      </skills>
+    </step>
+  </steps>
+</question>

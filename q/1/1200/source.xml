@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="28">
+  <customCommands/>
+  <statement>
+    <tex>%text
+Assume that the chances of a patient
+having a heart attack is $40\%$. Assuming
+that a meditation and yoga course reduces 
+the risk of a heart attack by $30\%$ and
+prescription of certain drugs reduces its
+chances by $25\%$. At a time, a patient can 
+choose any of the two options with equal 
+probabilities\newline 
+
+It is given that after going 
+through one of the two options, a patient 
+selected at random suffers a heart attack\newline 
+
+Find the probability that the patient followed
+a course of meditation and yoga. Interpret
+the result and state which of the above
+methods is beneficial for the patient
+%
+
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex> 
+
+Given the following events 
+\begin{center}
+  \begin{tabular}{Nl}
+   \toprule
+        \text{Event} &amp; Meaning  \\
+   \midrule 
+   Y &amp; Patient opts for Yoga \\
+    \midrule 
+    D &amp; Patient opts to take the drug \\
+    \midrule 
+    H &amp; Patient has a heart-attack \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+We have been told the following 
+\begin{center}
+  \begin{tabular}{NN}
+   \toprule
+        &amp; \text{Probability} \\
+   \midrule 
+   P(H) &amp; 0.4 \\
+    \midrule 
+    \condp{H}{Y} &amp; 0.28 \\
+    \midrule 
+    \condp{H}{D} &amp; 0.3 \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+</tex>
+      <tex correct="false"> 
+
+Given the following events 
+\begin{center}
+  \begin{tabular}{Nl}
+   \toprule
+        \text{Event} &amp; Meaning  \\
+   \midrule 
+   Y &amp; Patient opts for Yoga \\
+    \midrule 
+    D &amp; Patient opts to take the drug \\
+    \midrule 
+    H &amp; Patient has a heart-attack \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+We have been told the following 
+\begin{center}
+  \begin{tabular}{NN}
+   \toprule
+        &amp; \text{Probability} \\
+   \midrule 
+   P(H) &amp; 0.4 \\
+    \midrule 
+    \condp{H}{Y} &amp; 0.3 \\
+    \midrule 
+    \condp{H}{D} &amp; 0.25 \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+</tex>
+    </options>
+    <reason>
+      <tex>
+
+Yoga and the drug \underline{reduce} the chances of having a heart-attack by $30\%$ and $25\%$ respectively -- not bring it down to $30\%$ and $25\%$\newline 
+
+Hence, for the given events $H,Y$ and $D$
+
+\begin{center}
+  \begin{tabular}{NlN}
+   \toprule
+        \text{Event} &amp; Meaning &amp; \text{Probability} \\
+   \midrule 
+   H &amp; Heart-attack &amp; 0.4 \\
+    \midrule 
+    \condp{H}{Y} &amp; Heart-attack if Yoga &amp; \left(1-0.3 \right)\times 0.4 \\
+    &amp; &amp; = 0.28 \\
+    \midrule 
+    \condp{H}{D} &amp; Heart-attack if Drugs &amp; \left(1-0.25 \right)\times 0.4 \\
+    &amp; &amp; = 0.3 \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="36"/>
+      <skill id="38"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex>
+
+\begin{align}
+\condp{Y}{H} &amp;= \frac{14}{29}\text{ and } \condp{D}{H} = \frac{15}{29} \\
+\end{align} 
+
+</tex>
+      <tex correct="false">
+
+\begin{align}
+\condp{Y}{H} &amp;= \frac{15}{29} \text{ and } \condp{D}{H} = \frac{14}{29}
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+From Bayes' Theorem, we know that
+\smallmath
+\begin{align}
+	\condp{Y}{H} &amp;= \frac{\condp{H}{Y}\cdot P(Y)}{\underbrace{\condp{H}{Y}\cdot P(Y) + \condp{H}{D}\cdot P(D)}_{\text{Probability of heart-attack if Yoga or Drug}}} \\
+	\text{where } P(H) &amp;= P(D) = 0.5 \\
+	\therefore \condp{Y}{H} &amp;= \underbrace{\frac{\condp{H}{Y}}{\condp{H}{Y} + \condp{H}{D}}}_{P(H) \text{ and } P(D)\text{ cancel out}} \\
+	&amp;= \frac{0.28}{0.28 + 0.3} = \frac{14}{29} \\
+	\text{and } \condp{D}{H} &amp;= \underbrace{1 - \condp{Y}{H} = \frac{15}{29}}_{\text{One of yoga or drug option taken}}
+\end{align} 
+
+
+Note that $40\%$ was the probability of having a heart-attack \underline{without} yoga or  the drug \newline 
+
+But we know that this person was either doing yoga or taking the drug. And still he had a heart-attack \newline 
+
+Which is why 
+
+\begin{itemize}
+\item{The $P(H)$ we need now is the probability of a heart-attack \underline{given} yoga or the drug} 
+\item{ $\condp{Y}{H} + \condp{D}{H} = 1$} 
+\end{itemize}
+
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="14"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+As $\condp{Y}{H} &lt; \condp{D}{H}$, the person would have been better off taking Yoga 
+
+</tex>
+      <tex correct="false"> 
+
+As $\condp{Y}{H} &lt; \condp{D}{H}$, the person would have been better off taking the drug 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+We know that the person has had a heart-attack \newline 
+
+We also know that he was \underline{less likely} to have been doing Yoga and \underline{more likely} to have taken the drug \newline 
+
+Which means, he is more likely to have made a bad decision (taking the drug) \newline 
+
+Which means, doing Yoga was the better option</tex>
+    </reason>
+    <skills>
+      <skill id="38"/>
+    </skills>
+  </step>
+</question>

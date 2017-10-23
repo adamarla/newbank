@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{English $\to$ Math}
+Converting facts given in plain language into mathematical expressions</tex>
+  </render>
+  <reason>
+    <tex>%text
+ In word problems, you will be given the facts of the case in a natural language like English 
+ But to apply logic, you will need to express these facts in mathematical notation
+ Hence, take one fact at a time and write the Math for it. As you do, you will start getting insights into how to solve the problem%
+</tex>
+  </reason>
+</skill>

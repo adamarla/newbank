@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="23">
+  <customCommands/>
+  <statement>
+    <tex>Evaluate the following \[ \qquad\qquad\int\frac{x^2}{1+x^3}\cdot dx \]
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex correct="false"> 
+
+%text
+\underline{Best approach ?}
+
+\begin{align}
+\dfrac{x^2}{1+x^3} &amp;= \dfrac{x^2}{(1+x)\cdot (x^2-x+1)} \\ 
+&amp;= \dfrac{A}{x+1} + \dfrac{Bx + C}{x^2-x+1} \\
+\therefore I &amp;= \int\dfrac{x^2}{1+x^3}\cdot dx \\
+&amp;= \int\dfrac{A}{x+1}\cdot dx + \int\dfrac{Bx+ C}{x^2 - x + 1}\cdot dx 
+\end{align}
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+%text
+Breaking the integrand into partial
+sums might work\newline
+
+But it is not the smartest first step. Notice instead that 
+\begin{align}
+\dfrac{d}{dx} \left(1+x^3\right) &amp;= 3x^2 \\
+\text{Hence, if } z &amp;= 1+x^3 \\
+\text{then }dz = 3x^2\cdot dx &amp;\implies x^2\cdot dx = \frac{dz}{z} \\
+\therefore I = \int\dfrac{x^2}{1+x^3}\cdot dx &amp;= \frac{1}{3}\int\dfrac{dz}{z}
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="33"/>
+      <skill id="32"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex>
+
+\[ I = \frac{1}{3}\int\dfrac{dz}{z} = \frac{1}{3}\log\vert1+x^3\vert + C \]
+
+</tex>
+      <tex correct="false">
+
+\[ I = \frac{1}{3}\int\dfrac{dz}{z} = \frac{1}{3\cdot (1+x^3)^2} + C \]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+\begin{align}
+\text{Recall that } \int\frac{dz}{z} &amp;= \log\vert z\vert + C \\
+\therefore I &amp;= \frac{1}{3}\int\frac{dz}{z} = \frac{1}{3}\log\vert z\vert + C \\
+&amp;= \frac{1}{3}\log\vert1+x^3\vert + C
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="48"/>
+    </skills>
+  </step>
+</question>

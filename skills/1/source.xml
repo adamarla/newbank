@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<skill xmlns="http://www.gradians.com">
+  <render>
+    <tex>\title{Calculations}
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ Nothing much to say here 
+ If your score is low, then just be a little careful when you do calculations -- especially if you are not allowed to use calculators%
+</tex>
+  </reason>
+</skill>

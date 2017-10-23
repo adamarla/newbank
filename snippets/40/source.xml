@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<snippet xmlns="http://www.gradians.com">
+  <customCommands/>
+  <render>
+    <tex>%text
+ If $f(x) = \dfrac{1}{x}$, then $\dfrac{d}{dx} \left(f\circ f \right)(x) = -\dfrac{1}{x^2}$%
+</tex>
+  </render>
+  <reason>
+    <tex>%text
+ The first question is, what is $\left(f\circ f \right)(x)$?
+%
+\begin{align}
+
+\left(f\circ f \right)(x) &amp;= f \left(\, f(x) \,\right) \\
+&amp;= f \left(\frac{1}{x} \right) = \dfrac{1}{\frac{1}{x}} = x
+\end{align}
+%text
+ And so, if $ \left(f\circ f \right)(x) = x$, then
+\[ \quad\qquad \ddx \left(f\circ f \right)(x) = 1 \]
+%
+</tex>
+  </reason>
+            <skills>
+    <skill id="47"/>
+  </skills>
+</snippet>

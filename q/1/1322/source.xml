@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<question xmlns="http://www.gradians.com" chapterId="24">
+  <customCommands/>
+  <statement>
+    <tex>%text
+Using the method of integration, find the 
+area of the region bounded by the lines 
+\[\lone, \ltwo  \text{ and }  \lthree \]
+%
+
+</tex>
+  </statement>
+  <step>
+    <options>
+      <tex> 
+
+\begin{center}
+\includegraphics[scale=0.55]{img_right.svg} 
+\end{center} 
+
+</tex>
+      <tex correct="false">
+
+\begin{center}
+\includegraphics[scale=0.55]{img_right.svg} 
+\end{center} 
+
+</tex>
+    </options>
+    <reason>
+      <tex>
+
+Let us re-write the equations of the lines so that we can eventually plot them 
+
+\begin{align}
+	L_1: \lone \implies y &amp;= -2x + 4 \\ 
+	L_2 : \ltwo \implies y &amp;= \frac{3}{2}x + 3 \\ 
+	L_3: \lthree \implies y &amp;= \frac{x}{3} + \frac{5}{3}
+\end{align}
+
+For the three lines, we can see that 
+\begin{center}
+  \begin{tabular}{NNNN}
+  \toprule 
+        \text{Line} &amp; \text{Slope }(m) &amp; \text{$x$ intercept} &amp; \text{$y$ intercept}  \\
+   \midrule 
+   L_1 &amp; -2 &amp; (2,0) &amp; (0,4) \\ 
+    \midrule 
+    L_2 &amp; \frac{3}{2} &amp; (2,0) &amp; (0,-3) \\ 
+    \midrule 
+    L_3 &amp; \frac{1}{3} &amp; (-5,0) &amp; \left(0,\frac{5}{3} \right)\\
+    \bottomrule
+  \end{tabular}
+  
+\end{center}
+
+Hence, this is how they must look 
+\begin{center}
+\includegraphics[scale=0.55]{right.svg} 
+\end{center} 
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="26"/>
+      <skill id="60"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\begin{center}
+  \begin{tabular}{NN}
+  \toprule 
+       \text{Pt. of intersection} &amp; \text{Coordinates} \\
+   \midrule
+   A &amp; \left(2,0 \right) \\
+   \midrule
+   B &amp; \left(1,2 \right)\\
+    \midrule 
+    C &amp; \left(4,3 \right) \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+</tex>
+      <tex correct="false"> 
+
+\begin{center}
+  \begin{tabular}{NN}
+  \toprule 
+       \text{Pt. of intersection} &amp; \text{Coordinates} \\
+   \midrule
+   A &amp; \left(2,0 \right) \\
+   \midrule
+   B &amp; \left(1,1 \right)\\
+    \midrule 
+    C &amp; \left(5,2 \right) \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+We need to find the points of intersection -- $A,B$ and $C$ -- of the three lines \newline 
+
+ Hence, we take two lines at a time and solve for $x$ and $y$ 
+
+\begin{align}
+A: y=4-2x &amp;= \frac{3x}{2}-3\implies x = 2, y = 0 \\
+B: y=4-2x &amp;= \frac{x}{3}+\frac{5}{3} \implies x = 1, y = 2 \\
+C: y = \frac{x}{3}+\frac{5}{3} &amp;= \frac{3x}{2}-3 \implies x = 4,y=3 
+\end{align}
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="60"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+The required area $R$ is therefore 
+\small\[R = \int_1^4 \frac{x+5}{3}dx - \int_1^2 (4-2x)\cdot dx - \int_2^4 \left( \frac{3x}{2}-3\right)dx\]\normalsize 
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+Refer back to the diagram again and you will see 
+
+\begin{align}
+R &amp;= \underbrace{\text{Area under BC}}_{\text{From B to C}} = \int_1^4 \frac{x+5}{3}dx\\
+&amp;- \underbrace{\text{Area under BA}}_{\text{From B to A}}=\int_1^2 (4-2x)\cdot dx \\ 
+&amp;- \underbrace{\text{Area under AC}}_{\text{From A to C}}=\int_2^4 \left( \frac{3x}{2}-3\right)dx
+\end{align}\newline 
+
+And so we get the expression 
+\small\[R = \int_1^4 \frac{x+5}{3}dx - \int_1^2 (4-2x)\cdot dx - \int_2^4 \left( \frac{3x}{2}-3\right)dx\]\normalsize 
+
+</tex>
+    </reason>
+    <skills>
+      <skill id="36"/>
+      <skill id="26"/>
+    </skills>
+  </step>
+  <step>
+    <options>
+      <tex> 
+
+\[ \qquad R = \frac{7}{2}\]
+
+</tex>
+      <tex correct="false"> 
+
+\[ \qquad R = \frac{5}{2}\]
+
+</tex>
+    </options>
+    <reason>
+      <tex> 
+
+The following standard result has been applied in the calculations below \[\qquad\qquad \int x^n\cdot dx = \frac{x^{n+1}}{n+1}\]
+
+Which gives us 
+
+\begin{align} 
+R &amp;= \left[ \int_1^4 \frac{x+5}{3}dx =\frac{1}{3}\left[ \frac{x^2}{2} + 5x \right]_1^4 = \frac{15}{2}\right]\\ 
+&amp;- \left[\int_1^2 (4-2x)\cdot dx = \left[ 4x-x^2\right]_1^2 = 1 \right]\\
+&amp;- \left[\int_2^4 \left( \frac{3x}{2}-3\right)dx = \left[\frac{3x^2}{4}-3x \right]_2^4 = 3 \right] \\
+\therefore R &amp;= \frac{15}{2} - 1 - 3 = \frac{7}{2} 
+\end{align}</tex>
+    </reason>
+    <skills>
+      <skill id="48"/>
+    </skills>
+  </step>
+</question>
